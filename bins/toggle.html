@@ -68,7 +68,7 @@
 		</div>
 	</div>
 	<ul id="toggles">
-		<li><label for="test-toggle">Test</label><div class="switch"><input type="checkbox" id="test-toggle" checked="checked"><span><span>No</span><span>Yes</span><a></a></span></div></li>
+		<li><label for="test-toggle">Test</label><div class="switch"><input type="checkbox" id="test-toggle" checked="checked"><span><span aria-hidden="true">No</span><span aria-hidden="true">Yes</span><a></a></span></div></li>
 	</ul>
 
 	<script>
@@ -147,7 +147,7 @@
 	var html = '';
 	for(tag in taglist){
 		t = tag.replace(/:/g,"-");
-		html += '<li><label for="'+t+'-toggle">'+taglist[tag].label+'</label><div class="switch"><input type="checkbox" id="'+t+'-toggle"><span><span>No</span><span>Yes</span><a></a></span></div></li>';
+		html += '<li><label for="'+t+'-toggle">'+taglist[tag].label+'</label><div class="switch"><input type="checkbox" id="'+t+'-toggle"><span><span aria-hidden="true">No</span><span aria-hidden="true">Yes</span><a></a></span></div></li>';
 	}
 	S('#toggles').append(html);
 	</script>
