@@ -23,7 +23,7 @@
 
 	body { font-family: Tahoma, Arial, sans-serif; padding: 1em; font-size: 16px; line-height: 1.25em; }
 	h1 { font-size: 1.4em; font-weight: bold; line-height: 1.4em; margin-bottom: 0.5em; }
-	
+	.row { line-height: 2em; position: relative; margin-bottom: 1em; }
 	li { line-height: 2em; padding: 0.5em 0; position: relative; border-bottom: 1px solid #ddd; }
 	li:first-child { padding-top: 0; }
 	li:last-child { padding-bottom: 0; border-bottom: 0px; }
@@ -32,20 +32,41 @@
 	.switch { width: 5em; position: absolute; display: inline-block; right: 0px; }
 	.switch input { position: absolute; opacity: 0; z-index: 3; width: 100%; height: 100%; margin: 0px; cursor: pointer; }
 	.switch input:focus ~ span { box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2, 0 0 4px 2px #3366dd; }
-	.switch input:checked ~ span { background-color: #0DBC37; }
-	.switch input:checked ~ span a { left: 100%; border-color: #0DBC37; margin-left: -2em; right: 0%; }
-	.switch input:checked ~ span span:first-of-type { opacity: 0; }
-	.switch input:checked ~ span span:last-of-type { opacity: 1; color: #fff; }
+	.switch input:checked + span { background-color: #0DBC37; }
+	.switch input:checked + span a { left: 100%; border-color: #0DBC37; margin-left: -2em; right: 0%; }
+	.switch input:checked + span span:first-of-type { opacity: 0; }
+	.switch input:checked + span span:last-of-type { opacity: 1; color: #fff; }
 	.switch a { left: 0; top: 0; width: 2em; height: 2em; background-color: #fff; border-radius: 100%; border: 0.25em solid #dddddd; transition: all .2s ease-out; position: absolute; right: 50%; top: 0; z-index: 1; display: block; padding: 0; }
 	.switch > span { display: block; width: 100%; height: 2em; background-color: #dddddd; border-radius: 1.75em; transition: all .4s ease-out; position: relative; overflow: hidden; display: block; min-height: 2em; padding: 0; text-align: left; line-height: 2em; color: #fff; box-sizing: border-box; }
 	.switch > span span { text-align: center; display: block; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: all .2s ease-out; box-sizing: border-box; }
 	.switch > span span:last-of-type { padding-right: 2em; }
 	.switch > span span:first-of-type { opacity: 1; padding-left: 2em; color: black; }
+
+	.switch.radio { width: 100%; right: auto; position: relative; height: 3em; }
+	.switch.radio label { font-weight: normal; line-height: 3em; }
+	.switch.radio a, .switch.radio > span { border-radius: 2em; }
+	.switch.radio a { width: 50%; width: calc(50% - 0.5em); border: 0px; height: 2.5em; margin: 0.25em; border-color: #444; z-index: 0; position: absolute; z-index: 0; left: 0px; }
+	.switch.radio input { opacity: 0; width: 50%; }
+	.switch.radio input + input { left: 50%; }
+	.switch.radio > span { background-color: #444; height: 3em; }
+	.switch.radio > span label { text-align: center; padding: 0; width: 50%; z-index: 1; position: absolute; }
+	.switch.radio span > label:first-of-type { opacity: 1; z-index: 1; color: white; left: 50%; padding: 0px; }
+	.switch.radio span > label:last-of-type { opacity: 1; z-index: 1; color: black; left: 0%; padding: 0px; }
+	.switch.radio input:checked + span a { left: 50%; margin-left: 0.25em; right: auto; }
+	.switch.radio input:checked + span label:last-of-type, .switch.radio input:checked + span label:first-of-type { opacity: 1; color: black; }
+	
 	</style>
 </head>
 <body>
 
 	<h1>CSS toggle test</h1>
+	<div class="row">
+		<div class="switch radio">
+			<input type="radio" id="waste" name="tag-type" checked="checked">
+			<input type="radio" id="recycling" name="tag-type" >
+			<span><label for="recycling">Recycling</label><label for="waste">Waste</label><a></a></span>
+		</div>
+	</div>
 	<ul id="toggles">
 		<li><label for="test-toggle">Test</label><div class="switch"><input type="checkbox" id="test-toggle" checked="checked"><span><span>No</span><span>Yes</span><a></a></span></div></li>
 	</ul>
