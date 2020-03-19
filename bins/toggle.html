@@ -46,9 +46,10 @@
 	.switch.radio label { font-weight: normal; line-height: 3em; font-weight: bold; }
 	.switch.radio a, .switch.radio > div { border-radius: 2em; }
 	.switch.radio a { width: 50%; width: calc(50% - 0.5em); border: 0px; height: 2.5em; margin: 0.25em; border-color: #444; z-index: 1; position: absolute; z-index: 0; left: 0px; }
-	.switch.radio input { opacity: 0; width: 50%; z-index: 3; }
+	.switch.radio input { opacity: 0; width: 50%; }
 	.switch.radio input + input { left: 50%; }
-	.switch.radio > div { background-color: #444; height: 3em; color: white; }
+	.switch.radio input:focus ~ div { box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2, 0 0 4px 2px #3366dd; }
+	.switch.radio > div { background-color: #444; height: 3em; color: white; position: relative; z-index: 5; }
 	.switch.radio > div label { text-align: center; padding: 0; width: 50%; z-index: 2; position: absolute; }
 	.switch.radio div > label:first-of-type { opacity: 1; z-index: 2; left: 50%; padding: 0px; }
 	.switch.radio div > label:last-of-type { opacity: 1; z-index: 2; left: 0%; padding: 0px; color: black; }
@@ -64,11 +65,11 @@
 	<form>
 		<div class="row">
 			<fieldset>
-				<legend>Select the type of container</legend>
+				<legend>Select the type of container/bin</legend>
 				<div class="switch radio">
-					<input type="radio" id="waste" name="tag-type" checked="checked">
-					<input type="radio" id="recycling" name="tag-type" >
-					<div><label for="recycling">Recycling</label><label for="waste">Waste</label><a></a></div>
+					<input type="radio" id="waste" name="tag-type" checked="checked" />
+					<input type="radio" id="recycling" name="tag-type" />
+					<div><label for="recycling" title="Recycling is used for a container or centre that accepts waste for recycling, and donations of used goods.">Recycling</label><label for="waste" title="A single small container for depositing rubbish that is easily accessible for pedestrians.">Waste</label><a></a></div>
 				</div>
 			</fieldset>
 		</div>
