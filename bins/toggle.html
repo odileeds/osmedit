@@ -43,17 +43,18 @@
 	.switch > span span:first-of-type { opacity: 1; padding-left: 2em; color: black; }
 
 	.switch.radio { width: 100%; right: auto; position: relative; height: 3em; }
-	.switch.radio label { font-weight: normal; line-height: 3em; }
-	.switch.radio a, .switch.radio > span { border-radius: 2em; }
+	.switch.radio label { font-weight: normal; line-height: 3em; font-weight: bold; }
+	.switch.radio a, .switch.radio > div { border-radius: 2em; }
 	.switch.radio a { width: 50%; width: calc(50% - 0.5em); border: 0px; height: 2.5em; margin: 0.25em; border-color: #444; z-index: 1; position: absolute; z-index: 0; left: 0px; }
-	.switch.radio input { opacity: 0; width: 50%; }
+	.switch.radio input { opacity: 0.1; width: 50%; z-index: 3; }
 	.switch.radio input + input { left: 50%; }
-	.switch.radio > span { background-color: #444; height: 3em; }
-	.switch.radio > span label { text-align: center; padding: 0; width: 50%; z-index: 2; position: absolute; }
-	.switch.radio span > label:first-of-type { opacity: 1; z-index: 2; color: white; left: 50%; padding: 0px; }
-	.switch.radio span > label:last-of-type { opacity: 1; z-index: 2; color: black; left: 0%; padding: 0px; }
-	.switch.radio input:checked + span a { left: 50%; margin-left: 0.25em; right: auto; }
-	.switch.radio input:checked + span label:last-of-type, .switch.radio input:checked + span label:first-of-type { opacity: 1; color: black; }
+	.switch.radio > div { background-color: #444; height: 3em; color: white; }
+	.switch.radio > div label { text-align: center; padding: 0; width: 50%; z-index: 2; position: absolute; }
+	.switch.radio div > label:first-of-type { opacity: 1; z-index: 2; left: 50%; padding: 0px; }
+	.switch.radio div > label:last-of-type { opacity: 1; z-index: 2; left: 0%; padding: 0px; color: black; }
+	.switch.radio input:checked + div a { left: 50%; margin-left: 0.25em; right: auto; }
+	.switch.radio input:checked + div label:first-of-type { color: black; }
+	.switch.radio input:checked + div label:last-of-type { color: white; }
 	
 	</style>
 </head>
@@ -67,7 +68,7 @@
 				<div class="switch radio">
 					<input type="radio" id="waste" name="tag-type" checked="checked">
 					<input type="radio" id="recycling" name="tag-type" >
-					<span><label for="recycling">Recycling</label><label for="waste">Waste</label><a></a></span>
+					<div><label for="recycling">Recycling</label><label for="waste">Waste</label><a></a></div>
 				</div>
 			</fieldset>
 		</div>
