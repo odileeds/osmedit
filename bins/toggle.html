@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS toggle test</title>
+	<script type="text/javascript" src="../resources/stuquery.js"></script>
+	<style>
+	
+	/* Reset http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+	body { line-height: 1em; }
+	ol, ul { list-style: none; }
+	blockquote, q { quotes: none; }
+	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+	table { border-collapse: collapse; border-spacing: 0; }
+	/* apply a natural box layout model to all elements */
+	*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	/* End of reset */
+
+
+	body { font-family: Tahoma, Arial, sans-serif; padding: 1em; font-size: 16px; line-height: 1.25em; }
+	h1 { font-size: 1.4em; font-weight: bold; line-height: 1.4em; margin-bottom: 0.5em; }
+	
+	li { line-height: 2em; padding: 0.5em 0; position: relative; border-bottom: 1px solid #ddd; }
+	li:first-child { padding-top: 0; }
+	li:last-child { padding-bottom: 0; border-bottom: 0px; }
+	label { font-weight: bold; display: inline-block; width: 100%; cursor: pointer; }
+
+	.switch { width: 5em; position: absolute; display: inline-block; right: 0px; }
+	.switch input { position: absolute; opacity: 0; z-index: 3; width: 100%; height: 100%; margin: 0px; }
+	.switch input:focus ~ span { box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2, 0 0 4px 2px #3366dd; }
+	.switch input:checked ~ span { background-color: #0DBC37; }
+	.switch input:checked ~ span a { left: 100%; border-color: #0DBC37; margin-left: -2em; right: 0%; }
+	.switch input:checked ~ span span:first-of-type { opacity: 0; }
+	.switch input:checked ~ span span:last-of-type { opacity: 1; color: #fff; }
+	.switch a { left: 0; top: 0; width: 2em; height: 2em; background-color: #fff; border-radius: 100%; border: 0.25em solid #dddddd; transition: all .2s ease-out; position: absolute; right: 50%; top: 0; z-index: 1; display: block; padding: 0; }
+	.switch > span { display: block; width: 100%; height: 2em; background-color: #dddddd; border-radius: 1.75em; transition: all .4s ease-out; position: relative; overflow: hidden; display: block; min-height: 2em; padding: 0; text-align: left; line-height: 2em; color: #fff; box-sizing: border-box; }
+	.switch > span span { text-align: center; display: block; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: all .2s ease-out; box-sizing: border-box; }
+	.switch > span span:last-of-type { padding-right: 2em; }
+	.switch > span span:first-of-type { opacity: 1; padding-left: 2em; color: black; }
+	</style>
+</head>
+<body>
+
+	<h1>CSS toggle test</h1>
+	<ul id="toggles">
+		<li><label for="test-toggle">Test</label><div class="switch"><input type="checkbox" id="test-toggle"><span><span>No</span><span>Yes</span><a></a></span></div></li>
+	</ul>
+
+	<script>
+	var taglist = {
+		"recycling:aerosol_cans":{"label":"Aerosol cans","desc":"Home and DIY (etc.) aerosol cans (e.g. hairspray, spray paint, etc.)"},
+		"recycling:animal_waste":{"label":"Animal waste"},
+		"recycling:aluminium":{"label":"Aluminium"},
+		"recycling:bags":{"label":"Bags","desc":"All kinds of bags."},
+		"recycling:batteries":{"label":"Batteries","desc":"Household batteries (e.g. D-cell, 9-volt). Does not imply larger batteries are accepted. There are a handful of uses of recycling:car_batteries."},
+		"recycling:belts":{"label":"Belts","desc":"All belts related to clothing."},
+		"recycling:beverage_cartons":{"label":"Beverage cartons","desc":"Carton package (multi-materials, e.g. Tetra Pak) for drink and food – possible duplicate of more frequently used recycling:cartons; see above"},
+		"recycling:bicycles":{"label":"Bicycles"},
+		"recycling:books":{"label":"Books","desc":"Donation of books"},
+		"recycling:cans":{"label":"Cans","desc":"Many places are tagged as accepting cans without accepting metal objects in general[1]"},
+		"recycling:car_batteries":{"label":"Car batteries","desc":"Some facilities will take household batteries but not car batteries"},
+		"recycling:cardboard":{"label":"Cardboard","desc":"In about 90% cases of recycling:cardboard=yes it duplicates recycling:paper=yes[2]"},
+		"recycling:cartons":{"label":"Cartons","desc":"Paper based cartons (for drink or food). Likely to be data of low value due to mixing paper cartons, multi-material cartons like Tetra Pak by various mappers."},
+		"recycling:cds":{"label":"CDs","desc":"Compact discs and DVDs"},
+		"recycling:chipboard":{"label":"Chipboard"},
+		"recycling:christmas_trees":{"label":"Christmas trees","desc":"Place where old christmas trees are collected, use with opening_hours=Jan 01-Jan 15 or so."},
+		"recycling:clothes":{"label":"Clothes","desc":"Donation of clothes, including shoes (e.g. Humana and others)"},
+		"recycling:coffee_capsules":{"label":"Coffee capsules","desc":"Shows if recycling facilities take coffee capsules"},
+		"recycling:computers":{"label":"Computers"},
+		"recycling:cooking_oil":{"label":"Cooking oil"},
+		"recycling:cork":{"label":"Cork"},
+		"recycling:drugs":{"label":"Drugs","desc":"Expired drugs."},
+		"recycling:electrical_items":{"label":"Electrical items","desc":"Larger electrical items like fridges, freezers, dishwashers, etc. (See also recycling:white_goods below, which tends to mean fridges, freezers, washing machines, dishwashers, ovens in British English; we'd probably choose recycling:electrical_items or recycling:small_appliances for appliances like TVs, vacuum cleaners, microwaves and anything smaller)"},
+		"recycling:engine_oil":{"label":"Engine oil"},
+		"recycling:fluorescent_tubes":{"label":"Fluorescent tubes"},
+		"recycling:foil":{"label":"Foil","desc":"Kitchen foil/ tin foil"},
+		"recycling:food":{"label":"Food","desc":"community fridge to help reduce food waste"},
+		"recycling:food_waste":{"label":"Food waste","desc":"Cooked and uncooked food waste, includes raw and cooked meat, bones, dairy, baked goods and peelings. Don't usually take liquids or oil. Don't take garden waste"},
+		"recycling:furniture":{"label":"Furniture","desc":"Piece of furniture or furnishing (ES: mueble)"},
+		"recycling:gas_bottles":{"label":"Gas bottles","desc":"Pressurized gas bottles such as those for camping propane and butane. These are often prohibited elsewhere (See Coleman's Green Key program)."},
+		"recycling:glass":{"label":"Glass","desc":"Implies recycling:glass_bottles=yes, but there's no standard yet for indicating which of the trickier types (drinking glasses, window glass, light bulb glass, tempered glass, borosilicate glass, Pyrex) are accepted. Note that recycling containers labelled glass often are supposed to be used for solely soda–lime–silica glass, what excludes nearly all \"tricky\" glass and is tagged with rather recycling:glass_bottles."},
+		"recycling:glass_bottles":{"label":"Glass bottles","desc":"Includes jars but not any of the trickier types listed above under recycling:glass Note that typical recycling container labelled \"glass\" is not supposed to be used for many items made of glass. It is often quite hidden in recommendations or regulations that actually just bottles and jars are allowed[3]. For example borosilicate glass (sold under brand names such as Pyrex, Borosil, Duran) or other glasses are excluded, in effect excluding glassware, lighting bulbs, window glass, mirrors, spectacles, reagent bottles and more."},
+		"recycling:green_waste":{"label":"Green waste","desc":"In practice it is synonym of recycling:garden_waste. Differences, if any, will vary across mappers and location."},
+		"recycling:garden_waste":{"label":"Garden waste","desc":"In practice it is synonym of recycling:green_waste. Differences, if any, will vary across mappers and location."},
+		"recycling:hazardous_waste":{"label":"Hazardous waste","desc":"Common house hold hazardous waste (paints, chemicals, asbestos)."},
+		"recycling:hardcore":{"label":"Hardcore","desc":"Possible duplicate of more frequently used recycling:rubble; see below."},
+		"recycling:low_energy_bulbs":{"label":"Low energy bulbs"},
+		"recycling:magazines":{"label":"Magazines","desc":"Over 90% of uses repeats recycling:paper=yes, but some places are tagged as allowing newspapers without allowing paper[4]"},
+		"recycling:metal":{"label":"Metal","desc":"All sorts of metal – possible duplicate of more frequently used recycling:scrap_metal; see below."},
+		"recycling:mobile_phones":{"label":"Mobile phones"},
+		"recycling:newspaper":{"label":"Newspaper","desc":"Over 90% of uses repeats recycling:paper=yes, but some places are tagged as allowing newspapers without allowing paper[5]"},
+		"recycling:organic":{"label":"Organic","desc":"Organic remains of food that are recycled into biogas or compost. Assuming that this tag definition was intended this tag is likely to change meaning, as nothing in its value excludes organic non-food trash."},
+		"recycling:paint":{"label":"Paint"},
+		"recycling:pallets":{"label":"Pallets","desc":"Wooden shipping pallets"},
+		"recycling:paper":{"label":"Paper"},
+		"recycling:paper_packaging":{"label":"Paper packaging","desc":"Over 90% of uses repeats recycling:paper=yes, but some places are tagged as allowing paper packagings without allowing paper[6]"},
+		"recycling:pens":{"label":"Pens","desc":"Writing instruments, usually plastic pens"},
+		"recycling:PET":{"label":"PET","desc":"This usually includes PET (or PETE: Polyethylene terephthalate) bottles"},
+		"recycling:plasterboard":{"label":"Plasterboard","desc":"This usually includes all loose plaster, based on Gypsum"},
+		"recycling:plastic":{"label":"Plastic","desc":"In the UK at least, often centres/containers will distinguish between (broadly) hard plastics (typically ones that shatter), soft plastics (typically bendy food packaging; black food plastic may be an exception), carrier bags, and all other stretchy plastics. Many will accept only a subset of these, so try to pick more specific categories if you can."},
+		"recycling:plastic_bags":{"label":"Plastic bags"},
+		"recycling:plastic_bottles":{"label":"Plastic bottles","desc":"Often they allow bottles but not other plastic items! There is significant number (over 6k as of September 2019) places tagged as accepting plastic bottles, without accepting broader plastics[7]"},
+		"recycling:plastic_packaging":{"label":"Plastic packaging","desc":"Other packaging made out of plastic. There is significant number (over 4k as of September 2019) places tagged as accepting plastic packaging, without accepting broader plastics[8]"},
+		"recycling:polyester":{"label":"Polyester"},
+		"recycling:polystyrene_foam":{"label":"Polystyrene foam","desc":"Polystyrene foam. Can be styrofoam, generic extruded polystyrene foam, or generic expanded polystyrene foam."},
+		"recycling:printer_cartridges":{"label":"Printer cartridges","desc":"See below for more specific restrictions, not all centres do both ink and toner (e.g. Ross on Wye)"},
+		"recycling:printer_toner_cartridges":{"label":"Printer toner cartridges"},
+		"recycling:printer_inkjet_cartridges":{"label":"Printer inkjet cartridges"},
+		"recycling:rubble":{"label":"Rubble","desc":"Bricks and building rubble; see also recycling:hardcore above."},
+		"recycling:scrap_metal":{"label":"Scrap metal"},
+		"recycling:sheet_metal":{"label":"Sheet metal"},
+		"recycling:small_appliances":{"label":"Small appliances"},
+		"recycling:small_electrical_appliances":{"label":"Small electrical appliances","desc":"Small electrical items such as computer mice, keyboards, electric razors, pocket radios, hair dryers, irons, electric kettles, small quantities of electric cables, etc."},
+		"recycling:styrofoam":{"label":"Styrofoam","desc":"Typically refers to expanded styrofoam, such as styrofoam box or packing material"},
+		"recycling:tyres":{"label":"Tyres"},
+		"recycling:tv_monitor":{"label":"TV monitor"},
+		"recycling:waste":{"label":"Waste","desc":"General waste container (black bags) (don't use this if the waste is not recycled, use a tag like amenity=waste_disposal or amenity=waste_basket instead)"},
+		"recycling:white_goods":{"label":"White goods","desc":"In British English this only means fridges, freezers, washing machines, dishwashers, ovens; see also recycling:electrical_items and recycling:small_appliances above, which might be better suited for appliances like TVs, vacuum cleaners, microwaves and anything smaller)"},
+		"recycling:wood":{"label":"Wood"},
+		"recycling:shoes":{"label":"Shoes"}
+	}
+	var html = '';
+	for(tag in taglist){
+		t = tag.replace(/:/g,"-");
+		html += '<li><label for="'+t+'-toggle">'+taglist[tag].label+'</label><div class="switch"><input type="checkbox" id="'+t+'-toggle"><span><span>No</span><span>Yes</span><a></a></span></div></li>';
+	}
+	S('#toggles').append(html);
+	</script>
+
+</body>
+</html>
