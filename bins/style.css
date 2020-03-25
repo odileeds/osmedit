@@ -1,0 +1,73 @@
+.theme { background-color: #F9BC26; color: #000000; }
+.theme-accent { background-color: #000; color: #F9BC26; }
+.theme-bg { background-color: #502d16; color: white; }
+button.done.theme-accent, button.theme-accent:hover, button.theme-accent:focus { background: #444; color: #F9BC26; }
+button.done.theme, button.theme:hover, button.theme:focus { background: #FF6700; color: #000000; }
+nav li a.theme, nav li a.theme-accent { background-color: #502d16; color: white; }
+
+.waste { color: white; }
+.waste .leaflet-popup-content-wrapper,
+.waste .leaflet-popup-tip { background: black; }
+
+.recycling { color: black; }
+.recycling .leaflet-popup-content-wrapper,
+.recycling .leaflet-popup-tip { background: #0DBC37; }
+
+.paper { color: black; }
+.paper .leaflet-popup-content-wrapper,
+.paper .leaflet-popup-tip { background: #00ace8; }
+
+.beverage { color: black; }
+.beverage .leaflet-popup-content-wrapper,
+.beverage .leaflet-popup-tip { background: #F9BC26; }
+
+.glass { color: black; }
+.glass .leaflet-popup-content-wrapper,
+.glass .leaflet-popup-tip { background: #1DD3A7; }
+
+#add-item svg { overflow: unset; }
+#add-item svg path:first-child { filter: drop-shadow(0 4px 12px #F9BC26); }
+
+.leaflet-popup-content .id { margin-top: 0px; margin-bottom: 0px; font-size: 0.8em; opacity: 0.8; }
+.leaflet-popup-content .id:before { content: "OSMID: "; }
+
+.marker-group { background: #000000; color: white; }
+
+
+
+/* form toggle */
+#item-details ul { list-style: none; margin: 0; padding: 0; }
+#item-details li { line-height: 2em; padding: 0.5em 0; position: relative; border-bottom: 1px solid #ddd; color: inherit; }
+#item-details li:first-child { padding-top: 0; }
+#item-details li:last-child { padding-bottom: 0; border-bottom: 0px; }
+label { font-weight: bold; display: inline-block; width: 100%; cursor: pointer; }
+legend { margin-bottom: 1em; }
+
+.switch { width: 5em; position: absolute; display: inline-block; right: 0px; }
+.switch input { position: absolute; opacity: 0; z-index: 3; width: 100%; height: 100%; margin: 0px; cursor: pointer; }
+.switch input:focus ~ span { box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2, 0 0 4px 2px #3366dd; }
+.switch input:checked + span { background-color: #67E767; color: black; }
+.switch input:checked + span a { left: 100%; border-color: #67E767; margin-left: -2em; right: 0%; }
+.switch input:checked + span span:first-of-type { opacity: 0; }
+.switch input:checked + span span:last-of-type { opacity: 1; }
+.switch a { left: 0; top: 0; width: 2em; height: 2em; background-color: #fff; border-radius: 100%; border: 0.25em solid #dddddd; transition: all .2s ease-out; position: absolute; right: 50%; top: 0; z-index: 1; display: block; padding: 0; }
+.switch > span { display: block; width: 100%; height: 2em; background-color: #dddddd; border-radius: 1.75em; transition: all .4s ease-out; position: relative; overflow: hidden; display: block; min-height: 2em; padding: 0; text-align: left; line-height: 2em; box-sizing: border-box; }
+.switch > span span { text-align: center; display: block; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: all .2s ease-out; box-sizing: border-box; }
+.switch > span span:last-of-type { padding-right: 2em; }
+.switch > span span:first-of-type { opacity: 1; padding-left: 2em; color: black; }
+
+.switch.radio { width: 100%; right: auto; position: relative; height: 3em; }
+.switch.radio label { font-weight: normal; line-height: 3em; font-weight: bold; }
+.switch.radio a, .switch.radio > div { border-radius: 2em; }
+.switch.radio a { width: 50%; width: calc(50% - 0.5em); border: 0px; height: 2.5em; margin: 0.25em; border-color: #444; z-index: 1; position: absolute; z-index: 0; left: 0px; }
+.switch.radio input { opacity: 0; width: 50%; }
+.switch.radio input + input { left: 50%; }
+.switch.radio input:focus ~ div { box-shadow: 0 1px 1px #65727b, 0 0 1px #b6bdc2, 0 0 4px 2px #3366dd; }
+.switch.radio > div { background-color: #444; height: 3em; color: white; position: relative; z-index: 5; }
+.switch.radio > div label { text-align: center; padding: 0; width: 50%; z-index: 2; position: absolute; }
+.switch.radio div > label:first-of-type { opacity: 1; z-index: 2; left: 50%; padding: 0px; }
+.switch.radio div > label:last-of-type { opacity: 1; z-index: 2; left: 0%; padding: 0px; color: black; }
+.switch.radio input:checked + div { background-color: #67E767; color: black; }
+.switch.radio input:checked + div a { left: 50%; margin-left: 0.25em; right: auto; }
+.switch.radio input:checked + div label:first-of-type { color: black; }
+.switch.radio input:checked + div label:last-of-type { color: black; }

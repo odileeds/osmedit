@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<title>Waste and recycling on OpenStreetMap</title>
+	<link rel="StyleSheet" href="../resources/leaflet.css" type="text/css" />
+	<link rel="StyleSheet" href="../resources/L.markercluster.css" type="text/css" />
+	<link rel="StyleSheet" href="../resources/L.markercluster.default.css" type="text/css" />
+	<link rel="StyleSheet" href="../resources/leaflet.draw.css" type="text/css" />
+	<link rel="StyleSheet" href="../resources/style.css" type="text/css" />
+	<link rel="StyleSheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="../resources/stuquery.js"></script>
+	<script type="text/javascript" src="../resources/leaflet.js"></script>
+	<script type="text/javascript" src="../resources/leaflet.markercluster-src.js"></script>
+	<script type="text/javascript" src="../resources/osmauth.js"></script>
+	<script type="text/javascript" src="../resources/osmeditor.js"></script>
+	<script type="text/javascript" src="../resources/Leaflet.Editable.js"></script>
+	<script type="text/javascript" src="../resources/typeahead.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+<!--	<link rel="manifest" href="manifest.webmanifest">-->
+</head>
+<body class="b6-bg">
+
+	<div id="splash" class="splash theme modal">
+		<div>
+			<div class="centre-block">
+				<img src="icon-waste.svg" />
+				<h1>Bins</h1>
+				<p>Mapping waste bins &amp; recycling points<br />with Open Street Map</p>
+			</div>
+			<div class="thumb">
+				<button id="btn-view-map" class="thumb-button theme-accent">View map</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="login" class="modal b6-bg doublepadded" style="display:none;">
+		<div>
+			<div class="close">&times;</div>
+			<div class="centre-block">
+				<h2>Adding bins</h2>
+				<p>We add bin data directly to OpenStreetMap - a free map of the world. To add bins you will first need an OpenStreetMap account and then you will need to give us permission to save the bins. OpenStreetMap accounts are free.</p>
+				<div style="text-align:center;">
+					<button id="btn-login" class="thumb-button theme">Log in with OpenStreetMap</button>
+					<a href="https://www.openstreetmap.org/user/new" target="osm" style="height:3em;padding:1em;display:block;">Create an account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="helper" class="modal b6-bg" style="display:none;"></div>
+
+	<div id="app">
+
+		<input type="checkbox" id="hamburger" class="hamburger">
+		<label for="hamburger" class="hamburger"><span class="nv">Toggle menu (if not visible)</span></label>
+		<header class="theme padded">
+			<div class="title">
+				<div id="auth">
+					<div class="user">
+						<button id="login" class="theme-accent">Login to OSM</button>
+						<a href="#" id="user"><img src="resources/unknown.png" /></a>
+						<div class="right padded b5-bg">
+							<div class="details">
+								<strong>Name:</strong> <span class="name"></span>
+								<br /><strong>ID:</strong> <span class="id"></span>
+								<br /><strong>Changesets:</strong> <span class="changesets"></span>
+							</div>
+							<button id="logout" class="c1-bg">Logout</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="holder b5-bg">
+				<div class="banner theme">
+					<img src="tree.svg" />
+					<h2>Bins</h2>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#map">Map</a></li>
+						<li><a href="#settings">Settings</a></li>
+						<li><a href="#about">About/credits</a></li>
+					</ul>
+				</nav>
+				<p>Created by <a href="https://odileeds.org/">ODI Leeds</a> 2019</p>
+			</div>
+		</header>
+
+		<div class="bg"></div>
+		
+		<!-- Loader overlay -->
+		<div id="loader">
+			<div>
+				<img src="odi.svg" class="spinner" />
+				<div class="label"></div>
+			</div>
+		</div>
+		
+		<!-- Edit screen -->
+		<section id="details" class="screen doublepadded" style="display:none;">
+			<h2>Edit details</h2>
+			<div class="close">&times;</div>
+			
+			<form id="item-details">
+				<div class="row">
+					<fieldset>
+						<legend>Select the type of container/bin</legend>
+						<div class="switch radio">
+							<input type="radio" id="waste" name="tag-type" checked="checked" />
+							<input type="radio" id="recycling" name="tag-type" />
+							<div><label for="recycling" title="Recycling is used for a container or centre that accepts waste for recycling, and donations of used goods.">Recycling</label><label for="waste" title="A single small container for depositing rubbish that is easily accessible for pedestrians.">Waste</label><a></a></div>
+						</div>
+					</fieldset>
+				</div>
+				<fieldset id="toggles-recycling">
+					<legend>Select any recycling types that this container/bin allows</legend>
+					<ul>
+						<div class="loader" style="text-align:center;">
+							<img src="odi.svg" />
+							<br />Loading...
+						</div>
+					</ul>
+				</fieldset>
+				<fieldset id="toggles-waste">
+					<legend>Select any waste types that this container/bin allows</legend>
+					<ul>
+						<div class="loader" style="text-align:center;">
+							<img src="odi.svg" />
+							<br />Loading...
+						</div>
+					</ul>
+				</fieldset>
+			</form>
+		
+			<button id="btn-save-details" class="thumb-button theme">OK</button>
+		</section>
+
+		<section id="init" class="screen doublepadded">
+			<img src="odi.svg" class="spinner" />
+		</section>
+
+
+		<section id="map" class="screen" style="display:none;">
+			<div id="location"><div id='tooltip'></div></div>
+			<div class="thumb thumb-padded">
+				<button id="btn-add-item" class="thumb-button theme thumb-button-padded">Add a bin</button>
+				<button id="btn-delete-item" class="thumb-button c12-bg thumb-button-padded" style="display:none;">&times;</button>
+				<button id="btn-edit-item" class="thumb-button theme thumb-button-padded" style="display:none;">Edit</button>
+				<button id="btn-save-item" class="thumb-button theme thumb-button-padded" style="display:none;">Done</button>
+				<button id="btn-publish" class="thumb-button theme thumb-button-padded" style="display:none;">Publish</button>
+			</div>
+		</section>
+		
+		<section id="about" class="screen doublepadded" style="display:none;">
+			<h2>About</h2>
+			<noscript>This requires Javascript to work. Sorry about that.</noscript>
+			<p>This is a <em>WORK-IN-PROGRESS</em> application to specifically add and update bins (waste and recycling) on <a href="https://openstreetmap.org/">Open Street Map</a>. The aim is to make this easy to do for this specific task. By saving directly to Open Street Map, the user keeps the credit for the addition, the data is made open (under the Open Database Licence), and we've not made ourselves gatekeepers or created yet another silo of data. This is Leeds City Council being #radicallyopen.</p>
+			
+			<p>Created by Stuart Lowe, <a href="http://odileeds.org/projects/">ODI Leeds</a> 2020</p>
+			<h3>Javascript libraries:</h3>
+			<ul>
+				<li><a href='https://github.com/osmlab/osm-auth'>osm-auth</a> to authenticate with the <a href='http://www.openstreetmap.org/'>Open Street Map</a> API</li>
+				<li><a href="http://leafletjs.com/">leaflet.js</a> to make an interactive map</li>
+			</ul>
+			<h3>Images</h3>
+			<ul>
+				<li><a href="https://www.svgrepo.com/svg/845/tree">Tree icon adapted from SVGRepo</a> CC-BY-4.0</li>
+			</ul>
+			<h3>Data sources</h3>
+			<ul>
+				<li><a href="https://datamillnorth.org/dataset/litter-bin-locations">Leeds City Council litter bin locations</a></li>
+				<li><a href="https://datamillnorth.org/dataset/bring-sites">Leeds City Council bring sites</a></li>
+				<li><a href="https://github.com/odileeds/west-yorkshire-mapping/blob/master/data/leeds/leeds-amenities-waste_basket.geojson">Open Street Map - waste baskets</a></li>
+				<li><a href="https://github.com/odileeds/west-yorkshire-mapping/blob/master/data/leeds/leeds-amenities-recycling.geojson">Open Street Map - recycling</a></li>
+			</ul>
+		</section>
+
+		<section id="settings" class="screen doublepadded">
+			<h2>Settings</h2>
+			<form>
+			<fieldset>
+				<label for="layerSelect">Map style:</label>
+				<select id="layerSelect"></select>
+				<img id="layerSelected" />
+			</fieldset>
+			</form>
+		</section>
+
+	</div>
+	<div id="messages"></div>
+	
+	<script>
+	S(document).ready(function(){
+
+		app = new Application({'name':'OSM Bins','requirelogin':false});
+
+	})
+	</script>
+</body>
+</html>

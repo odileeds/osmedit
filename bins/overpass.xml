@@ -1,0 +1,2550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.56.1002 b121d216">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2020-03-20T17:07:02Z"/>
+
+  <node id="26128102" lat="53.7144070" lon="-1.4968738">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="27182866" lat="53.9652004" lon="-1.0661942">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="27212071" lat="53.9767441" lon="-1.0724331">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="27231193" lat="53.9639065" lon="-1.0788981">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="27485696" lat="53.9137888" lon="-1.7479559">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="29563647" lat="53.9082034" lon="-1.3143393">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="Potlatch 0.4b"/>
+  </node>
+  <node id="42430816" lat="53.8035619" lon="-1.6754946">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="Potlatch alpha"/>
+    <tag k="recycling:books" v="yes"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+  </node>
+  <node id="50078329" lat="53.8147355" lon="-1.6024828">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="127822517" lat="53.8151114" lon="-1.5472151">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="140888739" lat="53.8303147" lon="-1.5554770">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="146657035" lat="53.8085690" lon="-1.5411302">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="150998592" lat="53.8209207" lon="-1.5431816">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="153723191" lat="53.8218743" lon="-1.5599134">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="JOSM"/>
+    <tag k="location" v="overground"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="245070058" lat="53.8208015" lon="-1.5799570">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="247293230" lat="53.8068534" lon="-1.5551455">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="249235308" lat="53.7584539" lon="-1.5937161">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="249481017" lat="53.8121577" lon="-1.5776999">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="local_konwledge"/>
+  </node>
+  <node id="250390242" lat="53.8289821" lon="-1.5678257">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="no"/>
+    <tag k="recycling:paper" v="no"/>
+  </node>
+  <node id="257894097" lat="53.9599709" lon="-1.0370654">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="259040699" lat="53.9571636" lon="-1.0445430">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="259178372" lat="53.9539012" lon="-1.0288497">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="263710580" lat="53.9842694" lon="-1.1242263">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="264106400" lat="53.9411055" lon="-1.0699265">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="266346792" lat="53.8712491" lon="-1.5967357">
+    <tag k="amenity" v="recycling"/>
+    <tag k="created_by" v="JOSM"/>
+  </node>
+  <node id="271637325" lat="53.6641497" lon="-1.5085383">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Wakefield Household Waste Recycling Centre"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="274051194" lat="53.8830230" lon="-1.2687628">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Radcaster Recycling Centre"/>
+  </node>
+  <node id="274069748" lat="53.8122435" lon="-1.5552282">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="274082818" lat="53.8105795" lon="-1.5481812">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="278770857" lat="53.8371693" lon="-1.5547014">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="280741522" lat="54.0161035" lon="-1.0740569">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="283443907" lat="53.9511314" lon="-1.0854720">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="298037342" lat="53.8105666" lon="-1.6276878">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="300957435" lat="53.8078296" lon="-1.7600570">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Midland Road Recycling Centre"/>
+  </node>
+  <node id="301033880" lat="53.7986243" lon="-1.7850769">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="308513447" lat="53.7818265" lon="-1.5437519">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="311529844" lat="53.8238283" lon="-1.7312408">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="317598195" lat="53.8050509" lon="-1.6548652">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Grangefield Road Household Waste Sorting Site"/>
+  </node>
+  <node id="318594995" lat="53.8397868" lon="-1.8225018">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:cardboard" v="yes"/>
+    <tag k="recycling:cartons" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:electrical_appliances" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:green_waste" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling:scrap_metal" v="yes"/>
+    <tag k="recycling:small_appliances" v="yes"/>
+    <tag k="recycling:waste" v="yes"/>
+    <tag k="recycling_type" v="centre"/>
+  </node>
+  <node id="324750497" lat="53.8704291" lon="-2.2835855">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="ele" v="324.0876465"/>
+  </node>
+  <node id="339139199" lat="53.8469486" lon="-0.7232318">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="340065024" lat="53.8063804" lon="-1.6290632">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="356075692" lat="53.7859845" lon="-1.6102797">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="363870410" lat="53.6881647" lon="-1.6247462">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:plastic_bags" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+  </node>
+  <node id="364808372" lat="53.6875890" lon="-1.6301800">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+  </node>
+  <node id="366919959" lat="53.8596410" lon="-1.8419878">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="368341664" lat="53.7046151" lon="-1.7766045">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="374331037" lat="53.6732869" lon="-1.6938276">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="no"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling:textiles" v="yes"/>
+  </node>
+  <node id="376985734" lat="53.7008032" lon="-1.7775757">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+  </node>
+  <node id="389996299" lat="53.7793008" lon="-1.5415643">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="brown"/>
+  </node>
+  <node id="392007374" lat="53.7731046" lon="-1.5488906">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="SavetheMothersTrust"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="392047370" lat="53.7764563" lon="-1.5518601">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="SavetheMothersTrust"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="393838658" lat="53.7790135" lon="-1.5419527">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="401349105" lat="53.7576275" lon="-1.6325897">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="Leeds City Council"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="405435128" lat="53.7784441" lon="-1.5550363">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="source" v="guess"/>
+  </node>
+  <node id="413272598" lat="53.7557188" lon="-1.6633550">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="413958902" lat="53.8692382" lon="-1.9115834">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+  </node>
+  <node id="426615133" lat="53.8163652" lon="-1.7873755">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="436371711" lat="53.9258932" lon="-1.8176720">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:scrap_metal" v="yes"/>
+  </node>
+  <node id="446334556" lat="53.9207201" lon="-1.0748542">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="471052210" lat="53.7021944" lon="-0.8680548">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="473521107" lat="53.7264072" lon="-1.0222709">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="475833368" lat="53.7066921" lon="-0.8769589">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="496498936" lat="53.8169782" lon="-0.8979497">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="496716191" lat="53.7363936" lon="-1.5749275">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="kerb" v="raised"/>
+    <tag k="layby" v="yes"/>
+    <tag k="local_ref" v="45011331"/>
+    <tag k="name" v="Dewsbury Road Topcliffe Lane"/>
+    <tag k="naptan:AtcoCode" v="450011331"/>
+    <tag k="naptan:Bearing" v="NE"/>
+    <tag k="naptan:CommonName" v="Dewsbury Road Topcliffe Lane"/>
+    <tag k="naptan:Crossing" v="Topcliffe Lane"/>
+    <tag k="naptan:Indicator" v="Stop 45011331"/>
+    <tag k="naptan:Landmark" v="Business Park"/>
+    <tag k="naptan:PlusbusZoneRef" v="LEEDS"/>
+    <tag k="naptan:ShortCommonName" v="Topcliffe Lane"/>
+    <tag k="naptan:Street" v="Dewsbury Road"/>
+    <tag k="naptan:verified" v="yes"/>
+    <tag k="shelter" v="no"/>
+    <tag k="source" v="naptan_import"/>
+    <tag k="timetable" v="yes"/>
+  </node>
+  <node id="496718858" lat="53.8284302" lon="-1.5374867">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="local_ref" v="45013618"/>
+    <tag k="name" v="Harrogate Road / Chapeltown"/>
+    <tag k="naptan:AtcoCode" v="450013618"/>
+    <tag k="naptan:Bearing" v="SE"/>
+    <tag k="naptan:CommonName" v="Harrogate Road Chapeltown"/>
+    <tag k="naptan:Crossing" v="Ingle Row"/>
+    <tag k="naptan:Indicator" v="Stop 45013618"/>
+    <tag k="naptan:Landmark" v="Parade of Shops"/>
+    <tag k="naptan:PlusbusZoneRef" v="LEEDS"/>
+    <tag k="naptan:ShortCommonName" v="Ingle Row"/>
+    <tag k="naptan:Street" v="Harrogate Road"/>
+    <tag k="naptan:verified" v="no"/>
+    <tag k="shelter" v="no"/>
+    <tag k="source" v="naptan_import"/>
+  </node>
+  <node id="496722322" lat="53.6903209" lon="-1.6206011">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="kerb" v="raised"/>
+    <tag k="local_ref" v="45015295"/>
+    <tag k="name" v="Wakefield Road High Road"/>
+    <tag k="naptan:AtcoCode" v="450015295"/>
+    <tag k="naptan:Bearing" v="E"/>
+    <tag k="naptan:CommonName" v="Wakefield Road High Road"/>
+    <tag k="naptan:Crossing" v="High Road"/>
+    <tag k="naptan:Indicator" v="Stop 45015295"/>
+    <tag k="naptan:PlusbusZoneRef" v="LEEDS"/>
+    <tag k="naptan:ShortCommonName" v="High Road"/>
+    <tag k="naptan:Street" v="Wakefield Road"/>
+    <tag k="naptan:verified" v="no"/>
+    <tag k="shelter" v="no"/>
+    <tag k="source" v="naptan_import"/>
+    <tag k="timetable" v="yes"/>
+    <tag k="towards" v="Ossett, Wakefield"/>
+  </node>
+  <node id="497396132" lat="53.8367020" lon="-1.7887638">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="Salvation Army"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="521935155" lat="53.7733351" lon="-1.7319088">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="522977031" lat="53.7794092" lon="-1.5547859">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="green;brown;clear"/>
+  </node>
+  <node id="566171258" lat="53.9884140" lon="-0.9150035">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Stamford Bridge village hall"/>
+  </node>
+  <node id="573340915" lat="53.7243019" lon="-1.8873451">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="573487878" lat="53.7819544" lon="-1.0677930">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="573487881" lat="53.7818467" lon="-1.0676803">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="585425759" lat="53.8255775" lon="-0.9582728">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="603974980" lat="53.7808484" lon="-1.0705767">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="651723785" lat="53.9396747" lon="-2.3305222">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="660871133" lat="53.9624857" lon="-1.0746429">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling:books" v="yes"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:low_energy_bulbs" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="667361052" lat="53.8883923" lon="-2.3586630">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="672947633" lat="53.8681256" lon="-0.9501351">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="676622253" lat="53.7701017" lon="-1.7095936">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="737224738" lat="53.7724075" lon="-1.5655530">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Bottle bank"/>
+  </node>
+  <node id="747722763" lat="53.8893254" lon="-1.7396952">
+    <tag k="amenity" v="recycling"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="766951856" lat="53.9644269" lon="-1.0655406">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey;Bing"/>
+  </node>
+  <node id="793549497" lat="53.9147074" lon="-1.9369395">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="886838463" lat="53.8300240" lon="-1.5069457">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="886838475" lat="53.8351329" lon="-1.5086690">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="886838554" lat="53.8308358" lon="-1.5079163">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="886838614" lat="53.8328544" lon="-1.5067610">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="945777387" lat="53.7845736" lon="-1.8797292">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="951535316" lat="53.7152028" lon="-1.8782918">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="951535319" lat="53.7318506" lon="-1.8702022">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Halifax Household Waste Recycling Site"/>
+  </node>
+  <node id="952454818" lat="53.6280932" lon="-1.8537229">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Titanic Mill"/>
+  </node>
+  <node id="956008048" lat="54.0206754" lon="-1.2116359">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="982564498" lat="53.6899684" lon="-1.6477859">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="982564514" lat="53.6911368" lon="-1.6471835">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="982564526" lat="53.6892532" lon="-1.6471433">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="982564550" lat="53.6906322" lon="-1.6488807">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="982564561" lat="53.6893953" lon="-1.6499410">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="982634249" lat="53.6931763" lon="-1.6503080">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988070298" lat="53.8373003" lon="-1.5039349">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:glass_jars" v="yes"/>
+    <tag k="source" v="photograph"/>
+  </node>
+  <node id="988159081" lat="53.8390984" lon="-1.4993233">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159092" lat="53.8380064" lon="-1.5038662">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159123" lat="53.8377544" lon="-1.5042301">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159131" lat="53.8412834" lon="-1.4973159">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159134" lat="53.8400363" lon="-1.4973762">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159155" lat="53.8407174" lon="-1.4988253">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159164" lat="53.8409283" lon="-1.4961708">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159169" lat="53.8382280" lon="-1.5035609">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988159252" lat="53.8397804" lon="-1.4962376">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988714549" lat="53.8397438" lon="-1.4980880">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="988923258" lat="53.8399185" lon="-1.5061358">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="989067341" lat="53.8429905" lon="-1.5322110">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="989067371" lat="53.8309836" lon="-1.5550819">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="989067385" lat="53.8282152" lon="-1.5373125">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="989067485" lat="53.8200154" lon="-1.5319043">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998209971" lat="53.7246970" lon="-1.6479831">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210019" lat="53.7243656" lon="-1.6475939">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210045" lat="53.7240909" lon="-1.6475506">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210153" lat="53.7245754" lon="-1.6491604">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210320" lat="53.7241179" lon="-1.6485192">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210337" lat="53.7257757" lon="-1.6512476">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210345" lat="53.7252518" lon="-1.6492928">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="998210392" lat="53.7238889" lon="-1.6479516">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1015824466" lat="53.9027834" lon="-1.6982727">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="1026886589" lat="53.7024320" lon="-1.7791450">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1026946910" lat="53.7015076" lon="-1.7792855">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1026947182" lat="53.7016061" lon="-1.7792600">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1039830776" lat="53.6463726" lon="-1.7780309">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="photo"/>
+  </node>
+  <node id="1039830938" lat="53.6458408" lon="-1.7768206">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1039830953" lat="53.6459894" lon="-1.7769939">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1041331272" lat="53.6447974" lon="-1.7832057">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1055328731" lat="53.6456223" lon="-1.7804137">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="photgraph"/>
+  </node>
+  <node id="1055328763" lat="53.6459334" lon="-1.7777065">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1111892813" lat="53.7939963" lon="-1.4356312">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1208082018" lat="53.8019757" lon="-1.8942234">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1227379058" lat="53.7765497" lon="-1.7368135">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379086" lat="53.7792252" lon="-1.7415476">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379087" lat="53.7784058" lon="-1.7393911">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379101" lat="53.7783011" lon="-1.7398417">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379103" lat="53.7770284" lon="-1.7412258">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379105" lat="53.7767495" lon="-1.7415798">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379119" lat="53.7744876" lon="-1.7347455">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379136" lat="53.7747555" lon="-1.7380822">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379141" lat="53.7801777" lon="-1.7420867">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379176" lat="53.7747158" lon="-1.7353651">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379188" lat="53.7767208" lon="-1.7391953">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379189" lat="53.7763769" lon="-1.7386616">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1227379191" lat="53.7768002" lon="-1.7378515">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1231442784" lat="53.6502105" lon="-1.4992759">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1277447792" lat="53.6282098" lon="-1.7895234">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="1277447810" lat="53.6307304" lon="-1.7875776">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1277537031" lat="53.7069085" lon="-1.6412533">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="1279689386" lat="53.6240221" lon="-1.7696647">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey; recording"/>
+  </node>
+  <node id="1284592674" lat="53.9734840" lon="-1.0815383">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="1286613591" lat="53.7013541" lon="-1.6549594">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1286794344" lat="53.7072392" lon="-1.6728397">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1291453567" lat="53.7092672" lon="-1.8955459">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1305117995" lat="53.7014556" lon="-1.7820208">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1306007098" lat="53.7095747" lon="-1.6721400">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1306007127" lat="53.6820645" lon="-1.6973485">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1306104469" lat="53.7301949" lon="-1.6613384">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1308161017" lat="53.6270137" lon="-1.7744081">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1314434815" lat="53.7387934" lon="-1.6707837">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1324360030" lat="53.6274579" lon="-1.7847205">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1324360118" lat="53.6284780" lon="-1.7866089">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1356937180" lat="53.7077412" lon="-1.6762931">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1356937189" lat="53.7077669" lon="-1.6762430">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1356937193" lat="53.7078410" lon="-1.6759346">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1361028212" lat="53.6728058" lon="-1.7735298">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1362218201" lat="53.6793070" lon="-1.7575688">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1363569978" lat="53.6707671" lon="-1.7000053">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="1363570004" lat="53.6797444" lon="-1.6575113">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1363570005" lat="53.6797641" lon="-1.6593799">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1377391163" lat="53.8297948" lon="-1.0659532">
+    <tag k="amenity" v="recycling"/>
+    <tag k="location" v="overground"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1416446551" lat="53.6902741" lon="-1.6296851">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1417324492" lat="53.8307699" lon="-1.9820420">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="ele" v="246.744415"/>
+    <tag k="time" v="2011-08-28T16:59:08Z"/>
+  </node>
+  <node id="1428145481" lat="53.8451778" lon="-1.5434808">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="visual inspection"/>
+  </node>
+  <node id="1428534318" lat="53.8390068" lon="-1.5437593">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="visual inspection"/>
+  </node>
+  <node id="1434904486" lat="53.6710716" lon="-1.7724748">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="1466049319" lat="53.6797374" lon="-1.7416091">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="1466049322" lat="53.6798089" lon="-1.7411917">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1481371703" lat="53.8271792" lon="-1.9006992">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1485154484" lat="53.9327828" lon="-1.1158446">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:books" v="yes"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:cardboard" v="yes"/>
+    <tag k="recycling:cartons" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:paper_packaging" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="York Council website"/>
+  </node>
+  <node id="1493253889" lat="53.9550261" lon="-1.0193906">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1510655364" lat="53.6318492" lon="-1.7936698">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="1534826980" lat="53.6431684" lon="-1.8115439">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="Save The Mothers Trust"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+  </node>
+  <node id="1535922285" lat="53.6423277" lon="-1.8035031">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="1535922312" lat="53.6425197" lon="-1.8050748">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1535922416" lat="53.6439380" lon="-1.8115955">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1535922428" lat="53.6440303" lon="-1.8135741">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1535922452" lat="53.6441905" lon="-1.8137850">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1574294191" lat="53.6710714" lon="-1.4807961">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1591394398" lat="53.6765514" lon="-1.2944992">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1607736797" lat="53.7148307" lon="-1.6317790">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1613532838" lat="53.6888655" lon="-1.6244371">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1616056718" lat="53.7079716" lon="-1.6568693">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1621185237" lat="53.9855937" lon="-1.0435324">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cartons" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:foil" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:paper_cups" v="yes"/>
+    <tag k="recycling:paper_packaging" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1635312311" lat="53.6973617" lon="-1.5994802">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Ossett Waste Recycling Centre"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:cardboard" v="yes"/>
+    <tag k="recycling:cartons" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:electrical_appliances" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:green_waste" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:paper_packaging" v="yes"/>
+    <tag k="recycling:plastic" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling:plastic_packaging" v="yes"/>
+    <tag k="recycling:scrap_metal" v="yes"/>
+    <tag k="recycling:small_appliances" v="yes"/>
+    <tag k="recycling:waste" v="yes"/>
+    <tag k="recycling:wood" v="yes"/>
+    <tag k="recycling_type" v="centre"/>
+  </node>
+  <node id="1646495036" lat="53.8188184" lon="-1.5976171">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1646527676" lat="53.8147874" lon="-1.6026646">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1649850475" lat="53.8146715" lon="-1.6026089">
+    <tag k="amenity" v="recycling"/>
+    <tag k="note" v="also &quot;small electrical items&quot; - not sure what this tags as?"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1649850476" lat="53.8146841" lon="-1.6025582">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1649850477" lat="53.8147488" lon="-1.6026383">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1659638905" lat="53.9844371" lon="-2.1025512">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1668534356" lat="53.6872163" lon="-1.6556077">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1668826260" lat="53.6785580" lon="-1.6658294">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1677507648" lat="53.8687881" lon="-1.8919323">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:batteries" v="no"/>
+    <tag k="recycling:books" v="no"/>
+    <tag k="recycling:cans" v="no"/>
+    <tag k="recycling:cardboard" v="no"/>
+    <tag k="recycling:cartons" v="no"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:electrical_appliances" v="no"/>
+    <tag k="recycling:glass" v="no"/>
+    <tag k="recycling:glass_bottles" v="no"/>
+    <tag k="recycling:green_waste" v="no"/>
+    <tag k="recycling:magazines" v="no"/>
+    <tag k="recycling:newspaper" v="no"/>
+    <tag k="recycling:paper" v="no"/>
+    <tag k="recycling:paper_packaging" v="no"/>
+    <tag k="recycling:plastic" v="no"/>
+    <tag k="recycling:plastic_bottles" v="no"/>
+    <tag k="recycling:plastic_packaging" v="no"/>
+    <tag k="recycling:scrap_metal" v="no"/>
+    <tag k="recycling:small_appliances" v="no"/>
+    <tag k="recycling:waste" v="no"/>
+    <tag k="recycling:wood" v="no"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="1729326916" lat="53.7476164" lon="-1.9011770">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1779175672" lat="53.9973484" lon="-1.6160049">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="West Harrogate Household Waste Recycling Centre"/>
+  </node>
+  <node id="1815944116" lat="53.9243253" lon="-0.9546099">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1825650336" lat="53.7296642" lon="-1.5608043">
+    <tag k="access" v="private"/>
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Freedom House"/>
+  </node>
+  <node id="1837018172" lat="53.9270579" lon="-1.8185220">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1843091014" lat="53.6728934" lon="-1.6289658">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1858344588" lat="53.8936188" lon="-1.4499307">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1859547836" lat="53.8922752" lon="-1.4509239">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1871866990" lat="53.6867031" lon="-1.6153234">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1890550256" lat="53.9381531" lon="-1.1204364">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1890554337" lat="53.9383038" lon="-1.1202451">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1890554339" lat="53.9384807" lon="-1.1204321">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1890554340" lat="53.9386231" lon="-1.1200499">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1899191083" lat="53.9545032" lon="-1.0884787">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1903272005" lat="53.9538809" lon="-1.1267184">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1906210060" lat="53.9501810" lon="-1.0730094">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1917623420" lat="53.9377088" lon="-1.1340437">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="1917653188" lat="53.9363368" lon="-1.1233244">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1919195103" lat="53.9795392" lon="-1.1336112">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1920933349" lat="53.9910625" lon="-1.0722909">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1920933353" lat="53.9909482" lon="-1.0721407">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1922008447" lat="53.7457113" lon="-0.8642661">
+    <tag k="amenity" v="recycling"/>
+    <tag k="location" v="overground"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="1922152689" lat="53.9400722" lon="-1.1157264">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1926354462" lat="53.9623546" lon="-1.0594277">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1926354477" lat="53.9625005" lon="-1.0595635">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1926354482" lat="53.9623289" lon="-1.0599337">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1930743828" lat="53.9414172" lon="-1.1057327">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1934003810" lat="53.9383117" lon="-1.1081735">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1934003813" lat="53.9383196" lon="-1.1084873">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="1961589488" lat="53.8286352" lon="-1.5818815">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="2068414347" lat="53.7537391" lon="-1.6560624">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="2080325161" lat="53.6382563" lon="-1.8102362">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Glass"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2093921391" lat="53.6427816" lon="-1.7315485">
+    <tag k="amenity" v="recycling"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2099591673" lat="53.6378593" lon="-1.7399511">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2099591708" lat="53.6379918" lon="-1.7403459">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2099591736" lat="53.6383376" lon="-1.7394608">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2099591767" lat="53.6386858" lon="-1.7392735">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2101532104" lat="53.7953035" lon="-1.5441943">
+    <tag k="addr:city" v="Leeds"/>
+    <tag k="addr:street" v="Trevelyan Square"/>
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2101772060" lat="53.9618314" lon="-2.0133654">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cardboard" v="yes"/>
+    <tag k="recycling:cartons" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:paper_packaging" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2107337308" lat="53.6440771" lon="-1.7629703">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2107337396" lat="53.6444003" lon="-1.7622090">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2116631998" lat="53.6128891" lon="-2.1338222">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="2116959258" lat="53.6152775" lon="-2.1448817">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2116959262" lat="53.6150802" lon="-2.1449568">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Tips - skips &amp; Recycle"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2210120286" lat="53.6675479" lon="-1.5246347">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cds" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2255618042" lat="53.7258217" lon="-1.8128212">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="2264343106" lat="53.9204322" lon="-1.3255182">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2334281519" lat="53.8988897" lon="-2.1497023">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2354678137" lat="53.8213851" lon="-1.5667592">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2354678138" lat="53.8199063" lon="-1.5641843">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2376472654" lat="53.6359785" lon="-1.8022651">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2376472658" lat="53.6363513" lon="-1.8032358">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2376472661" lat="53.6361424" lon="-1.8031000">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2376485453" lat="53.6364498" lon="-1.8040241">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2376485457" lat="53.6371966" lon="-1.8070918">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2376589327" lat="53.6382044" lon="-1.8077510">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2376589331" lat="53.6381220" lon="-1.8075645">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2400234908" lat="53.6387785" lon="-1.8230950">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2400234915" lat="53.6387849" lon="-1.8233177">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2407088505" lat="53.8104574" lon="-1.5486162">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="2407102011" lat="53.8102923" lon="-1.5497591">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="2407102014" lat="53.8102796" lon="-1.5496706">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="2408692016" lat="53.8103635" lon="-1.5507248">
+    <tag k="amenity" v="recycling"/>
+    <tag k="location" v="overground"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2415169117" lat="53.6202521" lon="-1.7944352">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2415169137" lat="53.6201423" lon="-1.7943977">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2415237511" lat="53.6187327" lon="-1.7933543">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2415237513" lat="53.6185434" lon="-1.7924370">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2420834577" lat="53.9546200" lon="-1.0974184">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2461480062" lat="53.9043319" lon="-1.6918490">
+    <tag k="amenity" v="recycling"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="2558097121" lat="53.6040527" lon="-1.7918727">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="2589207935" lat="53.9639436" lon="-1.0552498">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="ref" v="Dog Waste Bin"/>
+    <tag k="source" v="Survey"/>
+  </node>
+  <node id="2596692592" lat="53.8284902" lon="-1.5670860">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2596692599" lat="53.8283743" lon="-1.5671034">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2596692604" lat="53.8284107" lon="-1.5670223">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2630222051" lat="53.8485931" lon="-2.1027325">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2630222074" lat="53.8508788" lon="-2.1074694">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2630222085" lat="53.8518585" lon="-2.1130279">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2700481465" lat="53.9609447" lon="-1.0928109">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2700582237" lat="53.9725083" lon="-1.0874092">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2700664564" lat="53.9595461" lon="-1.0953428">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2808137942" lat="53.6225555" lon="-1.7698775">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey; recording"/>
+  </node>
+  <node id="2939679190" lat="53.8215489" lon="-1.6072219">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="gps;survey"/>
+  </node>
+  <node id="2950663009" lat="53.8729379" lon="-1.7078175">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="2978099686" lat="53.7874471" lon="-1.6377370">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="2993005588" lat="53.6585792" lon="-1.6208344">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3025622682" lat="53.7391704" lon="-2.0100702">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3051029378" lat="53.6737218" lon="-1.6297764">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3100300122" lat="53.7057352" lon="-1.6765574">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3170308466" lat="53.6778294" lon="-1.7452477">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3170327293" lat="53.6782677" lon="-1.7419729">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3170327294" lat="53.6786217" lon="-1.7417639">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3170327295" lat="53.6796089" lon="-1.7418747">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3170327297" lat="53.6781354" lon="-1.7415205">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3170332936" lat="53.6802433" lon="-1.7433029">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3178793060" lat="53.6805524" lon="-1.7389208">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3178794862" lat="53.6827637" lon="-1.7486616">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3178794863" lat="53.6804843" lon="-1.7410265">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499262" lat="53.8097950" lon="-1.5655065">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499263" lat="53.8108082" lon="-1.5652462">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499266" lat="53.8122460" lon="-1.5635164">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499267" lat="53.8139419" lon="-1.5623779">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="3222499361" lat="53.8125079" lon="-1.5637672">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499362" lat="53.8121599" lon="-1.5633823">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="3222499461" lat="53.8124563" lon="-1.5636873">
+    <tag k="amenity" v="recycling"/>
+    <tag k="glass_colour" v="mixed"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3222499561" lat="53.8124784" lon="-1.5634340">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499661" lat="53.8136303" lon="-1.5621573">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222499861" lat="53.8139791" lon="-1.5620868">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3222614368" lat="53.8138611" lon="-1.5601346">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3222634961" lat="53.8117832" lon="-1.5603210">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3222635061" lat="53.8117880" lon="-1.5602980">
+    <tag k="amenity" v="recycling"/>
+    <tag k="glass_colour" v="mixed"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3223342561" lat="53.8125271" lon="-1.5635737">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="3225905505" lat="53.8121069" lon="-1.5700683">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225905509" lat="53.8123719" lon="-1.5767608">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929361" lat="53.8093053" lon="-1.5639693">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929363" lat="53.8125534" lon="-1.5684494">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929364" lat="53.8124207" lon="-1.5688897">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929365" lat="53.8114134" lon="-1.5758103">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929461" lat="53.8097453" lon="-1.5650361">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929462" lat="53.8123921" lon="-1.5690417">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929561" lat="53.8097690" lon="-1.5651184">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929562" lat="53.8099977" lon="-1.5659323">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929563" lat="53.8105457" lon="-1.5699414">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929566" lat="53.8121836" lon="-1.5693345">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929662" lat="53.8124967" lon="-1.5686429">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3225929769" lat="53.8113139" lon="-1.5758160">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+  </node>
+  <node id="3236623319" lat="53.9670698" lon="-1.0833800">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3257021635" lat="53.7657417" lon="-1.3671950">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="3388276020" lat="53.6639410" lon="-1.7325571">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="3551989863" lat="53.6557295" lon="-1.7918367">
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Bottle Bank"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3556686336" lat="53.7885600" lon="-1.6337652">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+  </node>
+  <node id="3671058967" lat="53.8116326" lon="-1.5835534">
+    <tag k="amenity" v="recycling"/>
+    <tag k="glass_colour" v="mixed"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3671435260" lat="53.9836304" lon="-2.1043535">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3682442141" lat="53.9624849" lon="-2.0160162">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3682461787" lat="53.9621239" lon="-2.0134480">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3683636538" lat="53.9605180" lon="-2.0148665">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3683994242" lat="53.9601779" lon="-2.0175515">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3685377344" lat="53.9602257" lon="-2.0184884">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3693388302" lat="53.9583895" lon="-2.0199651">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3714849998" lat="53.7859855" lon="-1.5601706">
+    <tag k="amenity" v="recycling"/>
+    <tag k="note" v="Clear glass only."/>
+    <tag k="operator" v="Leeds City Council"/>
+    <tag k="recycling:cans" v="no"/>
+    <tag k="recycling:clothes" v="no"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="no"/>
+  </node>
+  <node id="3715039712" lat="53.8661274" lon="-1.6698061">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3715221480" lat="53.8554119" lon="-1.6831657">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3715223365" lat="53.8548904" lon="-1.6839056">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3716852685" lat="53.8661309" lon="-1.6790241">
+    <tag k="addr:city" v="Yeadon"/>
+    <tag k="addr:housenumber" v="99"/>
+    <tag k="addr:postcode" v="LS19 7TA"/>
+    <tag k="addr:street" v="High Street"/>
+    <tag k="amenity" v="recycling"/>
+    <tag k="name" v="Cash 4 Clothes"/>
+    <tag k="phone" v="+44 844 800 9016"/>
+    <tag k="recycling:cans" v="no"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="no"/>
+    <tag k="recycling:paper" v="no"/>
+  </node>
+  <node id="3716915901" lat="53.8656046" lon="-1.6819567">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3716946390" lat="53.8660799" lon="-1.6814665">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3718210821" lat="53.8660331" lon="-1.6848169">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3718213594" lat="53.8660592" lon="-1.6853935">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3736656492" lat="53.8264775" lon="-1.6368963">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="3737439336" lat="53.9553922" lon="-1.0845707">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="no"/>
+    <tag k="recycling:organic" v="yes"/>
+  </node>
+  <node id="3777343523" lat="53.8230348" lon="-1.5093927">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling:small_appliances" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="3887608948" lat="53.8034574" lon="-1.5456312">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3887608949" lat="53.8032919" lon="-1.5453393">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3887608950" lat="53.8036849" lon="-1.5452319">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3887608951" lat="53.8035415" lon="-1.5449727">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3925712005" lat="53.7592350" lon="-1.6325053">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932108391" lat="53.8876895" lon="-1.2547844">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932145585" lat="53.8852237" lon="-1.2582537">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932145612" lat="53.8887642" lon="-1.2601678">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932157223" lat="53.8844259" lon="-1.2605814">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932175414" lat="53.8835812" lon="-1.2620108">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932199483" lat="53.8837954" lon="-1.2618843">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932217249" lat="53.8839240" lon="-1.2631628">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="3932220451" lat="53.8849463" lon="-1.2624499">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932220456" lat="53.8845526" lon="-1.2621884">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3932240762" lat="53.8841008" lon="-1.2629342">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3939241152" lat="53.8850010" lon="-1.2644092">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3940962869" lat="53.9163473" lon="-1.8005559">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="3978314330" lat="53.7602365" lon="-1.2344859">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="4046566540" lat="53.8654063" lon="-1.6822181">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="4057268935" lat="53.8313401" lon="-1.9483954">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4057277609" lat="53.8305947" lon="-1.9493928">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4057506691" lat="53.8353140" lon="-1.9352392">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4076016240" lat="53.6804270" lon="-1.5086068">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4162184846" lat="53.8209652" lon="-1.5537972">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4172939291" lat="53.9849429" lon="-1.1572950">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:cardboard" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling:plastic" v="yes"/>
+  </node>
+  <node id="4202411485" lat="53.9857078" lon="-1.0482915">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="4203189935" lat="53.8357558" lon="-1.5634583">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4203189936" lat="53.8360855" lon="-1.5644185">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4203189938" lat="53.8373232" lon="-1.5689129">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4203189939" lat="53.8375614" lon="-1.5703292">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4203189941" lat="53.8375946" lon="-1.5715093">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4209816017" lat="53.8330917" lon="-1.5752413">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4209816019" lat="53.8312651" lon="-1.5743669">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4209816024" lat="53.8307888" lon="-1.5738150">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214304893" lat="53.8339150" lon="-1.5761370">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4214304896" lat="53.8341752" lon="-1.5756689">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214304897" lat="53.8354854" lon="-1.5770726">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4214304898" lat="53.8329877" lon="-1.5764423">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4214304900" lat="53.8314095" lon="-1.5761258">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4214304902" lat="53.8313826" lon="-1.5747417">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214304903" lat="53.8309140" lon="-1.5743394">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214393628" lat="53.8361820" lon="-1.5711727">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420527" lat="53.8332217" lon="-1.5662192">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420529" lat="53.8293296" lon="-1.5676254">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420530" lat="53.8290033" lon="-1.5670587">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420531" lat="53.8290500" lon="-1.5671131">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420532" lat="53.8287334" lon="-1.5669783">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420533" lat="53.8286570" lon="-1.5668958">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420536" lat="53.8317608" lon="-1.5743740">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4214420537" lat="53.8325475" lon="-1.5744571">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4306600682" lat="53.8039973" lon="-1.6374708">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4317556295" lat="53.9550573" lon="-1.0849446">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248190" lat="53.7983293" lon="-1.5322227">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248191" lat="53.7981709" lon="-1.5322715">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248192" lat="53.7982525" lon="-1.5322756">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248194" lat="53.7986179" lon="-1.5321302">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4362453635" lat="53.7952510" lon="-1.5371581">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4362557276" lat="53.7964889" lon="-1.5393189">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4362565016" lat="53.8016142" lon="-1.5489298">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4401401653" lat="53.8036982" lon="-1.5682598">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4434225670" lat="53.7992510" lon="-1.5546670">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4434225671" lat="53.7979986" lon="-1.5539943">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4449807813" lat="53.8010151" lon="-1.5585162">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="4464957582" lat="53.9880321" lon="-1.0677449">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4465587452" lat="53.8050712" lon="-1.4780569">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4467242330" lat="53.8993557" lon="-0.9678807">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068246" lat="53.8366752" lon="-1.7884613">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="Cancer Support"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068247" lat="53.8366797" lon="-1.7885117">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068248" lat="53.8366841" lon="-1.7885621">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068249" lat="53.8366886" lon="-1.7886126">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:plastic_bottles" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068250" lat="53.8366931" lon="-1.7886630">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4479068251" lat="53.8366975" lon="-1.7887134">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:paper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4547492474" lat="53.8084611" lon="-1.5525550">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4593011955" lat="53.6726006" lon="-1.8820711">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4598588889" lat="53.8220626" lon="-1.6550033">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4598588895" lat="53.8238416" lon="-1.6628741">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4598588896" lat="53.8239816" lon="-1.6630078">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4598588897" lat="53.8252540" lon="-1.6633220">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="4598588898" lat="53.8263386" lon="-1.6638698">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4617406142" lat="53.7356834" lon="-1.6108526">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4621501498" lat="53.8001182" lon="-1.5553851">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4634376289" lat="53.7954016" lon="-1.6211396">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4724882075" lat="53.9460905" lon="-1.0494612">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4726725668" lat="53.6773788" lon="-1.4977015">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:plastic" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4735704043" lat="53.7880951" lon="-1.6206099">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="4735892634" lat="53.7853886" lon="-1.6097491">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="4735892637" lat="53.7855169" lon="-1.6098167">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="4740732703" lat="53.7990433" lon="-1.5577073">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4790824188" lat="53.6497588" lon="-1.7891793">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4837670079" lat="53.9564824" lon="-2.0208083">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4846648925" lat="53.7429800" lon="-1.5980615">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="4903543133" lat="53.7411250" lon="-1.4870413">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4903543134" lat="53.7409108" lon="-1.4867046">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4903543135" lat="53.7400742" lon="-1.4907852">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4903543136" lat="53.7406097" lon="-1.4900325">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4903543137" lat="53.7409548" lon="-1.4901788">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4909235621" lat="53.8041750" lon="-1.6137807">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4909506259" lat="53.8015162" lon="-1.5957747">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914446391" lat="53.9617783" lon="-2.0314863">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914446392" lat="53.9607950" lon="-2.0286481">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914446393" lat="53.9603219" lon="-2.0278751">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914446394" lat="53.9627750" lon="-2.0338153">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914456460" lat="53.9618414" lon="-2.0306595">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4914456461" lat="53.9629615" lon="-2.0304624">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4916158731" lat="53.9620262" lon="-2.0323050">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4916158732" lat="53.9622875" lon="-2.0307668">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4938261727" lat="53.9550554" lon="-2.0136011">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5041237923" lat="53.9578389" lon="-1.0938006">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5082176726" lat="53.7855151" lon="-1.0691470">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5194913959" lat="53.7456972" lon="-1.6015793">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5194923629" lat="53.7685589" lon="-1.5831444">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5218896691" lat="53.7451428" lon="-1.6029753">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5218896693" lat="53.7450183" lon="-1.6027460">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="Salvation Army"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5248125491" lat="53.8485406" lon="-1.8397576">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="5250551716" lat="53.6486134" lon="-1.4651820">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5251665206" lat="53.6510445" lon="-1.4687848">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="5251722436" lat="53.6505410" lon="-1.4667595">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5251722437" lat="53.6483512" lon="-1.4652409">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5277367865" lat="53.8320558" lon="-2.3370442">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5301673767" lat="53.9604485" lon="-1.0845189">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5301673769" lat="53.9600412" lon="-1.0846036">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5356786143" lat="53.8140514" lon="-1.5622860">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:shoes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5385257455" lat="53.7965327" lon="-2.3313935">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5433818870" lat="53.8516886" lon="-2.1855068">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5467867274" lat="53.6032734" lon="-1.9270639">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5474949833" lat="53.7527001" lon="-1.5453645">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5475771241" lat="53.8720085" lon="-1.7072006">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5475771243" lat="53.8742311" lon="-1.7128506">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5485019701" lat="53.9625911" lon="-1.0720813">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378769" lat="53.7984465" lon="-1.5342276">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378771" lat="53.7983823" lon="-1.5338735">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378794" lat="53.7973114" lon="-1.5332348">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5512423009" lat="53.8033675" lon="-1.5497214">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5512719147" lat="53.9642191" lon="-1.1055063">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5536419730" lat="53.8191870" lon="-1.7664775">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5602347323" lat="53.8303715" lon="-1.6640378">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="5602347324" lat="53.8291732" lon="-1.6646580">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="5602347325" lat="53.8319901" lon="-1.6663130">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="5602347640" lat="53.8352323" lon="-1.6683836">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="5632780131" lat="53.9034580" lon="-1.6926241">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5639896436" lat="53.7500567" lon="-1.4745107">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5650477313" lat="53.7950211" lon="-1.4716209">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5650477314" lat="53.7950042" lon="-1.4716829">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5650477315" lat="53.7950126" lon="-1.4716519">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5659484007" lat="53.9631401" lon="-1.0725507">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="5671608836" lat="53.6780224" lon="-1.4990788">
+    <tag k="amenity" v="recycling"/>
+    <tag k="is_in" v="Sainsbury's"/>
+    <tag k="recycling:batteries" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5713710064" lat="53.8285495" lon="-1.6614373">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5747480409" lat="53.9827245" lon="-1.1051389">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5754691850" lat="53.9808726" lon="-1.0673413">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5866535026" lat="53.9021662" lon="-1.6801914">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="5891074446" lat="53.9598479" lon="-1.0832261">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5891074457" lat="53.9600625" lon="-1.0800185">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5891074465" lat="53.9585454" lon="-1.0808539">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5891096612" lat="53.9617156" lon="-1.0813877">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5891096614" lat="53.9617440" lon="-1.0840777">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5902187151" lat="53.9621341" lon="-1.0806681">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5902187152" lat="53.9621168" lon="-1.0806939">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5902187153" lat="53.9616947" lon="-1.0821772">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5902187154" lat="53.9616903" lon="-1.0821852">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5904401996" lat="53.9619451" lon="-1.0800801">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5904401997" lat="53.9619797" lon="-1.0797850">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5904407511" lat="53.9590310" lon="-1.0781843">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5905844234" lat="53.9584069" lon="-1.0918149">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5906768005" lat="53.9621581" lon="-1.0896111">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5906768007" lat="53.9584093" lon="-1.0804412">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6002856985" lat="53.6040066" lon="-1.9404925">
+    <tag k="amenity" v="recycling"/>
+    <tag k="location" v="overground"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6013114339" lat="53.6230354" lon="-1.8877146">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6036939034" lat="53.9624456" lon="-1.0909299">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6044612469" lat="53.9554228" lon="-1.0784655">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6044612479" lat="53.9554844" lon="-1.0796967">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6067572365" lat="53.9319510" lon="-1.0704465">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6143471786" lat="53.9637017" lon="-1.0871265">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6183459986" lat="53.7978446" lon="-1.5431916">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6185928523" lat="53.8197763" lon="-1.4601195">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6185928549" lat="53.8196011" lon="-1.4589155">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6185928550" lat="53.8187737" lon="-1.4589355">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6185928551" lat="53.8190164" lon="-1.4599484">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6206065607" lat="53.8064126" lon="-1.4463847">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6206065608" lat="53.8063947" lon="-1.4463837">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6206065609" lat="53.8063751" lon="-1.4463829">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6218913017" lat="53.8060451" lon="-1.4556522">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:glass_brown" v="yes"/>
+    <tag k="recycling:glass_clear" v="yes"/>
+    <tag k="recycling:glass_green" v="yes"/>
+    <tag k="recycling:glass_jars" v="yes"/>
+    <tag k="recycling:glass_white" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6218913018" lat="53.8060451" lon="-1.4556283">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:glass_brown" v="yes"/>
+    <tag k="recycling:glass_clear" v="yes"/>
+    <tag k="recycling:glass_green" v="yes"/>
+    <tag k="recycling:glass_jars" v="yes"/>
+    <tag k="recycling:glass_white" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6236602285" lat="53.6222750" lon="-1.8818030">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6271564594" lat="53.6281782" lon="-1.8560457">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6278573714" lat="53.9511060" lon="-1.0854056">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6293789956" lat="53.9596712" lon="-1.0879363">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6296175762" lat="53.6230286" lon="-1.8795867">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6296175763" lat="53.6228135" lon="-1.8800206">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6296616448" lat="53.6260798" lon="-1.8824274">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6301475226" lat="53.6221335" lon="-1.8748480">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6311830379" lat="53.8217699" lon="-1.4590261">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling:glass_bottles" v="yes"/>
+    <tag k="recycling:magazines" v="yes"/>
+    <tag k="recycling:newspaper" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6338657141" lat="54.0046064" lon="-1.5150788">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="6365315189" lat="53.6064218" lon="-1.9541556">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6393478352" lat="53.8520338" lon="-1.8382171">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6393478371" lat="53.8548792" lon="-1.8380535">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6393478373" lat="53.8563497" lon="-1.8382573">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6393478377" lat="53.8576809" lon="-1.8395609">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6414548132" lat="53.9609801" lon="-1.0931277">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6415978049" lat="53.8542733" lon="-1.8320802">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6484408043" lat="53.8244364" lon="-1.4418951">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6485425234" lat="54.0214023" lon="-1.2104756">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6485425270" lat="54.0225358" lon="-1.2089362">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6507012266" lat="53.7277762" lon="-1.5526668">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6509647592" lat="53.8495224" lon="-1.8279985">
+    <tag k="amenity" v="recycling"/>
+    <tag k="operator" v="St Vincents svp.org.uk"/>
+    <tag k="recycling:clothes" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="6509647594" lat="53.8301528" lon="-1.8190312">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6509647595" lat="53.8304354" lon="-1.8207481">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:cans" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="6509647596" lat="53.8304354" lon="-1.8207585">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6515014840" lat="53.9240663" lon="-1.0798844">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6515014844" lat="53.9242662" lon="-1.0794896">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6516325619" lat="53.9536565" lon="-1.0944074">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6541906180" lat="53.6195000" lon="-2.1548338">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="6551246567" lat="53.8933125" lon="-1.4516359">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6551246571" lat="53.8950951" lon="-1.4541619">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6553354482" lat="53.8951803" lon="-1.4537298">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6553400803" lat="53.8945564" lon="-1.4524282">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6557780310" lat="53.7721975" lon="-1.0879656">
+    <tag k="amenity" v="recycling"/>
+  </node>
+  <node id="6567337439" lat="53.9616062" lon="-1.1454485">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6586129872" lat="53.8481672" lon="-1.8399404">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6653424132" lat="53.7970988" lon="-1.5579657">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6659202104" lat="53.7880705" lon="-1.5602456">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="6672397751" lat="53.9618836" lon="-1.0760809">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6685465707" lat="54.0064942" lon="-2.2221755">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="6688180088" lat="54.0199720" lon="-2.2512692">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="6688521096" lat="54.0051162" lon="-2.2234406">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6688521098" lat="54.0059734" lon="-2.2200523">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6688521105" lat="54.0041743" lon="-2.2225602">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6688521106" lat="54.0037560" lon="-2.2228643">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6688521108" lat="54.0044474" lon="-2.2214082">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="6688521109" lat="54.0045129" lon="-2.2216328">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6690520749" lat="54.0044494" lon="-2.2223295">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="6693574670" lat="53.7964377" lon="-1.5478991">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="6693574671" lat="53.7964358" lon="-1.5477827">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="6693574672" lat="53.7964865" lon="-1.5476801">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="6693574673" lat="53.7965716" lon="-1.5476761">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="6736760566" lat="53.6784475" lon="-2.3086441">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6751336605" lat="53.9816702" lon="-1.8911022">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6757835035" lat="53.9507383" lon="-1.0755285">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6757933347" lat="53.9539633" lon="-1.0804371">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6757934789" lat="53.9531347" lon="-1.0798121">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6757944991" lat="53.9536208" lon="-1.0801849">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6758015989" lat="53.9815495" lon="-1.8929730">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="6758015991" lat="53.9815669" lon="-1.8929677">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6760499044" lat="53.9548401" lon="-1.0806904">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6760499049" lat="53.9549095" lon="-1.0807733">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6769497923" lat="53.7887850" lon="-1.4177757">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6872262615" lat="53.8267602" lon="-1.7429011">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6872262628" lat="53.8288600" lon="-1.7416167">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6872262749" lat="53.8244060" lon="-1.7340566">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6912889943" lat="53.6232375" lon="-1.8796773">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6937731912" lat="53.8567017" lon="-1.8371777">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="7029962656" lat="53.7953839" lon="-1.5436780">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7116555455" lat="54.0058110" lon="-2.2194716">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="source" v="survey"/>
+    <tag k="waste" v="trash"/>
+  </node>
+  <node id="7120516350" lat="53.7945377" lon="-1.3928432">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7120516351" lat="53.7945460" lon="-1.3937002">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7120516352" lat="53.7945250" lon="-1.3937033">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="7164717843" lat="53.8077243" lon="-1.5704801">
+    <tag k="amenity" v="recycling"/>
+    <tag k="recycling:glass" v="yes"/>
+    <tag k="recycling_type" v="container"/>
+  </node>
+  <node id="7172529764" lat="53.7198409" lon="-1.3243591">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7172529765" lat="53.7166852" lon="-1.3273409">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="colour" v="Black"/>
+    <tag k="mapillary" v="3JZxM0EnPUsLtRqcsTaQtQ"/>
+    <tag k="material" v="plastic"/>
+  </node>
+  <node id="7179282649" lat="53.6988839" lon="-1.3205718">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="7179282650" lat="53.6981867" lon="-1.3226559">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="7180445667" lat="53.6956440" lon="-1.3020152">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="waste" v="dog_excrement"/>
+  </node>
+  <node id="7199682015" lat="53.9586237" lon="-1.0907545">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7199682534" lat="53.9589915" lon="-1.0890300">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7200476956" lat="53.9594799" lon="-1.0843770">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7234413031" lat="53.6480912" lon="-1.7811442">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7234413032" lat="53.6475423" lon="-1.7814132">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="colour" v="green"/>
+    <tag k="material" v="metal"/>
+    <tag k="waste" v="recycling"/>
+  </node>
+  <node id="7234413033" lat="53.6475295" lon="-1.7814101">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="colour" v="black"/>
+    <tag k="material" v="metal"/>
+    <tag k="waste" v="litter"/>
+  </node>
+  <node id="7234413034" lat="53.6472372" lon="-1.7813195">
+    <tag k="amenity" v="waste_basket"/>
+    <tag k="colour" v="blue"/>
+    <tag k="material" v="metal"/>
+  </node>
+  <node id="7234413041" lat="53.6477672" lon="-1.7807199">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+
+</osm>
