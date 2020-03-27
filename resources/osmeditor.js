@@ -318,7 +318,7 @@
 		this.show = options.show||{};
 		
 		this.map = L.map(id,{'layers':[baseMaps[this.selectedLayer]],'scrollWheelZoom':true,'editable': true,'zoomControl': false}).fitBounds(bbox);
-		this.wood = {};
+		this.collection = {};
 		this.tooltip = L.DomUtil.get('tooltip');
 		this.log = new Logger({'id':'OSMMap','logging':options.logging});
 		this.callbacks = {};
@@ -604,8 +604,10 @@
 			return this;
 		}
 
-		var user = new User({mapper:this});
+		// Add geolocation control and interaction
+		var geolocation = new GeoLocation({mapper:this});
 
+		// Convert metres to pixels (used by GeoLocation)
 		this.m2px = function(m,lat,zoom){
 			if(!lat) lat = this.map.getCenter().lat;
 			if(!zoom) zoom = this.map.getZoom();
@@ -613,7 +615,6 @@
 			return m/mperpx;
 		}
 
-		
 		var _obj = this;
 
 		this.map.on("movestart", function(){
@@ -626,186 +627,22 @@
 			if(typeof _obj.callbacks.moveend==="function") _obj.callbacks.moveend.call(_obj);
 		});
 
-
-		function addTooltip (e) {
-			L.DomEvent.on(document, 'mousemove', moveTooltip);
-			var h = "Click on the map to start a "+_obj.drawingtype+".";
-			if(_obj.drawingtype == "marker") h = "Click on the map to add a marker";
-			_obj.log.message('addTooltip',_obj,_obj.tooltip)
-			_obj.tooltip.innerHTML = h;
-			_obj.tooltip.style.display = 'block';
-		}
-		function removeTooltip (e) {
-			_obj.tooltip.innerHTML = '';
-			_obj.tooltip.style.display = 'none';
-			L.DomEvent.off(document, 'mousemove', moveTooltip);
-		}
-		function moveTooltip (e) {
-			_obj.tooltip.style.left = e.clientX + 20 + 'px';
-			_obj.tooltip.style.top = e.clientY - 10 + 'px';
-		}
-		function updateTooltip (e) {
-			_obj.tooltip.innerHTML = (_obj.drawingtype=="marker" ? "" : (e.layer.editor._drawnLatLngs.length < e.layer.editor.MIN_VERTEX ? 'Click on the map to continue '+_obj.drawingtype+'.': 'Click on last point to finish '+_obj.drawingtype+'.'));
-		}
-
-		this.stopDrawing = function(e){
-			this.drawing = false;
-			S('.leaflet-draw-toolbar .active').removeClass('active');
-			this.map.editTools.stopDrawing();
-			this.log.message('stopDrawing',e);
-			removeTooltip(e);
-			return;
-		}
-
-		this.drawItem = function(el,typ){
-			this.drawingtype = typ;
-			this.log.message('drawItem',el,typ);
-			if(this.drawing){
-				this.stopDrawing();
-			}else{
-				this.drawing = true;
-				S(el).addClass('active');
-				this.map.editTools.featuresLayer = this.wood.leaflet;
-				if(typ=="polyline") window.LAYER = this.map.editTools.startPolyline.call(this.map.editTools);
-				if(typ=="polygon") window.LAYER = this.map.editTools.startPolygon.call(this.map.editTools);
-				if(typ=="marker") window.LAYER = this.map.editTools.startMarker.call(this.map.editTools,this.map.editTools,{'icon': makeMarker('marker','#67E767') });
-			}
-			return;
-		}
-
-		this.startEditLayer = function(id){
-			if(this.editing) this.stopEditLayer();
-			if(this.wood){
-				this.editing = id;
-				S('#layers li.edit').removeClass('edit');
-				S('.editor').remove();
-				S('#'+id).addClass('edit').removeClass('open');
-				// If the Leaflet layer doesn't exist, create a layerGroup
-				if(!this.wood.leaflet) this.wood.leaflet = new L.layerGroup();
-				// Add the layer to the map
-				this.wood.leaflet.addTo(this.map);
-				// If we have any features we need to make them editable
-				this.wood.leaflet.eachLayer(function(layer) { layer.enableEdit(); });
-				var _obj = this;
-				this.map.on('editable:drawing:start', function(e){
-					if(e.layer.setStyle) e.layer.setStyle({color: _obj.layer.colour});
-					addTooltip(e);
-				}).on('editable:drawing:end', function(e){
-					_obj.log.message('drawing:end');
-					_obj.stopDrawing(e);
-				}).on('editable:drawing:click', function(e){
-					updateTooltip(e);
-				}).on('editable:created', function(e){
-					_obj.log.message('editable:created');
-				});
-
-/*
-				this.controledit = L.Control.extend({
-					options: {
-						position: 'topleft'
-					},
-					onAdd: function (map){
-						_obj.log.message('onAdd',map)
-						var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-edit');
-						container.innerHTML = '<a href="#">'+getIcon('marker','')+'</a>';
-						container.onclick = function(e){
-							e.preventDefault();
-							console.log('click')
-							_obj.drawItem(this,'marker',id);
-							if(_obj.callbacks && _obj.callbacks.addmarker) _obj.callbacks.addmarker.call(this);
-						}
-						return container;
-					}
-				});
-				this.map.addControl(new this.controledit());
-*/
-
-				// Add the Editor HTML
-//				S('#'+id).append('<div class="editor"><div><div class="left padded"><form><div class="row"><label for="edit-name">Title:</label><input type="text" id="edit-name" name="edit-name" value="'+layers[id].name+'" /></div><div class="row"><label for="edit-desc">Description:</label><textarea id="edit-desc">'+(layers[id].desc ? layers[id].desc:'')+'</textarea></div><div class="row"><label for="edit-url">Website:</label><input type="url" id="edit-url" name="edit-url" value="'+layers[id].url+'" /></div><div class="row"><label for="edit-color">Colour:</label><input type="color" id="edit-color" name="edit-color" value="'+layers[id].colour+'" /></div></form></div><div class="right"><div class="leaflet-draw-toolbar leaflet-bar leaflet-draw-toolbar-top"><a class="leaflet-draw-draw-polyline" href="#" title="Draw a polyline"><span class="sr-only">Draw a polyline</span></a><a class="leaflet-draw-draw-polygon" href="#" title="Draw a polygon"><span class="sr-only">Draw a polygon</span></a><a class="leaflet-draw-draw-marker" href="#" title="Draw a marker"><span class="sr-only">Draw a marker</span></a></div><input id="editor-save" type="submit" value="Save" /></div></div></div>');
-
-
-				// Add events to elements we've just added
-				S('#editor-save').on('click',{me:this},function(e){
-					S('#'+id+' form').trigger('submit');
-				});
-				S('#edit-color').on('change',{me:this},function(e){
-					e.data.me.wood.colour = S('#edit-color')[0].value;
-					e.data.me.setLayerColours(id);
-				});
-				S('#'+id+' form').on('submit',function(e){
-					e.preventDefault();
-					e.stopPropagation();
-					_obj.stopEditLayer();
-				});
-				if(S('.message').length > 0 && showmessage){
-					//S('.message').html("<button class='close'>"+getIcon('remove')+"</button>We've temporarily hidden some layers because of copyright. They'll reappear once you stop editing.");
-					S('#message .close').on('click',function(e){ S('#message').remove(); });
-					S('body').addClass('hasmessage');
-				}
-			}
-			return this;
-		}
-
-		this.stopEditLayer = function(){
-			if(this.editing) id = this.editing;
-			this.log.message('stopEditLayer',id,this.editing)
-			if(this.wood){
-				// Need to save
-				this.wood.name = S('#edit-name')[0].value;
-				this.wood.desc = S('#edit-desc')[0].value || "";
-				this.wood.url = S('#edit-url')[0].value;
-				this.wood.colour = S('#edit-color')[0].value;
-				// Disable edit on feature
-				this.wood.leaflet.eachLayer(function(layer) { layer.disableEdit(); });
-				// Store the layer as data
-				this.wood.data = layers[id].leaflet.toGeoJSON();
-				this.log.message('GeoJSON',this.wood.data);
-				/*
-				_obj.setLayerColours(id);
-				_obj.updateLayers();
-				this.saveUserLayer();
-				S('#layers li.edit').removeClass('edit');
-				S('.editor').remove();
-				S('.message').html("");
-				S('#saver').html("").css({'display':'none'});
-				S('body').removeClass('hasmessage');
-				for(var i = 0; i < this.temporaryhide.length; i++){
-					this.showLayer(this.temporaryhide[i]);
-				}
-				this.temporaryhide = [];
-				*/
-			}
-			this.editing = "";
-			return this;
-		}
-
-		//this.startEditLayer();
-
 		return this;
 	}
 
-	function User(options){
+	// Define a function to get user location
+	function GeoLocation(options){
 		if(!options) options = {};
 		if(!options.mapper) return {};
 		this.locating = false;
-		this.mapper = options.mapper;
-		this.log = new Logger({'id':'User','logging':this.mapper.log.logging});
+		this.log = new Logger({'id':'GeoLocation','logging':options.mapper.log.logging});
 
 		var _obj = this;
 
-		this.check = setInterval(function(){
-			if(_obj.p){
-				var now = new Date();
-				var ago = (now-_obj.p.timestamp)/1000;
-				var el = S('.leaflet-control-geolocate');
-				if(ago > 10) el.removeClass('live-location');
-			}
-		},5000);
-
-		this.setUserLocation = function(p){
+		this.setLocation = function(p){
 
 			var btn = S('.leaflet-control-geolocate');
-			this.log.message('setUserLocation',p,btn,btn.hasClass('live-location'));
+			this.log.message('setLocation',p,btn,btn.hasClass('live-location'));
 
 			if(!this.locating){
 				this.p = null;
@@ -813,84 +650,108 @@
 				btn.removeClass('live-location');
 				this.marker.remove();
 				this.marker = null;
+				clearTimeout(this.check);
 				return;
 			}
 
 			lat = p.coords.latitude;
 			lon = p.coords.longitude;
 			this.p = p;
-			var a = Math.round(2*this.mapper.m2px(p.coords.accuracy,lat));
+			var a = Math.round(2*options.mapper.m2px(p.coords.accuracy,lat));
 
 			btn.addClass('live-location');
 			if(!this.marker){
 				var s = 10;
 				var ico = L.divIcon({ html: '<div class="my-location-accuracy" style="width:'+a+'px;height:'+a+'px"></div>', 'className':'my-location', 'iconSize': L.point(s, s) });
 				this.marker = L.marker([lat, lon],{icon:ico});
-				this.marker.addTo(this.mapper.map);
+				this.marker.addTo(options.mapper.map);
 				var _obj = this;
-				this.mapper.map.on('zoomend', function() {
-					_obj.setUserLocation(_obj.p,false);
+				options.mapper.map.on('zoomend', function() {
+					_obj.setLocation(_obj.p,false);
 				});
 			}else{
 				this.marker.setLatLng([lat, lon]).update();
 				S('.my-location-accuracy').css({'width':a+'px','height':a+'px'});
 			}
+
+
 			if(!this.centred){
 				// We want to centre the view and update the nodes
-				this.mapper.map.panTo(new L.LatLng(lat, lon))
-				this.mapper.getNodes(this.mapper.node.type,this.mapper.node.options);
+				options.mapper.map.panTo(new L.LatLng(lat, lon))
+				options.mapper.getNodes(options.mapper.node.type,options.mapper.node.options);
 				this.centred = true;
 			}
-			if(this.mapper.callbacks && this.mapper.callbacks.geoend) this.mapper.callbacks.geoend.call(this);
+			if(options.mapper.callbacks && options.mapper.callbacks.geoend) options.mapper.callbacks.geoend.call(this);
 
 		}
+
 		if("geolocation" in navigator){
-			var geo_options = {
-				enableHighAccuracy: true, 
-				maximumAge        : 30000, 
-				timeout           : 27000
-			};
+
+			// We need a function that checks how live the position is
+			// that runs independently of the geolocation api
+			this.updateLive = function(){
+				console.log('GeoLocation check',this.p);
+				if(this.p){
+					var ago = ((new Date())-this.p.timestamp)/1000;
+					if(ago > 10) S('.leaflet-control-geolocate').removeClass('live-location');
+				}
+			}
 
 			var _obj = this;
 
-			function geo_error(){
-				_obj.log.error("Sorry, no position available.");
-			}
-
 			this.control = L.Control.extend({
-				options: {
-					position: 'topleft'
-				},
-				onAdd: function (map){
+				"options": { position: 'topleft' },
+				"onAdd": function (map){
+
 					_obj.log.message('control onAdd',map)
+
 					var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-geolocate');
 					container.innerHTML = '<a href="#">'+getIcon('geo','black')+'</a>';
 					container.onclick = function(e){
+
 						e.preventDefault();
 						_obj.centred = false;
 						_obj.locating = !_obj.locating;
+
 						if(_obj.locating){
-							if(_obj.mapper.callbacks && _obj.mapper.callbacks.geostart) _obj.mapper.callbacks.geostart.call(this);
+							if(options.mapper.callbacks && options.mapper.callbacks.geostart) options.mapper.callbacks.geostart.call(this);
+
 							// Start watching the user location
-							_obj.watchID = navigator.geolocation.watchPosition(function(position) {
-								_obj.setUserLocation(position);
-							},geo_error,geo_options);
+							_obj.watchID = navigator.geolocation.watchPosition(function(position){
+								_obj.setLocation(position);
+							},function(){
+								_obj.log.error("Sorry, no position available.");
+							},{
+								enableHighAccuracy: true, 
+								maximumAge        : 30000, 
+								timeout           : 27000
+							});
+
+							// Create a checker to see if the geolocation is live
+							_obj.check = setInterval(function(){ _obj.updateLive(); },10000);
+
 						}else{
-							_obj.setUserLocation()
+
+							_obj.setLocation();
+
 						}
 					}
 					return container;
 				}
 			});
-			this.mapper.map.addControl(new _obj.control());
+
+			options.mapper.map.addControl(new _obj.control());
+
 		}else{
-			this.log.message('No location services available');
+
+			this.log.warning('No location services available');
+
 		}
 
 		return this;
 	}
 
-
+	// Define a logging function
 	function Logger(inp){
 		if(!inp) inp = {};
 		this.logging = (inp.logging||false);
@@ -946,7 +807,6 @@
 		}
 		return this;
 	};
-
 
 	root.OSMEditor = OSMEditor;
 	root.Logger = Logger;
