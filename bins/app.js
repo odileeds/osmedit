@@ -4,6 +4,11 @@ var app;
 
 	var osmedit;
 
+
+	// Do we update the address bar?
+	var pushstate = !!(window.history && history.pushState);
+	var requirelogin = true;
+
 /*
 	function receiveMessage(event) {
 		console.log('Received message from '+event.origin,event);
@@ -24,13 +29,11 @@ var app;
 		this.opts = opts;
 		this.name = (opts.name||"ODI Leeds Editor");
 		this.log = new Logger({'id':this.name,'logging':(location.search.indexOf("logging=true")>=0)});
-		this.requirelogin = (typeof opts.requirelogin==="boolean" ? opts.requirelogin: true);
 		this.data = {};
+		requirelogin = (typeof opts.requirelogin==="boolean" ? opts.requirelogin: true);
 
-		// Do we update the address bar?
-		this.pushstate = !!(window.history && history.pushState);
 		// Add event to change of push state
-		window[(this.pushstate) ? 'onpopstate' : 'onhashchange'] = function(e){
+		window[(pushstate) ? 'onpopstate' : 'onhashchange'] = function(e){
 			console.log('on',location.hash);
 			var hash = location.hash || "#intro";
 			setScreen(hash);
@@ -78,7 +81,7 @@ var app;
 
 			// Set the named markers
 			osmedit.mapper.setMarkers({
-				'waste':{'svg':'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42"><path style="fill:#000000;fill-opacity:1" d="M 16 42 L 3,34 3,7 0,7 0,4 8,4 10,0 22,0 24,4 21,4 20,2 12,2 11,4 32,4 32,7 29,7 29,11 29,34 Z" /><path style="fill:#999999;fill-opacity:1" d="M 8,11 l 0,19 3,0 0,-19 -3,0 m 6.5,0 l 0,19 3,0 0,-19 -3,0 m 6.5,0 l 0,19 3,0 0,-19 -3,0" /></svg>','color':'white','background':'black'},
+				'waste':{'svg':'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42"><path style="fill:%COLOR%;fill-opacity:1" d="M 16 42 L 3,34 3,7 0,7 0,4 8,4 10,0 22,0 24,4 21,4 20,2 12,2 11,4 32,4 32,7 29,7 29,11 29,34 Z" /><path style="fill:#999999;fill-opacity:1" d="M 8,11 l 0,19 3,0 0,-19 -3,0 m 6.5,0 l 0,19 3,0 0,-19 -3,0 m 6.5,0 l 0,19 3,0 0,-19 -3,0" /></svg>','color':'white','background':'black'},
 				'recycling':{'svg':'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42"><path style="fill:#0DBC37;fill-opacity:1" d="M 16 42 L 3,34 3,7 0,7 0,4 8,4 10,0 22,0 24,4 21,4 20,2 12,2 11,4 32,4 32,7 29,7 29,34 Z" /><path style="fill:#ffffff;fill-opacity:1" d="M 15 26 l 4,4 0,-2 4,0 4,-6 -3,-5 -2,1 2,4 -2,3 -3,0 0,-2 Z m -1,-1 l 0,3 -4,0 -4,-6 2,-3 -2,-1 4,-1 2,4 -2,-1 -1,2 2,3 z m -2,-8 l -3,-2 4,-5 5,0 3,3 2,-2 0,6 -6,0 2,-2 -2,-2 -3,0" /></svg>','color':'white','background':'#0DBC37'},
 				'beverage':{'svg':'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42"><path style="fill:#F9BC26;fill-opacity:1" d="M 16 42 L 3,34 3,12 C 6 0, 26 0, 29 12 L 29,12 L 29,34 Z" /><path style="fill:#D60303;fill-opacity:1" d="M 16 34 l -5,0 0,-5 1,-1 0,-8 -1,-1 0,-4 c 0 -2, 2 -4, 4 -4 l 0,-1 -1,0 0,-4 4,0 0,4 -1,0 0,1 c 2 0, 4 2, 4 4 l 0,4 -1,1 0,8 1,1 0,5 Z" /></svg>','color':'white','background':'#F9BC26'},
 				'paper':{'svg':'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42"><path style="fill:#00ace8;fill-opacity:1" d="M 16 42 L 3,34 3,7 0,7 0,4 8,4 10,0 22,0 24,4 21,4 20,2 12,2 11,4 32,4 32,7 29,7 29,34 Z" /><path style="fill:#ffffff;fill-opacity:1" d="M 9,31 l 0,-21 9,0 0,6 6,0 0,2 -12,0 0,2 9,0 0,-2 3,0 0,4 -12,0 0,2 9,0 0,-2 3,0 0,4 -12,0 0,2 9,0 0,-2 3,0 0,5 z m 15,-16 l -5,0 0,-5 z" /></svg>','background':'#00ace8'},
@@ -300,7 +303,7 @@ var app;
 
 		// Add an item (may require login
 		this.addItem = function(){
-			if((osmedit.user && osmedit.user.name) || !this.requirelogin){
+			if((osmedit.user && osmedit.user.name) || !requirelogin){
 				this.startAdd();
 				return this;
 			}else{
@@ -461,14 +464,15 @@ console.log(content);
 		this.startAdd = function(){
 			this.action = "adding";
 			this.setView('add');
-			S('#app #location').append('<div id="add-item">'+osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.color)+'<div class="balloon">Move the map to place the bin</div></div>').trigger('resize');
+			console.log(this);
+			S('#app #location').append('<div id="add-item">'+osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div></div>').trigger('resize');
 			
 			return this;
 		}
 
 		this.editItem = function(){
 			this.action = "edit";
-			if((osmedit.user && osmedit.user.name) || !this.requirelogin){
+			if((osmedit.user && osmedit.user.name) || !requirelogin){
 				
 				// TEMP
 				if(!osmedit.changeset) osmedit.changeset = {'id':'TEST'};
@@ -509,12 +513,6 @@ console.log(content);
 			}
 			return this;
 		}
-		
-		
-		
-		
-		// Do we update the address bar?
-		var pushstate = !!(window.history && history.pushState);
 
 
 		// Add events
