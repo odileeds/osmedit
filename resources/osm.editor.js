@@ -446,11 +446,71 @@
 		}
 
 		var tiler = new Tiler();
-		
+		var _obj = this;
+
+
+		function getTile(url,tileid){
+			_obj.log.info('Getting data for '+tileid+' from '+url);
+			return fetch(url,{'method':'GET'})
+			.then(response => { return response.text() })
+			.then(str => {
+				var i,rtn,oDOM,lastupdate,features,el,lat,lon,id,tags,tag,t,name;
+
+				// Store a copy of the response
+				_obj.overpass.tiles[tileid].data = str;
+				_obj.overpass.tiles[tileid].id = [];
+
+				// Parse the document
+				rtn = parseXML(str);
+				if(rtn.xml.activeElement.tagName == "html"){
+					console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
+					return false;
+				}
+				oDOM = rtn.xml;
+
+				// Update the time stamp
+				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
+				_obj.map.attributionControl.addAttribution("Last updated: "+lastupdate);
+
+				// Get nodes
+				features = oDOM.querySelectorAll('node');
+
+				_obj.log.message('Got results from overpass',oDOM,features.length);
+
+				for(i = 0; i < features.length; i++){
+					el = features[i];
+					lat = parseFloat(el.getAttribute('lat'));
+					lon = parseFloat(el.getAttribute('lon'));
+					id = 'OSM-'+el.getAttribute('id');
+					_obj.overpass.tiles[tileid].id.push(id);
+
+					// If we don't have this node we build a basic structure for it
+					if(!_obj.nodes[id]){
+						_obj.nodes[id] = {'id':el.getAttribute('id'),'props':{},'popup':'','changedtags':[]};
+					}
+
+					if(typeof lon==="number" && typeof lat==="number"){
+
+						// Add the coordinates
+						_obj.nodes[id].lat = lat;
+						_obj.nodes[id].lon = lon;
+
+						// Add the properties
+						tags = el.querySelectorAll('tag');
+						_obj.nodes[id].props = {'OSMID':id};
+						for(t = 0; t < tags.length; t++){
+							tag = tags[t];
+							name = tag.getAttribute('k')||"";
+							_obj.nodes[id].props[name] = tag.getAttribute('v')||"";
+						}
+					}
+				}	
+			});
+		}
 		// We will grab boxes of data
 		this.getNodesFromOverpass = function(a,options,callback){
 
-			if(!this.overpass) this.overpass = {};
+			if(!this.overpass) this.overpass = {'tiles':{}};
 
 			if(!a) return this;
 			if(!options) options = {};
@@ -462,8 +522,10 @@
 				return this;
 			}
 
+			this.overpass._options = options;
+
 			// Get the map bounds (with padding)
-			var b = this.map.getBounds().pad(2 * Math.sqrt(2) / 2);
+			var b = this.map.getBounds();//.pad(2 * Math.sqrt(2) / 2);
 
 			// Only update if the zoom level is deep enough
 			if(this.map.getZoom() <= 14){
@@ -472,14 +534,13 @@
 				return this;
 			}
 
-			var tiles = tiler.xyz(b,13);
-			console.log('tiles',tiles.length,options,callback);
+			var tiles = tiler.xyz(b,12);
+			//console.log('tiles',tiles);
 			
 			var qs,i,t,id;
 			var promises = [];
 			
 			for(t = 0; t < tiles.length; t++){
-				console.log(t,tiles[t]);
 				/* We need Overpass QL something like:
 				(
 				  node ["amenity"="waste_basket"] (53.4500,-1.9683,53.9272,-1.2250);
@@ -496,66 +557,17 @@
 				for(i = 0; i < a.length; i++) qs += 'node%20%5B'+encodeURIComponent(a[i])+'%5D%0A%20%20%28'+b._southWest.lat+','+b._southWest.lng+','+b._northEast.lat+','+b._northEast.lng+'%29%3B%20%20';
 				qs += '%29%3B%0Aout%3B';
 				
-
-			
-				id = tiles[t].x+'-'+tiles[t].y+'-'+tiles[t].z;
-				if(!this.overpass[id]){
-					this.overpass[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
-					this.overpass[id] = {'url':'data/'+id+'.xml'};
-					this.log.info('Getting data for '+id+' from '+this.overpass[id].url);
-					promises.push(fetch(this.overpass[id].url,{'method':'GET'}).then(response => response.text()).then(data => { return data; }));
+				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
+				if(!this.overpass.tiles[id]){
+					this.overpass.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
+					this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
+					// If we haven't already downloaded the data
+					if(!this.overpass.tiles[id].data) promises.push(getTile(this.overpass.tiles[id].url,id));
 				}
 			}
-			console.warn('Getting '+promises.length+' promises');
+
 			if(promises.length > 0){
-				Promise.all(promises).then(responses => {
-					responses.map(str => {
-						var i,rtn,oDOM,lastupdate,features,el,lat,lon,id,tags,tag,t,name;
-						// Parse the document
-						rtn = parseXML(str);
-						if(rtn.xml.activeElement.tagName == "html"){
-							console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
-							return false;
-						}
-						oDOM = rtn.xml;
-
-						// Update the time stamp
-						lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
-						this.map.attributionControl.addAttribution("Last updated: "+lastupdate);
-
-						// Get nodes
-						features = oDOM.querySelectorAll('node');
-
-						this.log.message('Got results from overpass',oDOM,features.length);
-
-						for(i = 0; i < features.length; i++){
-							el = features[i];
-							lat = parseFloat(el.getAttribute('lat'));
-							lon = parseFloat(el.getAttribute('lon'));
-							id = 'OSM-'+el.getAttribute('id');
-
-							// If we don't have this node we build a basic structure for it
-							if(!this.nodes[id]){
-								this.nodes[id] = {'id':el.getAttribute('id'),'props':{},'popup':'','changedtags':[]};
-							}
-
-							if(typeof lon==="number" && typeof lat==="number"){
-
-								// Add the coordinates
-								this.nodes[id].lat = lat;
-								this.nodes[id].lon = lon;
-
-								// Add the properties
-								tags = el.querySelectorAll('tag');
-								this.nodes[id].props = {'OSMID':id};
-								for(t = 0; t < tags.length; t++){
-									tag = tags[t];
-									name = tag.getAttribute('k')||"";
-									this.nodes[id].props[name] = tag.getAttribute('v')||"";
-								}
-							}
-						}
-					});
+				Promise.allSettled(promises).then(responses => {
 
 					// Now update the marker group
 					this.buildPins(options);
@@ -564,7 +576,6 @@
 					if(typeof callback==="function") callback.call(options['this']||this,{'a':a,'b':b});
 				});
 			}else{
-				console.warn('No tiles to update');
 				// Trigger any callback
 				if(typeof callback==="function") callback.call(options['this']||this,{'a':a,'b':b});
 			}
@@ -670,7 +681,6 @@
 			options['this'] = this;
 			if(options['overpass']){
 				this.getNodesFromOverpass(a,options,function(e){
-					console.log('callback',this);
 					this.log.message('got overpass',this,e);
 					// Do things here to build marker cluster layer
 					this.trigger('updatenodes',e);
@@ -692,7 +702,11 @@
 			return m/mperpx;
 		}
 
-		var _obj = this;
+		this.on('moveend',function(){
+			if(_obj.map.getZoom() >= 13){
+				_obj.getNodes(_obj.node.type,_obj.overpass._options);
+			}
+		});
 
 		this.map.on("movestart", function(){ _obj.trigger('movestart'); });
 		this.map.on("move", function(){ _obj.trigger('move'); });
@@ -918,13 +932,6 @@
 		}
 		return this;
 	}
-
-	function OverpassTiler(){
-		
-		this.tiler = new Tiler();
-
-	}
-
 	
 	// Define a logging function
 	function Logger(inp){

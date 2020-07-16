@@ -40,7 +40,6 @@ var app;
 	}
 	function remove(el){
 		if(el) el.parentNode.removeChild(el);
-		else console.warn('No element to remove',el);
 		return true;
 	}
 
@@ -143,7 +142,7 @@ var app;
 			osmedit.mapper.setMarker('waste');
 			
 			osmedit.mapper.map.on('zoomend', function() {
-				console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
+				//console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
 				if(osmedit.mapper.map.getZoom() < 17) document.getElementById('btn-add-item').setAttribute('disabled','disabled');
 				else document.getElementById('btn-add-item').setAttribute('disabled','');
 				_obj.message('',{'id':'editzoom'});
@@ -246,7 +245,7 @@ var app;
 				_obj.message('');
 			});
 			osmedit.mapper.on('updatenodes',{'blah':'test'},function(e){
-				console.log('updatenodes',e);
+				//console.log('updatenodes',e);
 				document.getElementById('loader').style.display = 'none';
 			});
 			osmedit.mapper.on('popupopen',function(e){
