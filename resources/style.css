@@ -261,7 +261,7 @@ pre.prettyprint {
 #auth .user.open .right { display: block; top: 4em; right: 0px; background-color: white; width: 300px; }
 #auth #user { display: none; padding: 0px; height: 100%; }
 #auth #user img { height: 100%; margin-right: 0px; border-radius: 100%; }
-#auth #login { line-height: 3em; }
+#auth #login { line-height: 2em; }
 #auth.logged-in #user { display: inline-block; }
 #auth.logged-in #login, #auth #logout { display: none; }
 #auth.logged-in #logout, #auth #login { display: inline-block; }
@@ -420,7 +420,7 @@ body.hasModal { overflow-y: none; }
 	header .banner { height: 3em; }
 	#auth .user { height: 2.5em; margin: 0.25em; }
 
-	#auth #login { line-height: 2em; }
+	#auth #login { line-height: 1.5em; }
 	#auth .user.open .right { top: 3em; }
 	.leaflet-touch .leaflet-bar a { font-size: 1.5em; }
 }
