@@ -175,35 +175,19 @@ var app;
 
 			var _obj = this;
 
-			// Bind functions to the "Add a bin" button
+			// Bind functions to buttons
 			document.getElementById('btn-add-item').addEventListener('click', function(e){ _obj.addItem(); });
-//			S('#btn-add-item').on('click',{me:this},function(e){ e.data.me.addItem(); });
-
 			document.getElementById('btn-save-item').addEventListener('click', function(e){ _obj.saveItem(); });
-//			S('#btn-save-item').on('click',{me:this},function(e){
-	//			e.data.me.saveItem();
-		//	});
 			document.getElementById('btn-save-details').addEventListener('click', function(e){ _obj.saveItem(); });
-//			S('#btn-save-details').on('click',{me:this},function(e){
-	//			e.data.me.saveItem();
-		//	});
-			
 			document.getElementById('btn-publish').addEventListener('click', function(e){
-	//		S('#btn-publish').on('click',{me:this},function(e){
-				console.log('test');
+				console.log('test publish');
 				// Hide the publish button
 				document.getElementById('btn-publish').style.display = 'none';
 				_obj.publish();
 			});
-
-			document.getElementById('logout').addEventListener('click', function(e){
-//			S('#logout').on("click",function(e){
-				osmedit.logout();
-			});
+			document.getElementById('logout').addEventListener('click', function(e){ osmedit.logout(); });
 			document.getElementById('user').addEventListener('click',function(e){
-//			S('#user').on('click',function(e){
 				document.getElementById('user').parentNode.classList.toggle('open');
-//				this.parent().toggleClass('open');
 				document.body.classList.toggle('side-panel-open');
 			});
 
@@ -211,21 +195,19 @@ var app;
 			// This is asynchronous so we might
 			// not know the result until later.
 			osmedit.getUserDetails();
-			
-			
+
+
 			// Set up the UI:
 			// Hide sections
 			var sections = document.querySelectorAll('#main section');
-			for(var i = 1; i < sections.length; i++){
-				sections[i].style.display = 'none';
-			}
-			
+			for(var i = 1; i < sections.length; i++) sections[i].style.display = 'none';
+
+
 			// Add an event to the bg
 			document.querySelector('.bg').addEventListener('click',function(e){
 				document.getElementById('hamburger').checked = false;
 			});
-			
-			
+
 			function getCenter(){ return osmedit.mapper.map.getCenter(); }
 			function getCenterTile(url,zoom){
 				ll = getCenter();
@@ -297,7 +279,6 @@ var app;
 			});
 
 			document.querySelectorAll('#loader .label')[0].innerHTML = 'Loading bins...';
-
 
 			osmedit.getNodes({
 				'overpass':true,
