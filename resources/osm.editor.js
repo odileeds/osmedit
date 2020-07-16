@@ -464,10 +464,10 @@ console.log('here',str.substr(0,100));
 				rtn = parseXML(str);
 				_obj.overpass.tiles[tileid].dom = rtn.xml;
 				console.log(rtn);
-				if(rtn.xml.activeElement.tagName == "html"){
-					console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
-					return false;
-				}
+				//if(rtn.xml.activeElement.tagName == "html"){
+				//	console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
+				//	return false;
+				//}
 				oDOM = rtn.xml;
 
 				// Update the time stamp
