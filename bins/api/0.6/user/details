@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<user id="2160231" display_name="odileeds" account_created="2020-07-16T18:00:00Z">
+  <description>A test person.</description>
+  <contributor-terms agreed="true" pd="false"/>
+  <img href="https://odileeds.org/resources/images/odileeds-white3.svg"/>
+  <roles>
+  </roles>
+  <changesets count="623"/>
+  <traces count="16"/>
+  <blocks>
+    <received count="0" active="0"/>
+  </blocks>
+  <home lat="53.79659" lon="-1.53385" zoom="3"/>
+  <languages>
+    <lang>en-GB</lang>
+  </languages>
+  <messages>
+    <received count="0" unread="0"/>
+    <sent count="0"/>
+  </messages>
+</user>
+</osm>
