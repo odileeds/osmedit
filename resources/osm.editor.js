@@ -467,6 +467,7 @@
 					return false;
 				}
 				oDOM = rtn.xml;
+				_obj.overpass.tiles[tileid].dom = rtn.xml;
 				console.log(oDOM);
 
 				// Update the time stamp
