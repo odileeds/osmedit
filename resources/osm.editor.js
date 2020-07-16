@@ -462,13 +462,13 @@
 console.log('here',str.substr(0,100));
 				// Parse the document
 				rtn = parseXML(str);
+				_obj.overpass.tiles[tileid].dom = rtn.xml;
+				console.log(rtn);
 				if(rtn.xml.activeElement.tagName == "html"){
 					console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
 					return false;
 				}
 				oDOM = rtn.xml;
-				_obj.overpass.tiles[tileid].dom = rtn.xml;
-				console.log(oDOM);
 
 				// Update the time stamp
 				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
