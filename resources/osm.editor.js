@@ -467,6 +467,7 @@
 					return false;
 				}
 				oDOM = rtn.xml;
+				console.log(oDOM);
 
 				// Update the time stamp
 				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
