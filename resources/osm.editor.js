@@ -459,7 +459,7 @@
 				// Store a copy of the response
 				_obj.overpass.tiles[tileid].data = str;
 				_obj.overpass.tiles[tileid].id = [];
-
+console.log('here',str);
 				// Parse the document
 				rtn = parseXML(str);
 				if(rtn.xml.activeElement.tagName == "html"){
