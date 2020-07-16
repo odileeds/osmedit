@@ -28,8 +28,9 @@ nav li a.theme, nav li a.theme-accent { background-color: #502d16; color: white;
 #add-item svg { overflow: unset; }
 #add-item svg path:first-child { filter: drop-shadow(0 4px 12px #F9BC26); }
 
-.leaflet-popup-content .id { margin-top: 0px; margin-bottom: 0px; font-size: 0.8em; opacity: 0.8; }
-.leaflet-popup-content .id:before { content: "OSMID: "; }
+.leaflet-popup-content .small { font-size: 0.8em; }
+.leaflet-popup-content table { width: 100%; }
+.leaflet-popup-content td:nth-child(2n) { text-align: right; }
 
 .marker-group { background: #000000; color: white; }
 

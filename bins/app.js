@@ -280,10 +280,15 @@ var app;
 
 			document.querySelectorAll('#loader .label')[0].innerHTML = 'Loading bins...';
 
+			var propertylookup = {
+				'OSMID':{'hide':true}
+			}
+
 			osmedit.getNodes({
 				'overpass':true,
 				'popup': function(){
-					var str,cls,title,types,p,i,ts;
+					var str,cls,title,types,p,i,ts,ul;
+					ul = '';
 					str = '';
 					cls = '';
 					ico = '';
@@ -316,11 +321,25 @@ var app;
 					i = 0;
 					for(p in _obj.data.tags){
 						if(_obj.data.tags[p] && this.props[p]){
-							str += (str ? ', ':'')+(ts > 1 && i == ts-1 ? 'and ':'')+((_obj.data.tags ? _obj.data.tags[p].label:p)||p)+(this.props[p] != "yes" ? ": "+this.props[p]:"");
+							str += (str ? ', ':'')+(ts > 1 && i == ts-1 ? 'and ':'')+((_obj.data.tags ? _obj.data.tags[p].label:p)||p);
+							if(this.props[p] == "yes"){
+								str += ": &#10003;";
+							}else if(this.props[p] == "no"){
+								str += ": &#10060;";
+							}else{
+								str += ": "+this.props[p];
+							}
 							i++;
 						}
 					}
-					return {'label':'<h3>'+title+'</h3><p class="id">'+this.id+'</p>'+(str ? '<p>'+str+'</p>':''), 'options':{'className':cls,'icon':ico}};
+					for(p in this.props){
+						if(!propertylookup[p] || (propertylookup[p] && !propertylookup[p].hide)){
+							ul += '<tr><td><strong>'+(propertylookup[p] ? propertylookup[p].label : p)+'</strong>:</td><td>'+this.props[p]+'</td></tr>';
+						}
+					}
+					ul += '<tr><td><strong>OSMID:</strong></td><td>'+this.id+'</td></tr>'
+					ul = '<table class="small">'+ul+'</table>';
+					return {'label':'<h3>'+title+'</h3>'+(str ? '<p>'+str+'</p>':'')+ul, 'options':{'className':cls,'icon':ico}};
 				}
 			});
 			
