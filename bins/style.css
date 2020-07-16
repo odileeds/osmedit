@@ -33,6 +33,8 @@ nav li a.theme, nav li a.theme-accent { background-color: #502d16; color: white;
 
 .marker-group { background: #000000; color: white; }
 
+#btn-add-item[disabled=disabled] { filter: grayscale(100%); cursor: not-allowed; }
+#btn-add-item[disabled=disabled]:after { display: block; content: "(zoom in to add)"; font-size:0.6em; }
 
 
 /* form toggle */

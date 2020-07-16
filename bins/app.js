@@ -23,7 +23,27 @@ var app;
 
 	window.addEventListener("message", receiveMessage, false);
 */
-	
+
+
+
+	function trigger(el,ev,opt){
+		var event;
+		if(!opt) opt = {};
+		if(window.CustomEvent && typeof window.CustomEvent === 'function'){
+			event = new CustomEvent(ev, {detail: opt});
+		}else{
+			event = document.createEvent('CustomEvent');
+			event.initCustomEvent(ev, true, true, opt);
+		}
+		el.dispatchEvent(event);
+		return true;
+	}
+	function remove(el){
+		if(el) el.parentNode.removeChild(el);
+		else console.warn('No element to remove',el);
+		return true;
+	}
+
 	function Application(opts){
 
 		this.opts = opts;
@@ -32,9 +52,32 @@ var app;
 		this.data = {};
 		requirelogin = (typeof opts.requirelogin==="boolean" ? opts.requirelogin: true);
 
+		// Access this within sub-functions
+		var _obj = this;
+
+		function setScreen(hash){
+			_obj.log.message('setScreen',hash);
+			var li = document.querySelectorAll('header nav > ul > li');
+			var j = -1;
+			for(var i = 0; i < li.length; i++){
+				if(li[i].querySelectorAll('a')[0].getAttribute('href')==hash) j = i;
+			}
+			if(j >= 0){
+				var el = li[j].querySelectorAll('a');
+				document.querySelectorAll('header nav a.theme-accent').forEach(function(e){ e.classList.remove('theme-accent'); });
+				el.forEach(function(e){ e.classList.add('theme-accent'); });
+			}
+			if(hash.indexOf('#')==0){
+				document.querySelectorAll('.screen').forEach(function(e){ e.style.display = 'none'; });
+				document.getElementById(hash.substr(1,)).style.display = 'block';
+			}
+			// Close menu
+			document.getElementById('hamburger').checked = false;
+		}
+
 		// Add event to change of push state
 		window[(pushstate) ? 'onpopstate' : 'onhashchange'] = function(e){
-			console.log('on',location.hash);
+			console.log('onpopstate/onhashchange',location.hash);
 			var hash = location.hash || "#intro";
 			setScreen(hash);
 		};
@@ -42,29 +85,36 @@ var app;
 		this.message = function(msg,attr){
 			if(msg) this.log.message(msg);
 
-			var msgel = S('#messages');
+			var msgel = document.getElementById('messages');
 			
 			if(!attr) attr = {'id':'default'};
-			if(!msg){
-				if(msgel.length > 0){
+			if(!msg || msg == ""){
+				if(msgel){
+					msgel.classList.add('theme');
 					// Remove the specific message container
-					if(msgel.find('#'+attr.id).length > 0) msgel.find('#'+attr.id).remove();
+					if(document.getElementById(attr.id)) remove(document.getElementById(attr.id));
 					// Remove the whole message container if there is nothing left
-					if(msgel.html()==""){
-						msgel.parent().css({'padding-bottom':''});
-						msgel.remove();
+					if(msgel.innerHTML == ""){
+						msgel.parentNode.style['padding-bottom'] = '';
+						remove(msgel);
 					}
 				}
 			}else if(msg){
 				// If there is no message container, we make that now
-				if(msgel.length == 0){
-					S('#main').append('<div id="messages" class="theme"></div>');
-					msgel = S('#messages');
+				if(!msgel){
+					msgel = document.createElement('div');
+					msgel.setAttribute('id','messages');
+					document.body.appendChild(msgel);
 				}
-				// We make a specific message container
-				if(msgel.find('#'+attr.id).length==0) msgel.append('<div id="'+attr.id+'"></div>');
-				msgel = msgel.find('#'+attr.id);
-				msgel.html(msg);
+				msgel.classList.add('theme');
+				el = document.getElementById(attr.id);
+				if(!el){
+					// We make a specific message container
+					el = document.createElement('div');
+					el.setAttribute('id',attr.id);
+					if(!document.getElementById(attr.id)) msgel.appendChild(el);
+				}
+				el.innerHTML = msg;
 			}
 
 			return this;
@@ -73,7 +123,7 @@ var app;
 		this.init = function(){
 
 			// Create an OSM Editor instance
-			osmedit = new OSMEditor();
+			osmedit = ODI.OSMEditor();
 			this.osmedit = osmedit;
 
 			// Attach the map to a div with id=location
@@ -91,75 +141,104 @@ var app;
 
 			// Set the default marker type
 			osmedit.mapper.setMarker('waste');
+			
+			osmedit.mapper.map.on('zoomend', function() {
+				console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
+				if(osmedit.mapper.map.getZoom() < 17) document.getElementById('btn-add-item').setAttribute('disabled','disabled');
+				else document.getElementById('btn-add-item').setAttribute('disabled','');
+				_obj.message('',{'id':'editzoom'});
+			});
 
 			// Add login/logout events
 			osmedit.on('login',{me:this},function(e){
 
 				html = "";
-				if(e.authenticated) S('#auth').addClass('logged-in');			
-				else S('#auth').removeClass('logged-in');
+				if(e.authenticated) document.getElementById('auth').classList.add('logged-in');			
+				else document.getElementById('auth').classList.remove('logged-in');
 				
-				S('.user .name').html(this.user.name||"?");
-				S('.user .id').html(this.user.id||"?");
-				S('.user .changesets').html(this.user.changesets||0);
-				if(this.user.img) S('.user img').attr('src',this.user.img);
-				S('#login').css({'display':'none'});
+				document.querySelectorAll('.user .name').innerHTML = (this.user.name||"?");
+				document.querySelectorAll('.user .id').innerHTML = (this.user.id||"?");
+				document.querySelector('.user .changesets').innerHTML  = (this.user.changesets||0);
+				if(this.user.img) document.querySelector('.user img').setAttribute('src',this.user.img);
+				document.getElementById('login').style.display = 'none';
 			
 			}).on('logout',{me:this},function(e){
 
-				S('#auth').removeClass('logged-in');
-				S('.user .name').html(this.user.name||"?");
-				S('.user .id').html(this.user.id||"?");
-				S('.user .changesets').html(this.user.changesets||0);
-				S('.user img').attr('src','resources/unknown.png');
-				S('body').removeClass('side-panel-open');
+				document.getElementById('auth').classList.remove('logged-in');
+				document.querySelectorAll('.user .name').innerHTML = (this.user.name||"?");
+				document.querySelectorAll('.user .id').innerHTML = (this.user.id||"?");
+				document.querySelectorAll('.user .changesets').innerHTML = (this.user.changesets||0);
+				document.querySelectorAll('.user img').setAttribute('src','resources/unknown.png');
+				document.getElementsByTagName('body')[0].classList.remove('side-panel-open');
 				
 			});
 
-			// Bind functions to the "Add a bin" button
-			S('#btn-add-item').on('click',{me:this},function(e){ e.data.me.addItem(); });
+			var _obj = this;
 
-			S('#btn-save-item').on('click',{me:this},function(e){
-				e.data.me.saveItem();
-			});
-			S('#btn-save-details').on('click',{me:this},function(e){
-				e.data.me.saveItem();
-			});
+			// Bind functions to the "Add a bin" button
+			document.getElementById('btn-add-item').addEventListener('click', function(e){ _obj.addItem(); });
+//			S('#btn-add-item').on('click',{me:this},function(e){ e.data.me.addItem(); });
+
+			document.getElementById('btn-save-item').addEventListener('click', function(e){ _obj.saveItem(); });
+//			S('#btn-save-item').on('click',{me:this},function(e){
+	//			e.data.me.saveItem();
+		//	});
+			document.getElementById('btn-save-details').addEventListener('click', function(e){ _obj.saveItem(); });
+//			S('#btn-save-details').on('click',{me:this},function(e){
+	//			e.data.me.saveItem();
+		//	});
 			
-			S('#btn-publish').on('click',{me:this},function(e){
+			document.getElementById('btn-publish').addEventListener('click', function(e){
+	//		S('#btn-publish').on('click',{me:this},function(e){
 				console.log('test');
 				// Hide the publish button
-				S('#btn-publish').css({'display':'none'});
-				e.data.me.publish();
+				document.getElementById('btn-publish').style.display = 'none';
+				_obj.publish();
 			});
 
-			S('#logout').on("click",function(e){
+			document.getElementById('logout').addEventListener('click', function(e){
+//			S('#logout').on("click",function(e){
 				osmedit.logout();
 			});
-			S('#user').on('click',function(e){
-				this.parent().toggleClass('open');
-				S('body').toggleClass('side-panel-open');
+			document.getElementById('user').addEventListener('click',function(e){
+//			S('#user').on('click',function(e){
+				document.getElementById('user').parentNode.classList.toggle('open');
+//				this.parent().toggleClass('open');
+				document.body.classList.toggle('side-panel-open');
 			});
 
 			// Do a check to see if we are already logged in
+			// This is asynchronous so we might
+			// not know the result until later.
 			osmedit.getUserDetails();
 			
-			var sections = S('#main section');
+			
+			// Set up the UI:
+			// Hide sections
+			var sections = document.querySelectorAll('#main section');
 			for(var i = 1; i < sections.length; i++){
-				S(sections[i]).css({'display':'none'});
+				sections[i].style.display = 'none';
 			}
 			
-			S('.bg').on('click',function(e){
-				S('#hamburger')[0].checked = false;
-			});
-			
-			S('header nav a').on('click',{me:this},function(e){
-				//e.preventDefault();
-				setScreen(S(e.currentTarget).attr('href'))
+			// Add an event to the bg
+			document.querySelector('.bg').addEventListener('click',function(e){
+				document.getElementById('hamburger').checked = false;
 			});
 			
 			
-			// Build map style selector
+			function getCenter(){ return osmedit.mapper.map.getCenter(); }
+			function getCenterTile(url,zoom){
+				ll = getCenter();
+				var x = (Math.floor((ll.lng + 180) / 360 * Math.pow(2, zoom)));
+				var y = (Math.floor((1 - Math.log(Math.tan(ll.lat * Math.PI / 180) + 1 / Math.cos(ll.lat * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, zoom)));
+				var xy = {
+					x: x,
+					y: y
+				};
+				return url.replace("{z}",18).replace("{x}",xy.x).replace("{y}",xy.y).replace("{r}","").replace("{s}","a");
+			}
+
+			// Build map base tile selector
 			var opts = "";
 			var o = osmedit.mapper.getLayers();
 			var selected = 0;
@@ -167,26 +246,28 @@ var app;
 				if(osmedit.mapper.selectedLayer == o[i].id) selected = i;
 				opts += '<option value="'+o[i].id+'"'+(selected == i ? ' selected="selected"':'')+'>'+o[i].id+'</option>';
 			}
-			S('#layerSelect').html(opts);
-			S('#layerSelected').attr('src',o[selected].url.replace("{z}",18).replace("{x}",129954).replace("{y}",84421).replace("{r}","").replace("{s}","a"));
-			S('#layerSelect').on('change',function(e){
-				console.log('change',e.currentTarget.value);
+			document.getElementById('layerSelect').innerHTML = opts;
+			document.getElementById('layerSelected').setAttribute('src',getCenterTile(o[selected].url,18));
+			document.getElementById('layerSelect').addEventListener('change',function(e){
 				osmedit.mapper.changeLayer(e.currentTarget.value);
 				var l = osmedit.mapper.getLayer();
-				S('#layerSelected').attr('src',l.url.replace("{z}",18).replace("{x}",129954).replace("{y}",84421).replace("{r}","").replace("{s}","a"));
+				var url = getCenterTile(l.url,18);
+				document.getElementById('layerSelected').setAttribute('src',url);
 			});
 
-			var _obj = this;
-			osmedit.mapper.callbacks.geostart = function(e){
+
+			// Add events
+			osmedit.mapper.on('geostart',function(e){
 				_obj.message('Finding location...');
-			};
-			osmedit.mapper.callbacks.geoend = function(e){
+			});
+			osmedit.mapper.on('geoend',function(e){
 				_obj.message('');
-			};
-			osmedit.mapper.callbacks.updatenodes = function(){
-				S('#loader').css({'display':'none'});
-			};
-			osmedit.mapper.callbacks.popupopen = function(e){
+			});
+			osmedit.mapper.on('updatenodes',{'blah':'test'},function(e){
+				console.log('updatenodes',e);
+				document.getElementById('loader').style.display = 'none';
+			});
+			osmedit.mapper.on('popupopen',function(e){
 				id = e.target.osmid;
 				console.log('popupopen',id,_obj.action);
 				if(_obj.action == "adding"){
@@ -197,25 +278,25 @@ var app;
 						_obj.setView('popupopen');
 					}
 				}
-			};
+			});
 			// Moving the map we remove the helper balloon
-			osmedit.mapper.callbacks.movestart = function(e){
-				S('#add-item .balloon').remove();
-			};
+			osmedit.mapper.on('movestart',function(e){
+				var el = document.querySelectorAll('#add-item .balloon')[0];
+				remove(el);
+			});
 			// When the popup is closed we stop editing mode
-			osmedit.mapper.callbacks.popupclose = function(e){
+			osmedit.mapper.on('popupclose',function(e){
 				if(_obj.action=="adding"){
 				}else _obj.setView('popupclose');
-				
 				osmedit.mapper.activeNode = {};
-			};
+			});
 			
+			// Set the node type
 			osmedit.setNode({
 				'type':['amenity=waste_basket','amenity=recycling']
 			});
 
-			S('#loader .label').html('Loading bins...');
-
+			document.querySelectorAll('#loader .label')[0].innerHTML = 'Loading bins...';
 
 
 			osmedit.getNodes({
@@ -264,7 +345,8 @@ var app;
 			
 			this.changes = [];
 
-			S('#init').remove();
+			var el = document.getElementById('init');
+			remove(el);
 
 			if(location.hash) setScreen(location.hash);
 			else setScreen('#intro');
@@ -285,14 +367,15 @@ var app;
 		// Log in process
 		this.login = function(){
 			
+			var login = document.getElementById('login')
 			// Show pre-login screen
-			S('#login').css({'display':''});
-			S('#login .close').on('click',function(e){
-				S('#login').css({'display':'none'});
+			login.style.display = '';
+			login.querySelectorAll('.close')[0].addEventListener('click',function(e){
+				login.style.display = 'none';
 			});
 	
 			// Login
-			S('#btn-login').on('click',function(e){
+			document.getElementById('btn-login').addEventListener('click',function(e){
 				console.log('clicked');
 				osmedit.login();
 			});
@@ -304,7 +387,13 @@ var app;
 		// Add an item (may require login
 		this.addItem = function(){
 			if((osmedit.user && osmedit.user.name) || !requirelogin){
-				this.startAdd();
+				// Must be at least zoom 17 to be able to add a bin
+				if(osmedit.mapper.map.getZoom() >= 17){
+					this.startAdd();
+				}else{
+					this.message('You need to zoom in more to place a new bin',{'id':'editzoom'});
+					console.warn('You need to zoom in more to place a new bin.');
+				}
 				return this;
 			}else{
 				return this.login();
@@ -314,12 +403,12 @@ var app;
 		this.setButton = function(name,state){
 			state = (state=="off" ? 'none':'');
 			id = "";
-			if(name=="publish") id = '#btn-publish-item';
-			else if(name=="save") id = '#btn-save-item';
-			else if(name=="edit") id = '#btn-edit-item';
-			else if(name=="delete") id = '#btn-delete-item';
+			if(name=="publish") id = 'btn-publish-item';
+			else if(name=="save") id = 'btn-save-item';
+			else if(name=="edit") id = 'btn-edit-item';
+			else if(name=="delete") id = 'btn-delete-item';
 			
-			if(id) S(id).css({'display':state});
+			if(id) document.getElementById(id).style.display = state;
 			else console.error('No valid button given for '+name);
 
 			return this;
@@ -337,18 +426,20 @@ var app;
 			this.setButton("delete","off");
 			
 			// Remove placeholder bin if one exists
-			if(S('#add-item').length > 0){
-				S('#add-item').remove();
+			if(document.getElementById('add-item')){
+				var el = document.getElementById('add-item');
+				remove(el);
 			}
 			
 			// Add bin properly
 
 			// Get properties
-			var genus = document.querySelector('#genus').getAttribute('data-genus');
-			var vernac = document.querySelector('#genus').getAttribute('data-vernacular');
-			var taxon = document.querySelector('#genus').getAttribute('data-taxon');
-			var height = parseFloat(document.querySelector('#height').value);
-			var circ = parseFloat(document.querySelector('#circumference').value);
+			var el = document.getElementById('genus');
+			var genus = el.getAttribute('data-genus');
+			var vernac = el.getAttribute('data-vernacular');
+			var taxon = el.getAttribute('data-taxon');
+			var height = parseFloat(document.getElementById('height').value);
+			var circ = parseFloat(document.getElementById('circumference').value);
 
 
 			var item = {
@@ -415,48 +506,69 @@ console.log(content);
 
 			if(!v) v = this.action;
 
-			console.log('setting view to '+v);
+			this.log.message('setting view to '+v);
+			
+			var el = {
+				'splash':document.getElementById('splash'),
+				'app':document.getElementById('app'),
+				'map':document.getElementById('map'),
+				'addItem':document.getElementById('add-item'),
+				'screen':document.querySelector('.screen'),
+				'details':document.getElementById('details'),
+				'helper':document.getElementById('helper'),
+				'btn':{
+					'add':document.getElementById('btn-add-item'),
+					'del':document.getElementById('btn-delete-item'),
+					'edit':document.getElementById('btn-edit-item'),
+					'save':document.getElementById('btn-save-item'),
+					'publish':document.getElementById('btn-publish')
+				}
+			};
 
-			S('#splash').css({'display':'none'});
+			el.splash.style.display = 'none';
+
+
 
 			if(v == "map"){
-				S('#app').css({'display':'block'});
-				S('#map').css({'display':'block'}).trigger('resize');
+				el.app.style.display = 'block';
+				trigger(el.app,'resize');
+				el.map.style.display = 'block';
+				trigger(el.map,'resize');
 			}else if(v == "edit"){
-				S('#add-item').css({'display':'none'});
-				S('.screen').css({'display':'none'});
-				S('#details').css({'display':''});
-				S('#helper').css({'display':'none'});
+				el.addItem.style.display = 'none';
+				el.screen.style.display = 'none';
+				el.details.style.display = '';
+				el.helper.style.display = 'none';
 			}else if(v == "add"){
-				S('#btn-add-item').css({'display':'none'});
-				S('#btn-delete-item').css({'display':''});
-				S('#btn-edit-item').css({'display':''});
-				S('#btn-save-item').css({'display':''});
-				S('#add-item').remove();
+				el.btn.add.style.display = 'none';
+				el.btn.del.style.display = '';
+				el.btn.edit.style.display = '';
+				el.btn.save.style.display = '';
+				remove(el.addItem);
 			}else if(v == "done"){
-				S('#btn-add-item').css({'display':''});
-				S('#btn-delete-item').css({'display':'none'});
-				S('#btn-edit-item').css({'display':'none'});
-				S('#btn-save-item').css({'display':'none'});
-				S('#add-item').remove();
+				el.btn.add.style.display = '';
+				el.btn.del.style.display = 'none';
+				el.btn.edit.style.display = 'none';
+				el.btn.save.style.display = 'none';
+				remove(el.addItem);
 			}else if(v == "save"){
 				// Show the publish button
-				S('#btn-publish').css({'display':''});
+				el.btn.publish.style.display = '';
 				// Hide/show other elements
-				S('#details').css({'display':'none'});
-				S('#map').css({'display':''});
-				S('#helper').css({'display':'none'});
-				S('#map').trigger('resize');
-				if(S('#add-item').length > 0) S('#add-item').css({'display':''});				
+				el.details.style.display = 'none';
+				el.map.style.display = '';
+				el.helper.style.display = 'none';
+				trigger(el.map,'resize');
+				if(el.addItem) el.addItem.style.display = '';			
 			}else if(v == "popupopen"){
-				S('#btn-add-item').css({'display':'none'});
-				S('#btn-delete-item').css({'display':'none'});
-				S('#btn-edit-item').css({'display':''});
-				S('#helper').css({'display':'none'});
+				el.btn.add.style.display = 'none';
+				el.btn.del.style.display = 'none';
+				el.btn.edit.style.display = '';
+				el.helper.style.display = 'none';
 			}else if(v == "popupclose"){
-				S('#btn-add-item').css({'display':''});
-				S('#btn-delete-item').css({'display':'none'});
-				S('#btn-edit-item').css({'display':'none'});
+				el.btn.add.style.display = '';
+				el.btn.del.style.display = 'none';
+				el.btn.edit.style.display = 'none';
 			}
 			return this;
 		}
@@ -464,9 +576,9 @@ console.log(content);
 		this.startAdd = function(){
 			this.action = "adding";
 			this.setView('add');
-			console.log(this);
-			S('#app #location').append('<div id="add-item">'+osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div></div>').trigger('resize');
-			
+			var el = document.querySelector('#app #location');
+			el.innerHTML += '<div id="add-item">'+osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div></div>';
+			trigger(el,'resize');
 			return this;
 		}
 
@@ -516,26 +628,27 @@ console.log(content);
 
 
 		// Add events
-		S('#btn-view-map').on('click',{me:this},function(e){
-			e.data.me.setView('map');
+		
+		document.getElementById('btn-view-map').addEventListener('click',function(e){
+			_obj.setView('map');
 			location.href = "#map";
-			e.data.me.init();
+			_obj.init();
 		});
 
-		S('#btn-delete-item').on('click',{me:this},function(e){
-			e.data.me.deleteItem();
+		document.getElementById('btn-delete-item').addEventListener('click',function(e){
+			_obj.deleteItem();
 		});
 
-		S('#btn-edit-item').on('click',{me:this},function(e){
-			e.data.me.editItem();
+		document.getElementById('btn-edit-item').addEventListener('click',function(e){
+			_obj.editItem();
 		});
 		
-		S('#details .close').on('click',function(e){
-			S('#details').css({'display':'none'});
-			S('#map').css({'display':''});
-			S('#helper').css({'display':'none'});
-			S('#map').trigger('resize');
-			if(S('#add-item').length > 0) S('#add-item').css({'display':''});
+		document.querySelector('#details .close').addEventListener('click',function(e){
+			document.getElementById('details').style.display = 'none';
+			document.getElementById('map').style.display = '';
+			document.getElementById('helper').style.display = 'none';
+			trigger(document.getElementById('map'),'resize');
+			if(document.getElementById('add-item')) document.getElementById('add-item').style.display = '';
 		});
 
 		this.addTags = function(json){
@@ -544,12 +657,14 @@ console.log(content);
 			this.data.tags = json;
 
 			function toggleOptions(cat){
+				var rec = document.getElementById('toggles-recycling');
+				var wst = document.getElementById('toggles-waste');
 				if(cat == "recycling"){
-					S('#toggles-recycling').css({'display':''});
-					S('#toggles-waste').css({'display':'none'});
+					rec.style.display = '';
+					wst.style.display = 'none';
 				}else{
-					S('#toggles-recycling').css({'display':'none'});
-					S('#toggles-waste').css({'display':''});
+					rec.style.display = 'none';
+					wst.style.display = '';
 				}
 			}
 
@@ -560,50 +675,31 @@ console.log(content);
 				html[category] += '<li class="'+category+'"><label for="'+t+'-toggle">'+this.data.tags[tag].label+'</label><div class="switch"><input type="checkbox" id="'+t+'-toggle"><span><span aria-hidden="true">No</span><span aria-hidden="true">Yes</span><a></a></span></div></li>';
 			}
 			for(cat in html){
-				S('#toggles-'+cat+' ul').html(html[cat]);
+				document.querySelector('#toggles-'+cat+' ul').innerHTML = html[cat];
 			}
 			
 			// Switch to waste
 			toggleOptions('waste');
 
 			// Add event to radio switch
-			S('.switch.radio input').on('change',function(e){
-				toggleOptions(e.currentTarget.getAttribute('id'));
+			document.querySelectorAll('.switch.radio input').forEach(function(el){
+				el.addEventListener('change',function(ev){
+					toggleOptions(ev.target.getAttribute('id'));
+				});
 			});
 
 		}
-
-
+		
 		// Load some data
-		S(document).ajax("taglist.json",{
-			"dataType": "json",
-			"this": this,
-			"success": function(d){ this.addTags(d); },
-			"error": function(e,attr){ console.error('Unable to load '+attr.file,e); }
+		fetch('taglist.json')
+		.then(response => response.json())
+		.then(json => {
+			_obj.addTags(json);
+		}).catch(function(error) {
+			console.error('Unable to load taglist.json',error);
 		});
 
-
-
 		return this;
-	}
-	
-	function setScreen(hash){
-		var li = S('header nav > ul > li');
-		var j = -1;
-		for(var i = 0; i < li.length; i++){
-			if(S(li[i]).find('a').attr('href')==hash) j = i;
-		}
-		if(j >= 0){
-			var el = S(li[j]).find('a');
-			S('header nav a.theme-accent').removeClass('theme-accent');
-			el.addClass('theme-accent');
-		}
-		if(hash.indexOf('#')==0){
-			S('.screen').css({'display':'none'});
-			S(hash).css({'display':'block'});
-		}
-		// Close menu
-		S('#hamburger')[0].checked = false;
 	}
 	
 
