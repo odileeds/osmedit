@@ -551,7 +551,6 @@ console.log('login here',this.auth);
 			}
 
 			var tiles = tiler.xyz(b,12);
-			//console.log('tiles',tiles);
 			
 			var qs,i,t,id;
 			var promises = [];
@@ -576,7 +575,7 @@ console.log('login here',this.auth);
 				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
 				if(!this.overpass.tiles[id]){
 					this.overpass.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
-					this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
+					//this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
 					// If we haven't already downloaded the data
 					if(!this.overpass.tiles[id].data) promises.push(getTile(this.overpass.tiles[id].url,id));
 				}
