@@ -611,11 +611,13 @@ console.log('login here',this.auth);
 		
 		this.buildPins = function(options){
 			
+			console.log('buildPins',this.markers);
 			this.log.message('buildPins');
 
 			if(!options) options = {};
 
-			var _obj,id,t,str,markerList,color,customicon,nodes,taglist,p;
+			var obj,id,t,str,markerList,color,customicon,nodes,taglist,p;
+
 
 			// Loop over markers building them as necessary
 			for(m in this.markers){
@@ -625,14 +627,15 @@ console.log('login here',this.auth);
 				}
 			}
 
-			_obj = this;
+
+			obj = this;
 
 			// Define the custom background colour for the group
 			color = (this.markers[this.marker].color||options.color||'white');
 
 			nodes = L.markerClusterGroup({
 				chunkedLoading: true,
-				maxClusterRadius: 40,
+				maxClusterRadius: 60,
 				iconCreateFunction: function (cluster) {
 					var pins = cluster.getAllChildMarkers();
 					var colours = {};
@@ -665,6 +668,9 @@ console.log('login here',this.auth);
 			// Build marker list
 			markerList = [];
 
+			// Remove the previous cluster group
+			if(this.nodegroup) this.map.removeLayer(this.nodegroup);
+
 			for(id in this.nodes){
 				if(this.nodes[id] && typeof this.nodes[id].lon==="number" && typeof this.nodes[id].lat==="number"){
 					popup = {};
@@ -681,23 +687,25 @@ console.log('login here',this.auth);
 						popup = {'label':'<h3>'+(options.title||"Node")+'</h3>'+(str ? '<p>'+str+'</p>':''),'options':{'icon':this.marker}};
 					}
 					marker = L.marker([this.nodes[id].lat,this.nodes[id].lon],{icon: this.markers[popup.options.icon].icon}).on('popupopen', function(e){
-						_obj.trigger('popupopen',e);
+						obj.trigger('popupopen',e);
 					}).on('popupclose',function(e){
-						_obj.trigger('popupclose',e);
+						obj.trigger('popupclose',e);
 					});
 					marker.osmid = id;
 					if(!marker.properties) marker.properties = {};
 					marker.properties.background = (this.markers[popup.options.icon].background||"black");
 					marker.bindPopup(popup.label,popup.options);
 					markerList.push(marker);
-
 				}else{
 					this.log.warning('Unable to add node: '+id);
 				}
 			}
 
+			// Add all the markers we've just made
 			nodes.addLayers(markerList);
-			nodes.addTo(this.map);
+			this.map.addLayer(nodes);
+
+			// Save a copy of the cluster group
 			this.nodegroup = nodes;
 		}
 		this.getNodes = function(a,options){
