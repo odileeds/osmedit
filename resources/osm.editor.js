@@ -507,8 +507,11 @@ console.log('here',str.substr(0,100));
 						}
 					}
 				}	
+			}).catch(error => {
+				console.error(error,url);
 			});
 		}
+
 		// We will grab boxes of data
 		this.getNodesFromOverpass = function(a,options,callback){
 
@@ -569,7 +572,9 @@ console.log('here',str.substr(0,100));
 			}
 
 			if(promises.length > 0){
-				Promise.allSettled(promises).then(responses => {
+				promises.map(p => p.catch(e => e));
+				Promise.all(promises).then(responses => {
+					console.log('Promise.all');
 
 					// Now update the marker group
 					this.buildPins(options);
