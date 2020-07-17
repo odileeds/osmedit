@@ -259,7 +259,7 @@ pre.prettyprint {
 #auth .user { position: relative; height: 3em; margin: 0.5em;}
 #auth .user .right { position: absolute; display: none; }
 #auth .user.open .right { display: block; top: 4em; right: 0px; background-color: white; width: 300px; }
-#auth #user { display: none; padding: 0px; height: 100%; border-radius: 100%; overflow: hidden; }
+#auth #user { display: none; padding: 0px; height: 3em; width: 3em; border-radius: 100%; overflow: hidden; }
 #auth #user img { height: 100%; margin-right: 0px; }
 #auth #login { line-height: 2em; }
 #auth.logged-in #user { display: inline-block; }
@@ -339,8 +339,10 @@ select {
 	line-height: 1.5em;
 	border-top: 1px solid #502d16;
 }
-#messages > div { line-height: 3em; }
-
+#messages > div { line-height: 1.5em; min-height:2em; padding: 0.75em; }
+#messages .info { background: #00B6FF; color: black; }
+#messages .warning { background: #F9BC26; color: black; }
+#messages .error { background: #D60303; color: white; }
 
 
 .grid {
@@ -407,7 +409,6 @@ body.hasModal { overflow-y: none; }
 }
 
 
-
 @media only screen and (max-width: 700px) {
 	h1 { line-height: 1em; }
 	select { width: 100%; }
@@ -438,6 +439,7 @@ body.hasModal { overflow-y: none; }
 	#auth .user { height: 2.5em; margin: 0.25em; }
 
 	#auth #login { line-height: 1.5em; }
+	#auth #user { height: 2.5em; width: 2.5em; }
 	#auth .user.open .right { top: 3em; }
 	.leaflet-touch .leaflet-bar a { font-size: 1.5em; }
 }

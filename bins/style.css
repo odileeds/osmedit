@@ -34,8 +34,7 @@ nav li a.theme, nav li a.theme-accent { background-color: #502d16; color: white;
 
 .marker-group { background: #000000; color: white; }
 
-#btn-add-item[disabled=disabled] { filter: grayscale(100%); cursor: not-allowed; }
-#btn-add-item[disabled=disabled]:after { display: block; content: "(zoom in to add)"; font-size:0.6em; }
+#btn-add-item[disabled=disabled], #btn-add-item.disabled { filter: grayscale(100%); color: #444; cursor: not-allowed; }
 
 /* form toggle */
 #item-details ul { list-style: none; margin: 0; padding: 0; }

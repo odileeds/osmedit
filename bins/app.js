@@ -100,6 +100,7 @@ var app;
 			var msgel = document.getElementById('messages');
 			
 			if(!attr) attr = {'id':'default'};
+			attr.id = 'message-'+attr.id;
 			if(!msg || msg == ""){
 				if(msgel){
 					msgel.classList.add('theme');
@@ -123,14 +124,32 @@ var app;
 				if(!el){
 					// We make a specific message container
 					el = document.createElement('div');
-					el.setAttribute('id',attr.id);
-					if(!document.getElementById(attr.id)) msgel.appendChild(el);
+					//el.setAttribute('id',attr.id);
+					msgel.appendChild(el);
 				}
 				el.innerHTML = msg;
+				for(var a in attr) el.setAttribute(a,attr[a]);
+				if(attr['class']=='error') this.log.error(msg);
+				else if(attr['class']=='warning') this.log.warning(msg);
+				else if(attr['class']=="info") this.log.info(msg);
+				else this.log.message(msg);
 			}
 
 			return this;
 		};
+		
+		function checkZoom(){
+			var ok = true;
+			if(_obj.osmedit.mapper.map.getZoom() < 17){
+				_obj.message('Zoom in more to add a bin',{'id':'editzoom','class':'warning'});
+				ui.btn.add.classList.add('disabled');
+				ok = false;
+			}else{
+				_obj.message('',{'id':'editzoom'});
+				ui.btn.add.classList.remove('disabled');
+			}
+			return ok;
+		}
 
 		this.init = function(){
 
@@ -154,12 +173,7 @@ var app;
 			// Set the default marker type
 			osmedit.mapper.setMarker('waste');
 			
-			osmedit.mapper.map.on('zoomend', function() {
-				//console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
-				if(osmedit.mapper.map.getZoom() < 17) ui.btn.add.setAttribute('disabled','disabled');
-				else ui.btn.add.removeAttribute('disabled');
-				_obj.message('',{'id':'editzoom'});
-			});
+			osmedit.mapper.map.on('zoomend',function(){ checkZoom(); });
 
 			// Add login/logout events
 			osmedit.on('login',{me:this},function(e){
@@ -397,13 +411,8 @@ var app;
 		// Add an item (may require login
 		this.addItem = function(){
 			if((osmedit.user && osmedit.user.name) || !requirelogin){
-				// Must be at least zoom 17 to be able to add a bin
-				if(osmedit.mapper.map.getZoom() >= 17){
-					this.startAdd();
-				}else{
-					this.message('You need to zoom in more to place a new bin',{'id':'editzoom'});
-					console.warn('You need to zoom in more to place a new bin.');
-				}
+				// If the zoom level is OK we start to add a bin
+				if(checkZoom()) this.startAdd();
 				return this;
 			}else{
 				return this.login();
