@@ -231,6 +231,8 @@ pre.prettyprint {
 .leaflet-top, .leaflet-bottom { z-index: 900; }
 .leaflet-left .leaflet-control.leaflet-control-attribution { margin-left: 0px; }
 .leaflet-marker-icon svg { position: relative; margin: auto; position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-100%,0); }
+
+.leaflet-container .leaflet-bar { box-shadow: none; }
 .leaflet-bar { border-radius: 0px; }
 .leaflet-bar svg { position: relative; margin: auto; position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); width: 32px; height: 32px; }
 .leaflet-bar { background-color: white; border: 0px; }
@@ -242,10 +244,11 @@ pre.prettyprint {
 .leaflet-container .leaflet-control-zoom-in, .leaflet-container .leaflet-control-zoom-out { font-size: 1em; }
 .leaflet-top .leaflet-control { margin-top: 0px; }
 .leaflet-left .leaflet-control { margin-left: 0px; }
-.leaflet-container .leaflet-bar a:last-child, .leaflet-container .leaflet-bar a, .leaflet-container .leaflet-bar a:hover { border-radius: 0px; outline: transparent!important; background: transparent; }
+.leaflet-container .leaflet-bar a:last-child, .leaflet-container .leaflet-bar a, .leaflet-container .leaflet-bar a:hover { border-radius: 0px; outline: transparent!important; }
 .leaflet-control-geolocate { background: white; }
 .leaflet-control-geolocate a { color: inherit; }
-.leaflet-control-geolocate.live-location { background-color: rgba(34, 84, 244, 0.3); color: white; }
+.leaflet-control-geolocate.live-location { background:white; color: white; }
+.leaflet-control-geolocate.live-location a { background-color: rgba(34, 84, 244, 0.3); }
 .leaflet-popup-content h3 { margin-bottom: 0em; }
 .leaflet-popup-content p { margin-top: 0.5em; }
 .leaflet-container a.leaflet-popup-close-button, .leaflet-popup-content-wrapper, .leaflet-popup-tip { color: inherit; }
