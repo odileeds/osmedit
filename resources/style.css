@@ -396,17 +396,13 @@ body.hasModal { overflow-y: none; }
 
 /* ODI Leeds styles */
 .leaflet-container { font-size: 1em; }
-.leaflet-popup-content { margin: 1em; }
+.leaflet-popup-content { margin: 1em; max-width: 90%; }
 .leaflet-popup-content table td:first-child { padding-right: 0.5em; }
 .leaflet-popup-content ul { margin: 0px!important; margin-bottom: 0px!important; list-style: none; padding: 0px; }
 .leaflet-popup-content ul li { margin: 0px; list-style: none; padding: 0px; }
-.leaflet-popup-content-wrapper {
-	border-radius: 0px;
-	font-size: 1em;
-}
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-}
+.leaflet-popup-content-wrapper { border-radius: 0px; font-size: 1em; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); }
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale { font-size: 10px; }
 
 
 @media only screen and (max-width: 700px) {
