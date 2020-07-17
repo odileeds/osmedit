@@ -232,6 +232,8 @@ var app;
 
 			// Add an event to the bg
 			document.querySelector('.bg').addEventListener('click',function(e){
+				// If the user profile is open we close it
+				if(ui.auth.querySelector('.open')) trigger(ui.user,'click');
 				document.getElementById('hamburger').checked = false;
 			});
 
@@ -422,7 +424,7 @@ var app;
 
 		this.setButton = function(name,state){
 			state = (state=="off" ? 'none':'');
-console.log('setButton',ui.btn,name);			
+
 			if(id && ui.btn[name]) ui.btn[name].style.display = state;
 			else console.error('No valid button given for '+name);
 
