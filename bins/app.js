@@ -143,6 +143,7 @@ var app;
 			if(_obj.osmedit.mapper.map.getZoom() < 17){
 				_obj.message('Zoom in more to add a bin',{'id':'editzoom','class':'warning'});
 				ui.btn.add.classList.add('disabled');
+				ui.btn.add.blur();
 				ok = false;
 			}else{
 				_obj.message('',{'id':'editzoom'});
