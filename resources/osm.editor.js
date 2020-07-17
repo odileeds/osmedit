@@ -208,6 +208,7 @@ console.log('login here',this.auth);
 		}
 
 		this.logout = function(){
+			console.error('No authentication set up yet');
 			this.auth.logout();
 			this.trigger('logout');
 			return this;
