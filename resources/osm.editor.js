@@ -62,7 +62,7 @@
 	function OSMEditor(attr){
 		var auth = false;
 		this.name = "OSMEditor";
-		this.version = "0.4";
+		this.version = "0.4.1";
 		this.debug = true;
 		this.events = {"authenticate":""};	// Add some events
 		this.user = {};
@@ -72,7 +72,7 @@
 		if(console) console.log('%c'+this.name+' v'+this.version+'%c','font-weight:bold;font-size:1.25em;','');
 
 		function get(path,options,callback){
-			console.log('get',path,options);
+			_obj.log.info('Getting',path,options);
 			fetch(path,options)
 			.then(response => response.text())
 			.then(str => {
@@ -459,11 +459,11 @@
 				// Store a copy of the response
 				_obj.overpass.tiles[tileid].data = str;
 				_obj.overpass.tiles[tileid].id = [];
-console.log('here',str.substr(0,100));
+
 				// Parse the document
 				rtn = parseXML(str);
 				_obj.overpass.tiles[tileid].dom = rtn.xml;
-				console.log(rtn);
+
 				//if(rtn.xml.activeElement.tagName == "html"){
 				//	console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
 				//	return false;
@@ -574,7 +574,6 @@ console.log('here',str.substr(0,100));
 			if(promises.length > 0){
 				promises.map(p => p.catch(e => e));
 				Promise.all(promises).then(responses => {
-					console.log('Promise.all');
 
 					// Now update the marker group
 					this.buildPins(options);

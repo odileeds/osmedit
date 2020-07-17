@@ -172,8 +172,6 @@ var app;
 				
 			});
 
-			var _obj = this;
-
 			// Bind functions to buttons
 			document.getElementById('btn-add-item').addEventListener('click', function(e){ _obj.addItem(); });
 			document.getElementById('btn-save-item').addEventListener('click', function(e){ _obj.saveItem(); });
@@ -262,8 +260,8 @@ var app;
 			});
 			// Moving the map we remove the helper balloon
 			osmedit.mapper.on('movestart',function(e){
-				var el = document.querySelectorAll('#add-item .balloon')[0];
-				remove(el);
+				var el = document.querySelectorAll('#add-item .balloon');
+				if(el) remove(el[0]);
 			});
 			// When the popup is closed we stop editing mode
 			osmedit.mapper.on('popupclose',function(e){
@@ -500,6 +498,41 @@ console.log(content);
 			return this;
 		}
 
+		var ui = {};
+
+		function getUI(){
+			var el = {
+				'splash':'splash',
+				'app':'app',
+				'map':'map',
+				'addItem':'add-item',
+				'screen':'screen',
+				'details':'details',
+				'helper':'helper',
+				'location':'location',
+				'btn':{
+					'add':'btn-add-item',
+					'del':'btn-delete-item',
+					'edit':'btn-edit-item',
+					'save':'btn-save-item',
+					'publish':'btn-publish'
+				}
+			};
+			for(var key in el){
+				if(el[key]){
+					if(typeof el[key]==="string"){
+						if(!ui[key]) ui[key] = (el[key].indexOf('.')==0 ? document.querySelector(el[key]) : document.getElementById(el[key]));
+					}else{
+						if(!ui[key]) ui[key] = {};
+						for(var k2 in el[key]){
+							if(!ui[key][k2]) ui[key][k2] = (el[key][k2].indexOf('.')==0 ? document.querySelector(el[key][k2]) : document.getElementById(el[key][k2]));
+						}
+					}
+				}
+			}
+
+			return ui;
+		}
 
 		this.setView = function(v){
 
@@ -507,68 +540,50 @@ console.log(content);
 
 			this.log.message('setting view to '+v);
 			
-			var el = {
-				'splash':document.getElementById('splash'),
-				'app':document.getElementById('app'),
-				'map':document.getElementById('map'),
-				'addItem':document.getElementById('add-item'),
-				'screen':document.querySelector('.screen'),
-				'details':document.getElementById('details'),
-				'helper':document.getElementById('helper'),
-				'btn':{
-					'add':document.getElementById('btn-add-item'),
-					'del':document.getElementById('btn-delete-item'),
-					'edit':document.getElementById('btn-edit-item'),
-					'save':document.getElementById('btn-save-item'),
-					'publish':document.getElementById('btn-publish')
-				}
-			};
-			console.log('el',el);
-
-			el.splash.style.display = 'none';
-
-
+			getUI();
+			
+			ui.splash.style.display = 'none';
 
 			if(v == "map"){
-				el.app.style.display = 'block';
-				trigger(el.app,'resize');
-				el.map.style.display = 'block';
-				trigger(el.map,'resize');
+				ui.app.style.display = 'block';
+				trigger(ui.app,'resize');
+				ui.map.style.display = 'block';
+				trigger(ui.map,'resize');
 			}else if(v == "edit"){
-				if(el.addItem) el.addItem.style.display = 'none';
-				el.screen.style.display = 'none';
-				el.details.style.display = '';
-				el.helper.style.display = 'none';
+				if(ui.addItem) ui.addItem.style.display = 'none';
+				ui.screen.style.display = 'none';
+				ui.details.style.display = '';
+				ui.helper.style.display = 'none';
 			}else if(v == "add"){
-				el.btn.add.style.display = 'none';
-				el.btn.del.style.display = '';
-				el.btn.edit.style.display = '';
-				el.btn.save.style.display = '';
-				remove(el.addItem);
+				ui.btn.add.style.display = 'none';
+				ui.btn.del.style.display = '';
+				ui.btn.edit.style.display = '';
+				ui.btn.save.style.display = '';
+				remove(ui.addItem);
 			}else if(v == "done"){
-				el.btn.add.style.display = '';
-				el.btn.del.style.display = 'none';
-				el.btn.edit.style.display = 'none';
-				el.btn.save.style.display = 'none';
-				remove(el.addItem);
+				ui.btn.add.style.display = '';
+				ui.btn.del.style.display = 'none';
+				ui.btn.edit.style.display = 'none';
+				ui.btn.save.style.display = 'none';
+				remove(ui.addItem);
 			}else if(v == "save"){
 				// Show the publish button
-				el.btn.publish.style.display = '';
+				ui.btn.publish.style.display = '';
 				// Hide/show other elements
-				el.details.style.display = 'none';
-				el.map.style.display = '';
-				el.helper.style.display = 'none';
-				trigger(el.map,'resize');
-				if(el.addItem) el.addItem.style.display = '';			
+				ui.details.style.display = 'none';
+				ui.map.style.display = '';
+				ui.helper.style.display = 'none';
+				trigger(ui.map,'resize');
+				if(ui.addItem) ui.addItem.style.display = '';			
 			}else if(v == "popupopen"){
-				el.btn.add.style.display = 'none';
-				el.btn.del.style.display = 'none';
-				el.btn.edit.style.display = '';
-				el.helper.style.display = 'none';
+				ui.btn.add.style.display = 'none';
+				ui.btn.del.style.display = 'none';
+				ui.btn.edit.style.display = '';
+				ui.helper.style.display = 'none';
 			}else if(v == "popupclose"){
-				el.btn.add.style.display = '';
-				el.btn.del.style.display = 'none';
-				el.btn.edit.style.display = 'none';
+				ui.btn.add.style.display = '';
+				ui.btn.del.style.display = 'none';
+				ui.btn.edit.style.display = 'none';
 			}
 			return this;
 		}
@@ -576,9 +591,16 @@ console.log(content);
 		this.startAdd = function(){
 			this.action = "adding";
 			this.setView('add');
-			var el = document.querySelector('#app #location');
-			el.innerHTML += '<div id="add-item">'+osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div></div>';
-			trigger(el,'resize');
+			if(ui['location']){
+				var el = document.createElement('div');
+				el.setAttribute('id','add-item');
+				el.innerHTML = osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div>';
+				ui['location'].appendChild(el);
+				getUI();
+				trigger(el,'resize');
+			}else{
+				this.log.error('Unable to add bin because #location does not exist.');
+			}
 			return this;
 		}
 
