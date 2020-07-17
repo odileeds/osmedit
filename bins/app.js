@@ -511,7 +511,6 @@ console.log(content);
 				'splash':document.getElementById('splash'),
 				'app':document.getElementById('app'),
 				'map':document.getElementById('map'),
-				'addItem':document.getElementById('add-item'),
 				'screen':document.querySelector('.screen'),
 				'details':document.getElementById('details'),
 				'helper':document.getElementById('helper'),
@@ -523,6 +522,7 @@ console.log(content);
 					'publish':document.getElementById('btn-publish')
 				}
 			};
+			console.log('el',el);
 
 			el.splash.style.display = 'none';
 
@@ -534,7 +534,7 @@ console.log(content);
 				el.map.style.display = 'block';
 				trigger(el.map,'resize');
 			}else if(v == "edit"){
-				el.addItem.style.display = 'none';
+				el.btn.add.style.display = 'none';
 				el.screen.style.display = 'none';
 				el.details.style.display = '';
 				el.helper.style.display = 'none';
