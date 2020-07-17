@@ -30,19 +30,25 @@
 	}
 
 	function parseXML(str){
-		var error = null;
 		var xml = {};
 		if(window.DOMParser){
 			var parser = new DOMParser();
-			xml = parser.parseFromString(str, "text/xml");
+			try {
+				xml = parser.parseFromString(str, "text/xml");
+			}catch(err){
+				throw new Error('Failed to parse as XML (standards)');
+			}
 		}else{ // Internet Explorer
 			xml = new ActiveXObject("Microsoft.XMLDOM");
 			xml.async = false;
-			xml.loadXML(str);
+			try {
+				xml.loadXML(str);
+			}catch(err){
+				throw new Error('Failed to parse as XML (MS)');
+			}
 		}
-		auth = (xml.documentElement.nodeName != "parsererror");
-		if(!auth) error = {'message':'Unable to parse XML'};
-		return {'xml':xml,'error':error};
+		if(!xml || xml.documentElement.nodeName == "parsererror") throw new Error('XML parse error',xml)
+		return xml;
 	}
 
 	var icons = {
@@ -71,14 +77,15 @@
 
 		if(console) console.log('%c'+this.name+' v'+this.version+'%c','font-weight:bold;font-size:1.25em;','');
 
-		function get(path,options,callback){
+		function get(path,options,callback,err){
 			_obj.log.info('Getting',path,options);
 			fetch(path,options)
 			.then(response => response.text())
 			.then(str => {
 				if(typeof callback==="function") callback.call(_obj,str);
-			}).catch(function(error) {
-				console.error('Failed to get and parse',_obj.api.url+path,error);
+			}).catch(function(error){
+				if(typeof err==="function") err.call(this,error);
+				else console.error('Failed to get and parse',_obj.api.url+path,error);
 			});
 			return;
 		}
@@ -148,21 +155,20 @@
 		var _obj = this;
 
 		this.getUserDetails = function(){
-
-			get(this.api.url+'api/0.6/user/details',{
+			var url = this.api.url+'api/0.6/user/details';
+			get(url,{
 				'method':'GET'
 			},function(rtn){
-				var rtn2 = parseXML(rtn);
-				var res = rtn2.xml;
-				if(!_obj.authenticated()) {
-					_obj.trigger("login",{"authenticated":_obj.authenticated(),"error":"error! try clearing your browser cache"});
-					return false;
-				}
-				var u = res.getElementsByTagName('user')[0];
-				var changesets = res.getElementsByTagName('changesets')[0];
+				
+				var xml = parseXML(rtn);
+
+				auth = true;
+
+				var u = xml.getElementsByTagName('user')[0];
+				var changesets = xml.getElementsByTagName('changesets')[0];
 				var img = "";
 				try {
-					var img = res.getElementsByTagName('img')[0];
+					var img = xml.getElementsByTagName('img')[0];
 				}catch(e){
 					var img = "";
 				}
@@ -176,6 +182,8 @@
 				_obj.user = user;
 				_obj.trigger("login",{"authenticated":_obj.authenticated(),"user":_obj.user});
 				return true;
+			},function(error){
+				_obj.log.error('Unable to get valid user from '+url,error);
 			});
 			return this;
 		}
@@ -184,6 +192,7 @@
 			var _obj = this;
 			this.log.message('Login',_obj,this.auth,this.auth.authenticated())
 
+console.log('login here',this.auth);
 			this.auth.authenticate(function(){
 
 				_obj.log.message('Authenticated',_obj.auth.authenticated())
@@ -454,21 +463,21 @@
 			return fetch(url,{'method':'GET'})
 			.then(response => { return response.text() })
 			.then(str => {
-				var i,rtn,oDOM,lastupdate,features,el,lat,lon,id,tags,tag,t,name;
+				var i,xml,oDOM,lastupdate,features,el,lat,lon,id,tags,tag,t,name;
 
 				// Store a copy of the response
 				_obj.overpass.tiles[tileid].data = str;
 				_obj.overpass.tiles[tileid].id = [];
 
 				// Parse the document
-				rtn = parseXML(str);
-				_obj.overpass.tiles[tileid].dom = rtn.xml;
+				xml = parseXML(str);
+				_obj.overpass.tiles[tileid].dom = xml;
 
 				//if(rtn.xml.activeElement.tagName == "html"){
 				//	console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
 				//	return false;
 				//}
-				oDOM = rtn.xml;
+				oDOM = xml;
 
 				// Update the time stamp
 				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");

@@ -39,7 +39,13 @@ var app;
 		return true;
 	}
 	function remove(el){
-		if(el) el.parentNode.removeChild(el);
+		if(el){
+			if(el.parentNode){
+				el.parentNode.removeChild(el);
+			}else{
+				console.error('No parent for ',el);
+			}
+		}
 		return true;
 	}
 
@@ -67,8 +73,16 @@ var app;
 				el.forEach(function(e){ e.classList.add('theme-accent'); });
 			}
 			if(hash.indexOf('#')==0){
-				document.querySelectorAll('.screen').forEach(function(e){ e.style.display = 'none'; });
-				document.getElementById(hash.substr(1,)).style.display = 'block';
+				hash = hash.substr(1,);
+				if(hash){
+					if(hash != "auth"){
+						document.querySelectorAll('.screen').forEach(function(e){ e.style.display = 'none'; });
+						var el = document.getElementById(hash);
+						if(el) document.getElementById(hash).style.display = 'block';
+					}else{
+						console.log('#auth');
+					}
+				}
 			}
 			// Close menu
 			document.getElementById('hamburger').checked = false;
@@ -76,7 +90,6 @@ var app;
 
 		// Add event to change of push state
 		window[(pushstate) ? 'onpopstate' : 'onhashchange'] = function(e){
-			console.log('onpopstate/onhashchange',location.hash);
 			var hash = location.hash || "#intro";
 			setScreen(hash);
 		};
@@ -143,8 +156,8 @@ var app;
 			
 			osmedit.mapper.map.on('zoomend', function() {
 				//console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
-				if(osmedit.mapper.map.getZoom() < 17) document.getElementById('btn-add-item').setAttribute('disabled','disabled');
-				else document.getElementById('btn-add-item').setAttribute('disabled','');
+				if(osmedit.mapper.map.getZoom() < 17) ui.btn.add.setAttribute('disabled','disabled');
+				else ui.btn.add.setAttribute('disabled','');
 				_obj.message('',{'id':'editzoom'});
 			});
 
@@ -152,39 +165,42 @@ var app;
 			osmedit.on('login',{me:this},function(e){
 
 				html = "";
-				if(e.authenticated) document.getElementById('auth').classList.add('logged-in');			
-				else document.getElementById('auth').classList.remove('logged-in');
+				if(e.authenticated) ui.auth.classList.add('logged-in');			
+				else ui.auth.classList.remove('logged-in');
+				var _user = this.user;
 				
-				document.querySelectorAll('.user .name').innerHTML = (this.user.name||"?");
-				document.querySelectorAll('.user .id').innerHTML = (this.user.id||"?");
-				document.querySelector('.user .changesets').innerHTML  = (this.user.changesets||0);
-				if(this.user.img) document.querySelector('.user img').setAttribute('src',this.user.img);
-				document.getElementById('login').style.display = 'none';
+				document.querySelectorAll('.user .name').forEach(function(el){ el.innerHTML = (_user.name||"?"); });
+				document.querySelectorAll('.user .id').forEach(function(el){ el.innerHTML = (_user.id||"?"); });
+				document.querySelectorAll('.user .changesets').forEach(function(el){ el.innerHTML  = (_user.changesets||0); });
+				if(this.user.img) document.querySelectorAll('.user img').forEach(function(el){ el.setAttribute('src',_user.img); });
+				ui.login.style.display = 'none';
 			
 			}).on('logout',{me:this},function(e){
 
-				document.getElementById('auth').classList.remove('logged-in');
-				document.querySelectorAll('.user .name').innerHTML = (this.user.name||"?");
-				document.querySelectorAll('.user .id').innerHTML = (this.user.id||"?");
-				document.querySelectorAll('.user .changesets').innerHTML = (this.user.changesets||0);
-				document.querySelectorAll('.user img').setAttribute('src','resources/unknown.png');
-				document.getElementsByTagName('body')[0].classList.remove('side-panel-open');
+				var _user = this.user;
+				ui.auth.classList.remove('logged-in');
+				document.querySelectorAll('.user .name').forEach(function(el){ el.innerHTML = (_user.name||"?"); });
+				document.querySelectorAll('.user .id').forEach(function(el){ el.innerHTML = (this.user.id||"?"); });
+				document.querySelectorAll('.user .changesets').forEach(function(el){ el.innerHTML = (this.user.changesets||0); });
+				document.querySelectorAll('.user img').forEach(function(el){ el.setAttribute('src','resources/unknown.png'); });
+				document.body.classList.remove('side-panel-open');
 				
 			});
 
+
 			// Bind functions to buttons
-			document.getElementById('btn-add-item').addEventListener('click', function(e){ _obj.addItem(); });
-			document.getElementById('btn-save-item').addEventListener('click', function(e){ _obj.saveItem(); });
-			document.getElementById('btn-save-details').addEventListener('click', function(e){ _obj.saveItem(); });
-			document.getElementById('btn-publish').addEventListener('click', function(e){
+			ui.btn.add.addEventListener('click', function(e){ _obj.addItem(); });
+			ui.btn.save.addEventListener('click', function(e){ _obj.saveItem(); });
+			ui.btn.details.addEventListener('click', function(e){ _obj.saveItem(); });
+			ui.btn.publish.addEventListener('click', function(e){
 				console.log('test publish');
 				// Hide the publish button
-				document.getElementById('btn-publish').style.display = 'none';
+				ui.btn.publish.style.display = 'none';
 				_obj.publish();
 			});
-			document.getElementById('logout').addEventListener('click', function(e){ osmedit.logout(); });
-			document.getElementById('user').addEventListener('click',function(e){
-				document.getElementById('user').parentNode.classList.toggle('open');
+			ui.logout.addEventListener('click', function(e){ osmedit.logout(); });
+			ui.user.addEventListener('click',function(e){
+				ui.user.parentNode.classList.toggle('open');
 				document.body.classList.toggle('side-panel-open');
 			});
 
@@ -196,8 +212,7 @@ var app;
 
 			// Set up the UI:
 			// Hide sections
-			var sections = document.querySelectorAll('#main section');
-			for(var i = 1; i < sections.length; i++) sections[i].style.display = 'none';
+			document.querySelectorAll('#main section').forEach(function(el){ el.style.display = 'none'; });
 
 
 			// Add an event to the bg
@@ -225,13 +240,13 @@ var app;
 				if(osmedit.mapper.selectedLayer == o[i].id) selected = i;
 				opts += '<option value="'+o[i].id+'"'+(selected == i ? ' selected="selected"':'')+'>'+o[i].id+'</option>';
 			}
-			document.getElementById('layerSelect').innerHTML = opts;
-			document.getElementById('layerSelected').setAttribute('src',getCenterTile(o[selected].url,18));
-			document.getElementById('layerSelect').addEventListener('change',function(e){
+			ui.layerSelected.setAttribute('src',getCenterTile(o[selected].url,18));
+			ui.layerSelect.innerHTML = opts;
+			ui.layerSelect.addEventListener('change',function(e){
 				osmedit.mapper.changeLayer(e.currentTarget.value);
 				var l = osmedit.mapper.getLayer();
 				var url = getCenterTile(l.url,18);
-				document.getElementById('layerSelected').setAttribute('src',url);
+				ui.layerSelected.setAttribute('src',url);
 			});
 
 
@@ -244,7 +259,7 @@ var app;
 			});
 			osmedit.mapper.on('updatenodes',{'blah':'test'},function(e){
 				//console.log('updatenodes',e);
-				document.getElementById('loader').style.display = 'none';
+				ui.loader.style.display = 'none';
 			});
 			osmedit.mapper.on('popupopen',function(e){
 				id = e.target.osmid;
@@ -260,8 +275,7 @@ var app;
 			});
 			// Moving the map we remove the helper balloon
 			osmedit.mapper.on('movestart',function(e){
-				var el = document.querySelectorAll('#add-item .balloon');
-				if(el) remove(el[0]);
+				document.querySelectorAll('#add-item .balloon').forEach(function(el){ remove(el); });
 			});
 			// When the popup is closed we stop editing mode
 			osmedit.mapper.on('popupclose',function(e){
@@ -275,7 +289,7 @@ var app;
 				'type':['amenity=waste_basket','amenity=recycling']
 			});
 
-			document.querySelectorAll('#loader .label')[0].innerHTML = 'Loading bins...';
+			ui.loader.querySelectorAll('.label').forEach(function(el){ el.innerHTML = 'Loading bins...'; });
 
 			var propertylookup = {
 				'OSMID':{'hide':true}
@@ -364,16 +378,15 @@ var app;
 		// Log in process
 		this.login = function(){
 			
-			var login = document.getElementById('login')
 			// Show pre-login screen
-			login.style.display = '';
-			login.querySelectorAll('.close')[0].addEventListener('click',function(e){
-				login.style.display = 'none';
+			ui.login.style.display = '';
+			ui.login.querySelectorAll('.close')[0].addEventListener('click',function(e){
+				ui.login.style.display = 'none';
 			});
 	
 			// Login
-			document.getElementById('btn-login').addEventListener('click',function(e){
-				console.log('clicked');
+			ui.btn.login.addEventListener('click',function(e){
+				console.log('login clicked');
 				osmedit.login();
 			});
 			
@@ -399,13 +412,8 @@ var app;
 
 		this.setButton = function(name,state){
 			state = (state=="off" ? 'none':'');
-			id = "";
-			if(name=="publish") id = 'btn-publish-item';
-			else if(name=="save") id = 'btn-save-item';
-			else if(name=="edit") id = 'btn-edit-item';
-			else if(name=="delete") id = 'btn-delete-item';
-			
-			if(id) document.getElementById(id).style.display = state;
+console.log('setButton',ui.btn,name);			
+			if(id && ui.btn[name]) ui.btn[name].style.display = state;
 			else console.error('No valid button given for '+name);
 
 			return this;
@@ -420,17 +428,14 @@ var app;
 			this.setButton("publish","on");
 			this.setButton("save","off");
 			this.setButton("edit","off");
-			this.setButton("delete","off");
+			this.setButton("del","off");
 			
-			// Remove placeholder bin if one exists
-			if(document.getElementById('add-item')){
-				var el = document.getElementById('add-item');
-				remove(el);
-			}
+			// Remove placeholder node if one exists
+			if(ui.addItem){ remove(ui.addItem); delete ui.addItem; }
 			
 			// Add bin properly
 
-			// Get properties
+			// Get properties TODO
 			var el = document.getElementById('genus');
 			var genus = el.getAttribute('data-genus');
 			var vernac = el.getAttribute('data-vernacular');
@@ -506,26 +511,35 @@ console.log(content);
 				'app':'app',
 				'map':'map',
 				'addItem':'add-item',
-				'screen':'screen',
+				'screen':'.screen',
 				'details':'details',
 				'helper':'helper',
 				'location':'location',
+				'login':'login',
+				'logout':'logout',
+				'auth':'auth',
+				'user':'user',
+				'layerSelect':'layerSelect',
+				'layerSelected':'layerSelected',
+				'loader':'loader',
 				'btn':{
 					'add':'btn-add-item',
 					'del':'btn-delete-item',
 					'edit':'btn-edit-item',
 					'save':'btn-save-item',
-					'publish':'btn-publish'
+					'details':'btn-save-details',
+					'publish':'btn-publish',
+					'login':'btn-login'
 				}
 			};
 			for(var key in el){
 				if(el[key]){
 					if(typeof el[key]==="string"){
-						if(!ui[key]) ui[key] = (el[key].indexOf('.')==0 ? document.querySelector(el[key]) : document.getElementById(el[key]));
+						if(!ui[key]) ui[key] = (el[key].indexOf('.')==0 ? document.querySelectorAll(el[key]) : document.getElementById(el[key]));
 					}else{
 						if(!ui[key]) ui[key] = {};
 						for(var k2 in el[key]){
-							if(!ui[key][k2]) ui[key][k2] = (el[key][k2].indexOf('.')==0 ? document.querySelector(el[key][k2]) : document.getElementById(el[key][k2]));
+							if(!ui[key][k2]) ui[key][k2] = (el[key][k2].indexOf('.')==0 ? document.querySelectorAll(el[key][k2]) : document.getElementById(el[key][k2]));
 						}
 					}
 				}
@@ -543,6 +557,8 @@ console.log(content);
 			getUI();
 			
 			ui.splash.style.display = 'none';
+			
+			console.log('setView',v);
 
 			if(v == "map"){
 				ui.app.style.display = 'block';
@@ -551,7 +567,7 @@ console.log(content);
 				trigger(ui.map,'resize');
 			}else if(v == "edit"){
 				if(ui.addItem) ui.addItem.style.display = 'none';
-				ui.screen.style.display = 'none';
+				ui.screen.forEach(function(el){ el.style.display = 'none'; });
 				ui.details.style.display = '';
 				ui.helper.style.display = 'none';
 			}else if(v == "add"){
@@ -559,13 +575,13 @@ console.log(content);
 				ui.btn.del.style.display = '';
 				ui.btn.edit.style.display = '';
 				ui.btn.save.style.display = '';
-				remove(ui.addItem);
+				if(ui.addItem){ remove(ui.addItem); delete ui.addItem; }
 			}else if(v == "done"){
 				ui.btn.add.style.display = '';
 				ui.btn.del.style.display = 'none';
 				ui.btn.edit.style.display = 'none';
 				ui.btn.save.style.display = 'none';
-				remove(ui.addItem);
+				if(ui.addItem){ remove(ui.addItem); delete ui.addItem; }
 			}else if(v == "save"){
 				// Show the publish button
 				ui.btn.publish.style.display = '';
@@ -592,12 +608,18 @@ console.log(content);
 			this.action = "adding";
 			this.setView('add');
 			if(ui['location']){
-				var el = document.createElement('div');
-				el.setAttribute('id','add-item');
-				el.innerHTML = osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div>';
-				ui['location'].appendChild(el);
-				getUI();
-				trigger(el,'resize');
+				if(!ui.addItem){
+					var el = document.createElement('div');
+					el.setAttribute('id','add-item');
+					el.innerHTML = osmedit.mapper.markers.waste.svg.replace(/%COLOR%/g,osmedit.mapper.markers.waste.background)+'<div class="balloon">Move the map to place the bin</div>';
+					// Add event to the button
+					el.addEventListener('click', function(e){ console.log('additem click'); _obj.addItem(); });
+					ui['location'].appendChild(el);
+					ui.addItem = el;
+					trigger(el,'resize');
+				}else{
+					console.info('Already have additem',ui.addItem.parentNode);
+				}
 			}else{
 				this.log.error('Unable to add bin because #location does not exist.');
 			}
@@ -606,6 +628,7 @@ console.log(content);
 
 		this.editItem = function(){
 			this.action = "edit";
+			console.log('editItem',osmedit);
 			if((osmedit.user && osmedit.user.name) || !requirelogin){
 				
 				// TEMP
@@ -662,15 +685,16 @@ console.log(content);
 		});
 
 		document.getElementById('btn-edit-item').addEventListener('click',function(e){
+			console.log('edit',ui);
 			_obj.editItem();
 		});
 		
 		document.querySelector('#details .close').addEventListener('click',function(e){
-			document.getElementById('details').style.display = 'none';
-			document.getElementById('map').style.display = '';
-			document.getElementById('helper').style.display = 'none';
-			trigger(document.getElementById('map'),'resize');
-			if(document.getElementById('add-item')) document.getElementById('add-item').style.display = '';
+			ui.details.style.display = 'none';
+			ui.map.style.display = '';
+			ui.helper.style.display = 'none';
+			trigger(ui.map,'resize');
+			if(ui.addItem) ui.addItem.style.display = '';
 		});
 
 		this.addTags = function(json){
