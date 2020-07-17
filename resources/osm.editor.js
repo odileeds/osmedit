@@ -482,7 +482,8 @@ console.log('login here',this.auth);
 
 				// Update the time stamp
 				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
-				_obj.map.attributionControl.addAttribution("Last updated: "+lastupdate);
+				_obj.overpass.tiles[tileid].lastupdate = lastupdate;
+				//_obj.map.attributionControl.addAttribution("Last updated: "+lastupdate);
 
 				// Get nodes
 				features = oDOM.querySelectorAll('node');
@@ -584,6 +585,15 @@ console.log('login here',this.auth);
 			if(promises.length > 0){
 				promises.map(p => p.catch(e => e));
 				Promise.all(promises).then(responses => {
+					var newstr,newest,id;
+					newest = new Date('2000-01-01T00:00Z');
+					newstr = '';
+					for(id in this.overpass.tiles){
+						if(this.overpass.tiles[id].lastupdate){
+							if(new Date(this.overpass.tiles[id].lastupdate) > newest){ newest = d; newstr = this.overpass.tiles[id].lastupdate; }
+						}
+					}
+					this.map.attributionControl.setPrefix("Data updated: "+newstr);
 
 					// Now update the marker group
 					this.buildPins(options);
