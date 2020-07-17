@@ -107,8 +107,8 @@ a.b1-bg:hover, a.b2-bg:hover, a.b3-bg:hover, a.b4-bg:hover, a.b5-bg:hover, a.b6-
 .b6-bg .button { background-color: black; color: white!important; }
 
 
-button.done { background: #00B6FF; }
-button:hover { background: #00B6FF; }
+button.done { background: #FF6700; }
+button:hover { background: #FF6700; }
 .close { float: right; font-size: 3em; cursor: pointer; margin-top: -0.8em; }
 .modal .close { position: absolute; top: 0px; right: 0px; margin-top: 0; }
 .thumb { position: absolute; z-index: 995; bottom: 0px; left: 50%; transform: translate3d(-50%,0,0); text-align: center; max-width: 100%; }
