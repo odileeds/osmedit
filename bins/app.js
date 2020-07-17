@@ -157,7 +157,7 @@ var app;
 			osmedit.mapper.map.on('zoomend', function() {
 				//console.log('zoomend',_obj,osmedit.mapper.map.getZoom());
 				if(osmedit.mapper.map.getZoom() < 17) ui.btn.add.setAttribute('disabled','disabled');
-				else ui.btn.add.setAttribute('disabled','');
+				else ui.btn.add.removeAttribute('disabled');
 				_obj.message('',{'id':'editzoom'});
 			});
 
@@ -558,8 +558,6 @@ console.log(content);
 			
 			ui.splash.style.display = 'none';
 			
-			console.log('setView',v);
-
 			if(v == "map"){
 				ui.app.style.display = 'block';
 				trigger(ui.app,'resize');
@@ -618,7 +616,7 @@ console.log(content);
 					ui.addItem = el;
 					trigger(el,'resize');
 				}else{
-					console.info('Already have additem',ui.addItem.parentNode);
+					this.log.info('Already have additem',ui.addItem.parentNode);
 				}
 			}else{
 				this.log.error('Unable to add bin because #location does not exist.');

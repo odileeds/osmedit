@@ -259,8 +259,8 @@ pre.prettyprint {
 #auth .user { position: relative; height: 3em; margin: 0.5em;}
 #auth .user .right { position: absolute; display: none; }
 #auth .user.open .right { display: block; top: 4em; right: 0px; background-color: white; width: 300px; }
-#auth #user { display: none; padding: 0px; height: 100%; }
-#auth #user img { height: 100%; margin-right: 0px; border-radius: 100%; }
+#auth #user { display: none; padding: 0px; height: 100%; border-radius: 100%; overflow: hidden; }
+#auth #user img { height: 100%; margin-right: 0px; }
 #auth #login { line-height: 2em; }
 #auth.logged-in #user { display: inline-block; }
 #auth.logged-in #login, #auth #logout { display: none; }
