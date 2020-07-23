@@ -7,7 +7,7 @@ var app;
 
 	// Do we update the address bar?
 	var pushstate = !!(window.history && history.pushState);
-	var requirelogin = true;
+	var debug = false;
 
 /*
 	function receiveMessage(event) {
@@ -55,7 +55,7 @@ var app;
 		this.name = (opts.name||"ODI Leeds Editor");
 		this.log = new Logger({'id':this.name,'logging':(location.search.indexOf("logging=true")>=0)});
 		this.data = {};
-		requirelogin = (typeof opts.requirelogin==="boolean" ? opts.requirelogin: true);
+		debug = (typeof opts.debug==="boolean" ? opts.debug: true);
 
 		// Access this within sub-functions
 		var _obj = this;
@@ -427,7 +427,7 @@ var app;
 
 		// Add an item (may require login
 		this.addItem = function(){
-			if(osmedit.authenticated() || !requirelogin){
+			if(osmedit.authenticated() || debug){
 				// If the zoom level is OK we start to add a bin
 				if(checkZoom()) this.startAdd();
 				return this;
@@ -653,7 +653,7 @@ console.log(content);
 		this.editItem = function(){
 			this.action = "edit";
 			console.log('editItem',osmedit);
-			if((osmedit.user && osmedit.user.name) || !requirelogin){
+			if(osmedit.authenticated() || debug){
 				
 				// TEMP
 				if(!osmedit.changeset) osmedit.changeset = {'id':'TEST'};

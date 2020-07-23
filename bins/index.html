@@ -185,7 +185,7 @@
 	<script>
 	ODI.ready(function(){
 
-		app = new Application({'name':'OSM Bins','requirelogin':(location.search.indexOf('debug') < 0)});
+		app = new Application({'name':'OSM Bins','debug':(location.search.indexOf('debug') >= 0)});
 
 	})
 	</script>
