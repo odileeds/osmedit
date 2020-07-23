@@ -450,6 +450,57 @@
 		var tiler = new Tiler();
 		var _obj = this;
 
+		function getGeoJSONTile(url,tileid){
+			_obj.log.info('Getting data for '+tileid+' from '+url);
+			return fetch(url,{'method':'GET'})
+			.then(response => { return response.json() })
+			.then(json => {
+				var i,el,lat,lon,id,tags,tag,t,name;
+
+				// Store a copy of the response
+				_obj.nodegetter.tiles[tileid].data = json;
+				_obj.nodegetter.tiles[tileid].id = [];
+
+				// Update the time stamp
+				_obj.nodegetter.tiles[tileid].lastupdate = json.lastupdate;
+
+				_obj.log.message('Got results from geojson',json.features.length);
+
+				for(i = 0; i < json.features.length; i++){
+					el = json.features[i];
+					lat = el.geometry.coordinates[1];
+					lon = el.geometry.coordinates[0];
+					id = 'OSM-'+el.properties.osm_id;
+					_obj.nodegetter.tiles[tileid].id.push(id);
+
+					// If we don't have this node we build a basic structure for it
+					if(!_obj.nodes[id]){
+						_obj.nodes[id] = {'id':el.properties.osm_id,'props':{},'popup':'','changedtags':[]};
+					}
+
+					if(typeof lon==="number" && typeof lat==="number"){
+
+						// Add the coordinates
+						_obj.nodes[id].lat = lat;
+						_obj.nodes[id].lon = lon;
+
+						// Add the properties
+						_obj.nodes[id].props = {'OSMID':id};
+						for(p in el.properties){
+							if(p == "tag"){
+								for(t in el.properties.tag){
+									_obj.nodes[id].props[t] = el.properties.tag[t]||"";
+								}
+							}else{
+								_obj.nodes[id].props[p] = el.properties[p];
+							}
+						}
+					}
+				}	
+			}).catch(error => {
+				console.error(error,url);
+			});
+		}
 
 		function getTile(url,tileid){
 			_obj.log.info('Getting data for '+tileid+' from '+url);
@@ -459,12 +510,12 @@
 				var i,xml,oDOM,lastupdate,features,el,lat,lon,id,tags,tag,t,name;
 
 				// Store a copy of the response
-				_obj.overpass.tiles[tileid].data = str;
-				_obj.overpass.tiles[tileid].id = [];
+				_obj.nodegetter.tiles[tileid].data = str;
+				_obj.nodegetter.tiles[tileid].id = [];
 
 				// Parse the document
 				xml = parseXML(str);
-				_obj.overpass.tiles[tileid].dom = xml;
+				_obj.nodegetter.tiles[tileid].dom = xml;
 
 				//if(rtn.xml.activeElement.tagName == "html"){
 				//	console.error('Overpass return seems to be HTML',rtn.xml.activeElement.tagName);
@@ -474,7 +525,7 @@
 
 				// Update the time stamp
 				lastupdate = oDOM.querySelectorAll('meta')[0].getAttribute('osm_base').replace('T'," ");
-				_obj.overpass.tiles[tileid].lastupdate = lastupdate;
+				_obj.nodegetter.tiles[tileid].lastupdate = lastupdate;
 				//_obj.map.attributionControl.addAttribution("Last updated: "+lastupdate);
 
 				// Get nodes
@@ -487,7 +538,7 @@
 					lat = parseFloat(el.getAttribute('lat'));
 					lon = parseFloat(el.getAttribute('lon'));
 					id = 'OSM-'+el.getAttribute('id');
-					_obj.overpass.tiles[tileid].id.push(id);
+					_obj.nodegetter.tiles[tileid].id.push(id);
 
 					// If we don't have this node we build a basic structure for it
 					if(!_obj.nodes[id]){
@@ -515,10 +566,8 @@
 			});
 		}
 
-		// We will grab boxes of data
-		this.getNodesFromOverpass = function(a,options,callback){
-
-			if(!this.overpass) this.overpass = {'tiles':{}};
+		this.getNodesFromGeoJSON = function(a,options,callback){
+			if(!this.nodegetter) this.nodegetter = {'tiles':{}};
 
 			if(!a) return this;
 			if(!options) options = {};
@@ -530,7 +579,75 @@
 				return this;
 			}
 
-			this.overpass._options = options;
+			this.nodegetter._options = options;
+
+			// Get the map bounds (with padding)
+			var b = this.map.getBounds();//.pad(2 * Math.sqrt(2) / 2);
+
+			// Only update if the zoom level is deep enough
+			if(this.map.getZoom() <= 12){
+				// Zoom level not deep enough
+				console.warn('Not close enough for Geojson grab');
+				return this;
+			}
+
+			var tiles = tiler.xyz(b,12);
+			
+			var qs,i,t,id;
+			var promises = [];
+			
+			for(t = 0; t < tiles.length; t++){
+				
+				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
+				if(!this.nodegetter.tiles[id]){
+					this.nodegetter.tiles[id] = {'url':'data/'+id+'.geojson'};
+					// If we haven't already downloaded the data
+					if(!this.nodegetter.tiles[id].data) promises.push(getGeoJSONTile(this.nodegetter.tiles[id].url,id));
+				}
+			}
+
+			if(promises.length > 0){
+				promises.map(p => p.catch(e => e));
+				Promise.all(promises).then(responses => {
+					var newstr,newest,id;
+					newest = new Date('2000-01-01T00:00Z');
+					newstr = '';
+					for(id in this.nodegetter.tiles){
+						if(this.nodegetter.tiles[id].lastupdate){
+							if(new Date(this.nodegetter.tiles[id].lastupdate) > newest){ newest = d; newstr = this.nodegetter.tiles[id].lastupdate; }
+						}
+					}
+					this.map.attributionControl.setPrefix("Data updated: "+newstr);
+
+					// Now update the marker group
+					this.buildPins(options);
+
+					// Trigger any callback
+					if(typeof callback==="function") callback.call(options['this']||this,{'a':a,'b':b});
+				});
+			}else{
+				// Trigger any callback
+				if(typeof callback==="function") callback.call(options['this']||this,{'a':a,'b':b});
+			}
+			return this;
+		}
+
+		// We will grab boxes of data
+		this.getNodesFromOverpass = function(a,options,callback){
+
+			if(!this.nodegetter) this.nodegetter = {'tiles':{}};
+
+			if(!a) return this;
+			if(!options) options = {};
+			if(!options['this']) options['this'] = this;
+			if(!options.title) options.title = "Node";
+			if(typeof a==="string") a = [a];
+			if(!this.map){
+				console.error('No map object exists');
+				return this;
+			}
+
+			this.nodegetter._options = options;
 
 			// Get the map bounds (with padding)
 			var b = this.map.getBounds();//.pad(2 * Math.sqrt(2) / 2);
@@ -565,11 +682,11 @@
 				qs += '%29%3B%0Aout%3B';
 				
 				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
-				if(!this.overpass.tiles[id]){
-					//this.overpass.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
-					this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
+				if(!this.nodegetter.tiles[id]){
+					//this.nodegetter.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
+					this.nodegetter.tiles[id] = {'url':'data/'+id+'.xml'};
 					// If we haven't already downloaded the data
-					if(!this.overpass.tiles[id].data) promises.push(getTile(this.overpass.tiles[id].url,id));
+					if(!this.nodegetter.tiles[id].data) promises.push(getTile(this.nodegetter.tiles[id].url,id));
 				}
 			}
 
@@ -579,9 +696,9 @@
 					var newstr,newest,id;
 					newest = new Date('2000-01-01T00:00Z');
 					newstr = '';
-					for(id in this.overpass.tiles){
-						if(this.overpass.tiles[id].lastupdate){
-							if(new Date(this.overpass.tiles[id].lastupdate) > newest){ newest = d; newstr = this.overpass.tiles[id].lastupdate; }
+					for(id in this.nodegetter.tiles){
+						if(this.nodegetter.tiles[id].lastupdate){
+							if(new Date(this.nodegetter.tiles[id].lastupdate) > newest){ newest = d; newstr = this.nodegetter.tiles[id].lastupdate; }
 						}
 					}
 					this.map.attributionControl.setPrefix("Data updated: "+newstr);
@@ -704,9 +821,15 @@
 			if(!a) return this;
 			if(!options) options = {};
 			options['this'] = this;
-			if(options['overpass']){
+			if(options['type']=="overpass"){
 				this.getNodesFromOverpass(a,options,function(e){
 					this.log.message('got overpass',this,e);
+					// Do things here to build marker cluster layer
+					this.trigger('updatenodes',e);
+				});
+			}else if(options['type']=="geojson"){
+				this.getNodesFromGeoJSON(a,options,function(e){
+					this.log.message('got geojson',this,e);
 					// Do things here to build marker cluster layer
 					this.trigger('updatenodes',e);
 				});
@@ -729,7 +852,7 @@
 
 		this.on('moveend',function(){
 			if(_obj.map.getZoom() >= 13){
-				_obj.getNodes(_obj.node.type,_obj.overpass._options);
+				_obj.getNodes(_obj.node.type,_obj.nodegetter._options);
 			}
 		});
 

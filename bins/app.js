@@ -335,7 +335,7 @@ var app;
 			}
 
 			osmedit.getNodes({
-				'overpass':true,
+				'type':'geojson',
 				'popup': function(){
 					var str,cls,title,types,p,i,ts,ul;
 					ul = '';

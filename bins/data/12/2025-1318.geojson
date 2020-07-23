@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-23T17:29:38Z",
+"features": [
+	{"geometry":{"coordinates":[-1.982042,53.830769],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1417324492"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.948395,53.83134],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4057268935"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.949392,53.830594],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4057277609"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.935239,53.835314],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4057506691"},"type":"Feature"}
+]
+}

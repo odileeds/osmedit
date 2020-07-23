@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-23T17:29:38Z",
+"features": [
+	{"geometry":{"coordinates":[-1.887345,53.724301],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"573340915"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.878291,53.715202],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"951535316"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.870202,53.73185],"type":"Point"},"properties":{"amenity":"recycling","name":"Halifax Household Waste Recycling Site","osm_id":"951535319"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.895545,53.709267],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1291453567"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.901177,53.747616],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1729326916","tag":{"recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"}
+]
+}
