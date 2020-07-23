@@ -35,11 +35,12 @@
 			<div class="close">&times;</div>
 			<div class="centre-block">
 				<h2>Adding bins</h2>
-				<p>We add bin data directly to OpenStreetMap - a free map of the world. To add bins you will first need an OpenStreetMap account and then you will need to give us permission to save the bins. OpenStreetMap accounts are free.</p>
+				<p>Sorry, this app is currently being developed and doesn't yet have the ability to log you in to Open Street Map. But, in the mean time, you can still explore the existing bins on Open Street Map.</p>
+				<!--<p>We add bin data directly to OpenStreetMap - a free map of the world. To add bins you will first need an OpenStreetMap account and then you will need to give us permission to save the bins. OpenStreetMap accounts are free.</p>
 				<div style="text-align:center;">
 					<button id="btn-login" class="thumb-button theme">Log in with OpenStreetMap</button>
 					<a href="https://www.openstreetmap.org/user/new" target="osm" style="height:3em;padding:1em;display:block;">Create an account</a>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
@@ -54,7 +55,6 @@
 			<div class="title">
 				<div id="auth">
 					<div class="user">
-						<button id="login" class="theme-accent">(fake) Login to OSM</button>
 						<button id="user"><img src="resources/unknown.png" /></button>
 						<div class="right padded b5-bg">
 							<div class="details">
@@ -185,7 +185,7 @@
 	<script>
 	ODI.ready(function(){
 
-		app = new Application({'name':'OSM Bins','requirelogin':false});
+		app = new Application({'name':'OSM Bins','requirelogin':(location.search.indexOf('debug') < 0)});
 
 	})
 	</script>

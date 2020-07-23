@@ -152,6 +152,17 @@ var app;
 			return ok;
 		}
 
+		function getCenter(){ return osmedit.mapper.map.getCenter(); }
+		function getCenterTile(url,zoom){
+			ll = getCenter();
+			var x = (Math.floor((ll.lng + 180) / 360 * Math.pow(2, zoom)));
+			var y = (Math.floor((1 - Math.log(Math.tan(ll.lat * Math.PI / 180) + 1 / Math.cos(ll.lat * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, zoom)));
+			var xy = {
+				x: x,
+				y: y
+			};
+			return url.replace("{z}",18).replace("{x}",xy.x).replace("{y}",xy.y).replace("{r}","").replace("{s}","a");
+		}
 		this.init = function(){
 
 			// Create an OSM Editor instance
@@ -204,20 +215,42 @@ var app;
 
 
 			// Bind functions to buttons
-			ui.btn.add.addEventListener('click', function(e){ _obj.addItem(); });
-			ui.btn.save.addEventListener('click', function(e){ _obj.saveItem(); });
-			ui.btn.details.addEventListener('click', function(e){ _obj.saveItem(); });
-			ui.btn.publish.addEventListener('click', function(e){
-				console.log('test publish');
-				// Hide the publish button
-				ui.btn.publish.style.display = 'none';
-				_obj.publish();
-			});
-			ui.logout.addEventListener('click', function(e){ osmedit.logout(); });
-			ui.user.addEventListener('click',function(e){
-				ui.user.parentNode.classList.toggle('open');
-				document.body.classList.toggle('side-panel-open');
-			});
+			if(ui.btn.add) ui.btn.add.addEventListener('click', function(e){ _obj.addItem(); });
+			if(ui.btn.save) ui.btn.save.addEventListener('click', function(e){ _obj.saveItem(); });
+			if(ui.btn.details) ui.btn.details.addEventListener('click', function(e){ _obj.saveItem(); });
+			if(ui.btn.publish){
+				ui.btn.publish.addEventListener('click', function(e){
+					console.log('test publish');
+					// Hide the publish button
+					ui.btn.publish.style.display = 'none';
+					_obj.publish();
+				});
+			}
+			if(ui.user){
+				ui.user.addEventListener('click',function(e){
+					console.log('ui.user',osmedit.user);
+					// Only trigger open if there are user details
+					if(osmedit.user && osmedit.user.id){
+						ui.user.parentNode.classList.toggle('open');
+						document.body.classList.toggle('side-panel-open');
+					}else{
+						_obj.login();
+					}
+				});
+			}
+			if(ui.logout) ui.logout.addEventListener('click', function(e){ osmedit.logout(); });
+			if(ui.btn.login){
+				ui.btn.login.addEventListener('click',function(e){
+					console.log('login clicked');
+					osmedit.login();
+				});
+			}
+			if(ui.login){
+				ui.login.querySelectorAll('.close')[0].addEventListener('click',function(e){
+					ui.login.style.display = 'none';
+				});
+			}
+
 
 			// Do a check to see if we are already logged in
 			// This is asynchronous so we might
@@ -237,17 +270,6 @@ var app;
 				document.getElementById('hamburger').checked = false;
 			});
 
-			function getCenter(){ return osmedit.mapper.map.getCenter(); }
-			function getCenterTile(url,zoom){
-				ll = getCenter();
-				var x = (Math.floor((ll.lng + 180) / 360 * Math.pow(2, zoom)));
-				var y = (Math.floor((1 - Math.log(Math.tan(ll.lat * Math.PI / 180) + 1 / Math.cos(ll.lat * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, zoom)));
-				var xy = {
-					x: x,
-					y: y
-				};
-				return url.replace("{z}",18).replace("{x}",xy.x).replace("{y}",xy.y).replace("{r}","").replace("{s}","a");
-			}
 
 			// Build map base tile selector
 			var opts = "";
@@ -373,9 +395,10 @@ var app;
 			
 			this.changes = [];
 
-			var el = document.getElementById('init');
-			remove(el);
+			// Remove the loading spinner
+			remove(document.getElementById('init'));
 
+			// Set the start screen
 			if(location.hash) setScreen(location.hash);
 			else setScreen('#intro');
 			
@@ -394,18 +417,9 @@ var app;
 
 		// Log in process
 		this.login = function(){
-			
+			console.log('here')
 			// Show pre-login screen
 			ui.login.style.display = '';
-			ui.login.querySelectorAll('.close')[0].addEventListener('click',function(e){
-				ui.login.style.display = 'none';
-			});
-	
-			// Login
-			ui.btn.login.addEventListener('click',function(e){
-				console.log('login clicked');
-				osmedit.login();
-			});
 			
 			return this;
 		}
@@ -413,7 +427,7 @@ var app;
 
 		// Add an item (may require login
 		this.addItem = function(){
-			if((osmedit.user && osmedit.user.name) || !requirelogin){
+			if(osmedit.authenticated() || !requirelogin){
 				// If the zoom level is OK we start to add a bin
 				if(checkZoom()) this.startAdd();
 				return this;

@@ -155,23 +155,18 @@
 		var _obj = this;
 
 		this.getUserDetails = function(){
-			var url = this.api.url+'api/0.6/user/details';
+			var url = this.api.url+'api/0.6/user/detailsfail';
 			get(url,{
 				'method':'GET'
 			},function(rtn){
 				
 				var xml = parseXML(rtn);
 
-				auth = true;
-
 				var u = xml.getElementsByTagName('user')[0];
 				var changesets = xml.getElementsByTagName('changesets')[0];
 				var img = "";
-				try {
-					var img = xml.getElementsByTagName('img')[0];
-				}catch(e){
-					var img = "";
-				}
+				try { img = xml.getElementsByTagName('img')[0]; }
+				catch(e){ img = ""; }
 				var user = {
 					'name': (u.getAttribute('display_name') || "?"),
 					'id': (u.getAttribute('id') || "?"),
@@ -179,37 +174,34 @@
 					'img': (img ? img.getAttribute('href') : ''),
 					'account_created': (u.getAttribute('account_created') || "")
 				}
+
+				//if(user.name && user.id) auth = true;
+				console.log(auth);
 				_obj.user = user;
-				_obj.trigger("login",{"authenticated":_obj.authenticated(),"user":_obj.user});
+				//_obj.trigger("login",{"authenticated":_obj.authenticated(),"user":_obj.user});
 				return true;
 			},function(error){
 				_obj.log.error('Unable to get valid user from '+url,error);
+				//_obj.trigger("login",{"authenticated":_obj.authenticated()});
 			});
 			return this;
 		}
 
 		this.login = function(){
-			var _obj = this;
 			this.log.message('Login',_obj,this.auth,this.auth.authenticated())
 
-console.log('login here',this.auth);
-			this.auth.authenticate(function(){
-
-				_obj.log.message('Authenticated',_obj.auth.authenticated())
-				if(_obj.auth.authenticated()) {
-					_obj.getUserDetails();
-				}else{
-					// Reset user data
-					_obj.user = {};
-					_obj.trigger("login",{"authenticated":_obj.auth.authenticated()});
-				}
-			});
+			console.log('login here',this.auth);
+			if(this.authenticated()){
+				this.trigger("login",{"authenticated":this.authenticated(),"user":this.user||{}});
+			}else{
+				// Need to login here
+				console.error('No functions to login yet');
+			}
 			return this;
 		}
 
 		this.logout = function(){
 			console.error('No authentication set up yet');
-			this.auth.logout();
 			this.trigger('logout');
 			return this;
 		}
@@ -574,8 +566,8 @@ console.log('login here',this.auth);
 				
 				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
 				if(!this.overpass.tiles[id]){
-					this.overpass.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
-					//this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
+					//this.overpass.tiles[id] = {'url':'https://overpass-api.de/api/interpreter?data='+qs};
+					this.overpass.tiles[id] = {'url':'data/'+id+'.xml'};
 					// If we haven't already downloaded the data
 					if(!this.overpass.tiles[id].data) promises.push(getTile(this.overpass.tiles[id].url,id));
 				}
