@@ -16,6 +16,12 @@
 	{"geometry":{"coordinates":[-1.662073,53.573376],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4760764316"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.661899,53.573123],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4760764317"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.665905,53.580724],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4876651870"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.64204,53.564172],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5254862000"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.669573,53.552253],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3951353014"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.668495,53.55202],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3951353015"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.668294,53.552142],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3978166676"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.661091,53.547305],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4906773105","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.660659,53.547374],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4906773106"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.64204,53.564172],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5254862000"},"type":"Feature"}
 ]
 }

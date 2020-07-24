@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:51:42Z",
+"features": [
+	{"geometry":{"coordinates":[-1.616004,53.997348],"type":"Point"},"properties":{"amenity":"recycling","name":"West Harrogate Household Waste Recycling Centre","osm_id":"1779175672"},"type":"Feature"}
+]
+}
