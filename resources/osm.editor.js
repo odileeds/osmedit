@@ -178,11 +178,11 @@
 				//if(user.name && user.id) auth = true;
 				console.log(auth);
 				_obj.user = user;
-				//_obj.trigger("login",{"authenticated":_obj.authenticated(),"user":_obj.user});
+				_obj.trigger("login",{"authenticated":_obj.authenticated(),"user":_obj.user});
 				return true;
 			},function(error){
 				_obj.log.error('Unable to get valid user from '+url,error);
-				//_obj.trigger("login",{"authenticated":_obj.authenticated()});
+				_obj.trigger("login",{"authenticated":_obj.authenticated()});
 			});
 			return this;
 		}

@@ -140,7 +140,7 @@ var app;
 		
 		function checkZoom(){
 			var ok = true;
-			if(_obj.osmedit.mapper.map.getZoom() < 17){
+			if(_obj.osmedit.authenticated() && _obj.osmedit.mapper.map.getZoom() < 17){
 				_obj.message('Zoom in to add a bin',{'id':'editzoom','class':'warning'});
 				ui.btn.add.classList.add('disabled');
 				ui.btn.add.blur();
@@ -189,8 +189,13 @@ var app;
 
 			// Add login/logout events
 			osmedit.on('login',{me:this},function(e){
-
+				console.log('login',e,ui.app)
 				html = "";
+				if(ui.app){
+					if(e.authenticated) ui.app.classList.add('logged-in');
+					else ui.app.classList.remove('logged-in');
+				}
+				console.log(ui.app.classList);
 				if(e.authenticated) ui.auth.classList.add('logged-in');			
 				else ui.auth.classList.remove('logged-in');
 				var _user = this.user;
