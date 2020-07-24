@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.19754,50.852758],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"27195054","tag":{"recycling:cans":"yes","recycling:cardboard":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:shoes":"yes","recycling:textiles":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.214392,50.847732],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"92955950"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.224794,50.851552],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"462704115"},"type":"Feature"}
+]
+}

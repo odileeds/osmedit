@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-3.526716,54.48349],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1972860566","tag":{"recycling:batteries":"no","recycling:books":"no","recycling:cans":"yes","recycling:cardboard":"yes","recycling:cartons":"yes","recycling:clothes":"yes","recycling:electrical_appliances":"no","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:green_waste":"no","recycling:magazines":"yes","recycling:newspaper":"yes","recycling:paper":"yes","recycling:paper_packaging":"yes","recycling:plastic":"no","recycling:plastic_bottles":"yes","recycling:plastic_packaging":"no","recycling:scrap_metal":"no","recycling:small_appliances":"no","recycling:waste":"no","recycling:wood":"no","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.522602,54.506925],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3481706448"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.590677,54.492363],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3648489865"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.528221,54.482392],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4282094877"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.528607,54.481502],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4283758823"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.529011,54.481178],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4283798135"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.528491,54.482514],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4283816523"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.528391,54.484313],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4283919794"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.528351,54.483628],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4283924964"},"type":"Feature"}
+]
+}

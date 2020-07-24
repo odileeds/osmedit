@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.666512,51.564593],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4993314313"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.660772,51.574189],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4993331004"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.704739,51.589278],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5882823358"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.642873,51.563523],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6621480111","tag":{"operator":"Londis"}},"type":"Feature"}
+]
+}

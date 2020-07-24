@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.601988,51.802842],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5700725726","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.594152,51.808593],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5700726125","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.602488,51.802285],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5700726432","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.602364,51.802245],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5700726436","tag":{"recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.60235,51.802548],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5700726522","tag":{"waste":"rubbish bin"}},"type":"Feature"}
+]
+}

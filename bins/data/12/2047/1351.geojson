@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.062345,52.075584],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"87344978"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.030524,52.060228],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"271805151","tag":{"recycling:clothes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.032809,52.057002],"type":"Point"},"properties":{"amenity":"recycling","name":"Royston Household Waste Recycling Centre","osm_id":"273179196","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.026472,52.053753],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1086585800","tag":{"recycling:clothes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.0272,52.053105],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5041475924"},"type":"Feature"}
+]
+}

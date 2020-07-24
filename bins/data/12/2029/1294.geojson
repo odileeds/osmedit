@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.642658,55.045674],"type":"Point"},"properties":{"amenity":"recycling","name":"Brunswick Industrial Estate Recycle Centre","osm_id":"510416189"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.619668,55.057195],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"765376576","tag":{"recycling:cans":"yes","recycling:glass":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.584771,55.076921],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5600516596","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.623006,55.028452],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6173779797"},"type":"Feature"}
+]
+}

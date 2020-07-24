@@ -1,9 +1,11 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:51:42Z",
+"lastupdate": "2020-07-24T00:48:03Z",
 "features": [
 	{"geometry":{"coordinates":[-1.295648,54.56149],"type":"Point"},"properties":{"amenity":"recycling","name":"Stockton Campus Recycling Centre","osm_id":"413023317"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.28735,54.571899],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"414039168","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.263196,54.552411],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"740540284"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.316695,54.569416],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"763128459"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.285886,54.544203],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4026238743"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.289629,54.545576],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4034692318"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.307978,54.562596],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4034692321"},"type":"Feature"},

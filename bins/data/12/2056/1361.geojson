@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[0.710851,51.556615],"type":"Point"},"properties":{"amenity":"recycling","name":"Stock Rd Civic Amenity Site","osm_id":"628243322"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.707601,51.546166],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630506620","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.705768,51.54851],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630653833","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.706655,51.548259],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630661635"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.706633,51.548226],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630661636","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.706046,51.548374],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630661637"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.706397,51.548496],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"630661644"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.731031,51.540459],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1599844128"},"type":"Feature"}
+]
+}

@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-6.816399,57.902642],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2897996476","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-6.799265,57.897943],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5308726473"},"type":"Feature"},
+	{"geometry":{"coordinates":[-6.802535,57.897795],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5308726489"},"type":"Feature"},
+	{"geometry":{"coordinates":[-6.808433,57.898915],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5308726510","tag":{"recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-6.81272,57.90108],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5308726518"},"type":"Feature"}
+]
+}

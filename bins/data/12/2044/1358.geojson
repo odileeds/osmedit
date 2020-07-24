@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.284768,51.715202],"type":"Point"},"properties":{"amenity":"recycling","name":"Colney Fields Retail Park","osm_id":"1814723165","tag":{"addr:city":"London Colney","addr:postcode":"AL2 1BG","recycling:cans":"yes","recycling:cardboard":"yes","recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:newspaper":"yes","recycling:paper":"yes","recycling:paper_packaging":"yes","recycling:plastic":"yes","recycling:plastic_bottles":"yes","recycling_type":"container"}},"type":"Feature"}
+]
+}

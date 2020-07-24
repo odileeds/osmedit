@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.305204,51.394218],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"165981608","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.30431,51.392864],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"290205760"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.30319,51.392148],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"290205762"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.280138,51.398613],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"314375185"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.28232,51.390113],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"385288522"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.281222,51.381398],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"385303752"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.272455,51.372079],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2188184215"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.271349,51.367238],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2188345953"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.30449,51.392996],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4395058260"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.305718,51.392616],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4395357607"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.305258,51.392794],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4395357630"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.309441,51.391255],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4405143880"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.284576,51.365039],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4569602107"},"type":"Feature"}
+]
+}

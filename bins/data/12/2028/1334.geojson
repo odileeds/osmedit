@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.750688,53.010568],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"287038358","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling_type":"centre"}},"type":"Feature"}
+]
+}

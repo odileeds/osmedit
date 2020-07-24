@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.099805,49.191598],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1675160236"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.080957,49.168157],"type":"Point"},"properties":{"amenity":"recycling","name":"Le Marais recycling","osm_id":"1780640234","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.081397,49.165961],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1780640240","tag":{"recycling:cans":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.080776,49.165551],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1780640241","tag":{"recycling:clothes":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.086585,49.19849],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2132001895"},"type":"Feature"}
+]
+}

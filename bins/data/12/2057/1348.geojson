@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[0.865739,52.257137],"type":"Point"},"properties":{"amenity":"recycling","name":"Norton Recycling Centre","osm_id":"5706645496","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:shoes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.823998,52.250427],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"6349080751","tag":{"recycling:paper":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.812936,52.250834],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6349101810"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.819492,52.250373],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6349101824"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.809278,52.250346],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6350418037"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.806799,52.251589],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6357716066"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.809028,52.253554],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6357716128"},"type":"Feature"}
+]
+}

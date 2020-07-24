@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[0.256024,52.407751],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"29044222"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.257644,52.403754],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2330639921"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.260597,52.399092],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488654500"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.26083,52.399092],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488654511"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261003,52.399097],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488654514"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261613,52.396524],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488673549"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261673,52.395929],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488673557"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261556,52.396018],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488673561"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261542,52.396165],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488673565"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.261711,52.396294],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2488673568"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.262373,52.399361],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2496172964"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.26247,52.399294],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4382403732"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.262392,52.398882],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4382407274"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.262092,52.397392],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6330620363"},"type":"Feature"}
+]
+}

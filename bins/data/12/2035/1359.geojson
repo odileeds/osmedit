@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.081017,51.666698],"type":"Point"},"properties":{"amenity":"recycling","name":"Bottle bank","osm_id":"868657607"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.107006,51.621084],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7449901709"},"type":"Feature"}
+]
+}

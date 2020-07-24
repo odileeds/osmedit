@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.453977,52.753723],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"313817235","tag":{"recycling:clothes":"yes","recycling:glass":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.438114,52.763646],"type":"Point"},"properties":{"amenity":"recycling","name":"Lount recycling centre","osm_id":"4713198224","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.455203,52.750678],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6728075181"},"type":"Feature"}
+]
+}

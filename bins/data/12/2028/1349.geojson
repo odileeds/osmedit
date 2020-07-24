@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.689536,52.180871],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4977310600"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.689534,52.180903],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4977310601","tag":{"recycling:clothes":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.71465,52.20154],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5535770344","tag":{"opening_hours":"24/7","operator":"Salvation Army","recycling:PET":"no","recycling:aluminium":"no","recycling:batteries":"no","recycling:cans":"no","recycling:cardboard":"no","recycling:clothes":"yes","recycling:coffee_capsules":"no","recycling:cooking_oil":"no","recycling:electrical_appliances":"no","recycling:engine_oil":"no","recycling:glass":"no","recycling:glass_bottles":"no","recycling:green_waste":"no","recycling:paper":"no","recycling:plastic":"no","recycling:plastic_bottles":"no","recycling:plastic_packaging":"no","recycling:scrap_metal":"no","recycling:shoes":"yes","recycling:small_appliances":"no","recycling:waste":"no","recycling_type":"container","wheelchair":"no"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.712237,52.190458],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5536130166","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.703329,52.187618],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6173272967","tag":{"waste":"trash"}},"type":"Feature"}
+]
+}

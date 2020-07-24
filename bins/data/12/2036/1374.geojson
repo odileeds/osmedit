@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.053315,50.83561],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"360658607","tag":{"recycling:books":"yes","recycling:clothes":"yes","recycling:music":"yes","recycling:shoes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.050032,50.840833],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"360663267"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.040755,50.794563],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1484889127","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.040676,50.841367],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1485721712"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.047787,50.825841],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1496378571","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.047374,50.806002],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4738679645","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.047481,50.806065],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4738680901","tag":{"recycling:books":"yes","recycling:music":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.041433,50.839457],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5070143053","tag":{"recycling:glass":"yes","recycling:paper":"yes","recycling:plastics":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.049391,50.831667],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6003747208","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.052751,50.824298],"type":"Point"},"properties":{"amenity":"recycling","name":"H & E car spares and scrap yard","osm_id":"7335698332"},"type":"Feature"}
+]
+}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.067661,51.385543],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1927002765"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.03838,51.351427],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1941892459"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.079763,51.364394],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2620429794"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.028985,51.377434],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling Bins","osm_id":"7105503220","tag":{"operator":"Council","operator:type":"public","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:shoes":"yes","recycling_type":"centre"}},"type":"Feature"}
+]
+}

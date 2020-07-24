@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.52251,52.701875],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"458760181","tag":{"recycling:cans":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:textiles":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.516487,52.699356],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"461058255","tag":{"recycling:cans":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:textiles":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.503087,52.696366],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3634131410"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.495668,52.696381],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3634131901"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.502018,52.699137],"type":"Point"},"properties":{"amenity":"recycling","name":"James Rollason Metal Recycling","osm_id":"4248434620","tag":{"addr:city":"Telford","addr:housename":"Millfields","addr:postcode":"TF1 2NW","addr:street":"Haybridge Road","operator":"James Rollason","recycling:aluminium":"yes","recycling:batteries":"yes","recycling:electrical_appliances":"yes","recycling:scrap_metal":"yes"}},"type":"Feature"}
+]
+}

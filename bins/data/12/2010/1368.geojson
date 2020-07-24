@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-3.310918,51.166433],"type":"Point"},"properties":{"amenity":"recycling","name":"Williton HWRC","osm_id":"1382169352","tag":{"recycling_type":"centre"}},"type":"Feature"}
+]
+}

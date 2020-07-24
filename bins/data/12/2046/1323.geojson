@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.101965,53.54946],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4068270719"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.108177,53.566194],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4727886256"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.139351,53.571019],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5337751959","tag":{"disused":"yes","opening_hours":"24/7","recycling:cans":"yes","recycling:cardboard":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:plastic":"yes","recycling_type":"container"}},"type":"Feature"}
+]
+}

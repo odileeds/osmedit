@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.598919,51.144015],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5386008616","tag":{"recycling:bottles":"yes","recycling:clothes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.597813,51.141209],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7532976317","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.596681,51.140131],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7532976325","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.594853,51.1417],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7532976330","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.585837,51.139536],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7652545445","tag":{"recycling:clothes":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.597578,51.142377],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7726377745","tag":{"addr:street":"Salisbury Lane","waste":"dog_excrement"}},"type":"Feature"}
+]
+}

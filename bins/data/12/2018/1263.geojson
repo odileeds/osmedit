@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.613049,56.60175],"type":"Point"},"properties":{"amenity":"recycling","name":"Letham Grange Hotel","osm_id":"540940208","tag":{"tourism":"hotel"}},"type":"Feature"}
+]
+}

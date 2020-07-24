@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.546256,53.191705],"type":"Point"},"properties":{"amenity":"recycling","name":"Winsford Metal Demolition","osm_id":"3257529536","tag":{"addr:city":"Winsford","addr:postcode":"CW7 2LZ","addr:street":"Whitby's Lane","phone":"+44 1606 552777","website":"http://winsfordmetals.co.uk/"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.518248,53.2228],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3360607317","tag":{"recycling:cans":"yes","recycling:glass":"yes","recycling_type":"plastic"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.511723,53.186894],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6731370383"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.510642,53.187019],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6944560703"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.540005,53.189264],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7492664751"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.537459,53.186725],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7492728785"},"type":"Feature"}
+]
+}

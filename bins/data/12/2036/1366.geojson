@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-1.042706,51.26325],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"359172505"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.045332,51.27872],"type":"Point"},"properties":{"amenity":"recycling","name":"Car Breakers","osm_id":"391539120"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.043029,51.276356],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"474029617"},"type":"Feature"}
+]
+}

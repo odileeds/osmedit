@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[0.787522,50.936275],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"420417857","tag":{"recycling:glass_bottles":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.725185,50.949899],"type":"Point"},"properties":{"amenity":"recycling","name":"Gibbet Marsh Car Park","osm_id":"420420602","tag":{"recycling:cans":"yes","recycling:cardboard":"yes","recycling:glass_bottles":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.722825,50.915754],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2923645057","tag":{"recycling:glass":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.732073,50.949026],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6087860704"},"type":"Feature"}
+]
+}

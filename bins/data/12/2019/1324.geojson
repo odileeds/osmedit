@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.489427,53.524693],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6450169970"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.527829,53.532496],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6595854236"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.527579,53.532573],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6595854237"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.52702,53.532486],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6595924754"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.523612,53.535352],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6596744334"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.523633,53.5391],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6600123277"},"type":"Feature"}
+]
+}

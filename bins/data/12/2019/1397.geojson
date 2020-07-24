@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.543681,49.50645],"type":"Point"},"properties":{"amenity":"recycling","name":"Mont Cuet Recycling","osm_id":"810594322"},"type":"Feature"}
+]
+}

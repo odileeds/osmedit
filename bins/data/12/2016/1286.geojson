@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-2.759056,55.434004],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"772241744","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.792144,55.435066],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"772241752"},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.772403,55.43969],"type":"Point"},"properties":{"amenity":"recycling","name":"Henderson Road","osm_id":"2014100540","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-2.767918,55.437277],"type":"Point"},"properties":{"amenity":"recycling","name":"Burnfoot school recycling","osm_id":"2014101698","tag":{"recycling_type":"container"}},"type":"Feature"}
+]
+}

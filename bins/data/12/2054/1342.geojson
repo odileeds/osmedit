@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[0.574054,52.585137],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1575333948","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:shoes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.557156,52.538491],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2881517112","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.587358,52.538811],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2881570335","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.605542,52.56306],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2881655751","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.572984,52.583332],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2962620862"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.585209,52.541907],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4166414192","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.585306,52.54188],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4166414195","tag":{"recycling:paper":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.581423,52.542935],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4168928502","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.579508,52.546152],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4168928515","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.530463,52.564716],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4277359667","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[0.607822,52.560336],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4932659291","tag":{"recycling_type":"container"}},"type":"Feature"}
+]
+}

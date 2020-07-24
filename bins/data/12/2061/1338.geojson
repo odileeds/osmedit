@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[1.19178,52.801567],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1779196590","tag":{"recycling:glass":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[1.161684,52.77126],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4108271851","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[1.179623,52.759791],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4826781383"},"type":"Feature"},
+	{"geometry":{"coordinates":[1.163645,52.770837],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7372325228","tag":{"recycling:clothes":"yes","recycling:paper":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[1.163627,52.770611],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7372325231","tag":{"colour":"green","material":"plastic","waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[1.165418,52.76995],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7397902461","tag":{"colour":"green","material":"plastic"}},"type":"Feature"}
+]
+}

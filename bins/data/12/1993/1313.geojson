@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-4.756499,54.086372],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"414899375"},"type":"Feature"},
+	{"geometry":{"coordinates":[-4.755991,54.086703],"type":"Point"},"properties":{"amenity":"recycling","name":"Hospice Shop","osm_id":"1666047899","tag":{"recycling:batteries":"no","recycling:books":"yes","recycling:clothes":"yes","recycling:electrical_appliances":"yes","recycling:furniture":"yes","recycling:glass":"yes","recycling:magazines":"yes","recycling:small_appliances":"yes","recycling_type":"centre"}},"type":"Feature"}
+]
+}

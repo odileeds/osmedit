@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-4.636073,54.199455],"type":"Point"},"properties":{"amenity":"recycling","name":"Western Civic Amenity Site","osm_id":"492646005"},"type":"Feature"}
+]
+}

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:51:42Z",
+"lastupdate": "2020-07-24T00:48:03Z",
 "features": [
 	{"geometry":{"coordinates":[-1.312249,54.402232],"type":"Point"},"properties":{"amenity":"recycling","name":"Primary School","osm_id":"513412586"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.308975,54.399385],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4233482444"},"type":"Feature"},

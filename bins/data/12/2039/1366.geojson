@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.726367,51.276758],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"36742763"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.717229,51.255775],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"316957538"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.738719,51.247259],"type":"Point"},"properties":{"amenity":"recycling","name":"Household Waste Recycling Centre","osm_id":"426957040","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.742277,51.248971],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"426960047"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.765395,51.241301],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"443373107"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.761943,51.236777],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"443373153"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.762024,51.250033],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"479159838"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.769734,51.247737],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"479188745"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.772724,51.250232],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"638571657"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.743041,51.251347],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"656430372","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:shoes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.737476,51.252102],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"656430379","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:shoes":"yes"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.722142,51.272233],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1670285253","tag":{"designation":"Dog Bin"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778098,51.238625],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4787183443"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.771774,51.274674],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6843917695","tag":{"colour":"silver","material":"metal"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.771826,51.274649],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6843917696","tag":{"colour":"silver","material":"metal"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.771863,51.274677],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6843917697","tag":{"colour":"silver","material":"metal"}},"type":"Feature"}
+]
+}

@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T00:48:03Z",
+"features": [
+	{"geometry":{"coordinates":[-0.547105,51.894918],"type":"Point"},"properties":{"amenity":"recycling","name":"Dunstable Recycling Centre","osm_id":"291315771"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.537689,51.94097],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4972137649","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.536383,51.942639],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4972137650","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.536516,51.94108],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6342075831","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.534512,51.941304],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6342075832","tag":{"waste":"trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.528831,51.941579],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6342075833","tag":{"waste":"dog_excrement"}},"type":"Feature"}
+]
+}
