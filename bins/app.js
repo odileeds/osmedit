@@ -384,12 +384,12 @@ var app;
 					}
 					for(p in this.props){
 						if(!propertylookup[p] || (propertylookup[p] && !propertylookup[p].hide)){
-							ul += '<tr><td><strong>'+(propertylookup[p] ? propertylookup[p].label : p)+'</strong>:</td><td>'+this.props[p]+'</td></tr>';
+							ul += '<tr><td><strong>'+(propertylookup[p] ? propertylookup[p].label : p)+'</strong>:</td><td>'+(p == "website" ? '<a href="'+this.props[p]+'" target="_external">'+this.props[p]+'</a>' : this.props[p])+'</td></tr>';
 						}
 					}
 					ul += '<tr><td><strong>OSMID:</strong></td><td>'+this.id+'</td></tr>'
 					ul = '<table class="small">'+ul+'</table>';
-					return {'label':'<h3>'+title+'</h3>'+(str ? '<p>'+str+'</p>':'')+ul, 'options':{'className':cls,'icon':ico}};
+					return {'label':'<h3>'+title+'</h3>'+(str ? '<p>'+str+'</p>':'')+ul+'<p class="tiny">'+this.lastupdate+'</p>', 'options':{'className':cls,'icon':ico}};
 				}
 			});
 			
