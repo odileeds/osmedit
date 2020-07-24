@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-23T17:29:38Z",
+"lastupdate": "2020-07-24T08:37:10Z",
 "features": [
 	{"geometry":{"coordinates":[-1.853722,53.628093],"type":"Point"},"properties":{"amenity":"recycling","name":"Titanic Mill","osm_id":"952454818"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.927063,53.603273],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5467867274","tag":{"recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"},

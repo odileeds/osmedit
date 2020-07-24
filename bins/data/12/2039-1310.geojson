@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-24T08:37:10Z",
+"features": [
+	{"geometry":{"coordinates":[-0.7767,54.245698],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1400348909"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.776338,54.245647],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1400348925"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778872,54.246059],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1855160622"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.774373,54.243913],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5077222211","tag":{"recycling:glass_bottles":"yes","recycling:plastic_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.776062,54.249265],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713476"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.777468,54.245749],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713479"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778552,54.2462],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713480"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.779241,54.245697],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713481"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.779016,54.245672],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713482"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778903,54.245536],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713483"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778957,54.245387],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713484"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.778982,54.245058],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713485"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.777916,54.245555],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713486"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.781679,54.246462],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713487"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.781583,54.246307],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713488"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.780609,54.246427],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5263713489"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.781025,54.243882],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5699053619","tag":{"recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.775553,54.244936],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5699102117"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.775244,54.244968],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5699102118"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.775465,54.244775],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5699102119"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.709109,54.241019],"type":"Point"},"properties":{"amenity":"recycling","name":"Thornton-le-Dale Household Waste Recycling Centre","osm_id":"7599795820","tag":{"addr:city":"Thornton-le-Dale","addr:postcode":"YO18 7QP","addr:street":"Outgang Lane"}},"type":"Feature"}
+]
+}
