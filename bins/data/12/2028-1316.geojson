@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T08:37:10Z",
+"lastupdate": "2020-07-24T09:40:17Z",
 "features": [
 	{"geometry":{"coordinates":[-1.747955,53.913788],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"27485696"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.698018,53.904405],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091243","tag":{"collection_times":"We; Fr","condition":"FAIR","ref:UK:leedscc:bin":"3571","waste_basket:model":"METAL TWIN"}},"type":"Feature"},
@@ -39,11 +39,6 @@
 	{"geometry":{"coordinates":[-1.710344,53.913308],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091366","tag":{"collection_times":"We; Su","condition":"POOR","ref:UK:leedscc:bin":"3581","waste_basket:model":"PLASTIC ROUND OPEN TOP"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.697542,53.912325],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091368","tag":{"collection_times":"We; Su","ref:UK:leedscc:bin":"2284"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.708694,53.913671],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091373","tag":{"collection_times":"We; Su","condition":"FAIR","ref:UK:leedscc:bin":"6864","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.71524,53.914384],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091379","tag":{"collection_times":"We; Su","condition":"GOOD","ref:UK:leedscc:bin":"3585","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.715058,53.915983],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091397","tag":{"collection_times":"We; Su","condition":"GOOD","ref:UK:leedscc:bin":"6863","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.697519,53.915223],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091400","tag":{"collection_times":"We; Su","condition":"FAIR","ref:UK:leedscc:bin":"2286","waste_basket:model":"METAL TWIN"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.690569,53.91445],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091402","tag":{"collection_times":"We; Su","condition":"GOOD","ref:UK:leedscc:bin":"3735","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.69753,53.915821],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091403","tag":{"collection_times":"We; Su","condition":"POOR","ref:UK:leedscc:bin":"2285","waste_basket:model":"POST BIN OPEN TOP"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.71524,53.914384],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091379","tag":{"collection_times":"We; Su","condition":"GOOD","ref:UK:leedscc:bin":"3585","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.715058,53.915983],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091397","tag":{"collection_times":"We; Su","condition":"GOOD","ref:UK:leedscc:bin":"6863","waste_basket:model":"METAL SQUARE"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.697519,53.915223],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091400","tag":{"collection_times":"We; Su","condition":"FAIR","ref:UK:leedscc:bin":"2286","waste_basket:model":"METAL TWIN"}},"type":"Feature"},
