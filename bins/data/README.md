@@ -1,6 +1,6 @@
 # Data
 
-To power the Open Street Map bin explorer we generate static GeoJSON "tiles" arranged in the following structure:
+To power the [OpenStreetMap Bins explorer](https://odileeds.github.io/osmedit/bins/) we generate static GeoJSON "tiles" arranged in the following structure:
 
 `12/{x}/{y}.geojson`
 
