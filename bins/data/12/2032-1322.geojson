@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T09:40:17Z",
+"lastupdate": "2020-07-24T00:51:42Z",
 "features": [
 	{"geometry":{"coordinates":[-1.326068,53.601532],"type":"Point"},"properties":{"amenity":"recycling","name":"Shanks waste management","osm_id":"4501974989","tag":{"name:en":"Shanks waste management"}},"type":"Feature"}
 ]

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T09:40:17Z",
+"lastupdate": "2020-07-24T00:51:42Z",
 "features": [
 	{"geometry":{"coordinates":[-1.325518,53.920432],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2264343106","tag":{"recycling:glass_bottles":"yes","recycling:paper":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.405784,53.908643],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429091226","tag":{"ref:UK:leedscc:bin":"2826"}},"type":"Feature"},
