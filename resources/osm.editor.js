@@ -475,7 +475,7 @@
 
 					// If we don't have this node we build a basic structure for it
 					if(!_obj.nodes[id]){
-						_obj.nodes[id] = {'id':el.properties.osm_id,'props':{},'popup':'','changedtags':[]};
+						_obj.nodes[id] = {'id':el.properties.osm_id,'props':{},'popup':'','changedtags':[],'lastupdate':json.lastupdate};
 					}
 
 					if(typeof lon==="number" && typeof lat==="number"){
@@ -492,13 +492,20 @@
 									_obj.nodes[id].props[t] = el.properties.tag[t]||"";
 								}
 							}else{
-								_obj.nodes[id].props[p] = el.properties[p];
+								if(p != "osm_id"){
+									_obj.nodes[id].props[p] = el.properties[p];
+								}
 							}
 						}
 					}
 				}	
 			}).catch(error => {
 				console.error(error,url);
+				_obj.nodegetter.tiles[tileid].data = {};
+				_obj.nodegetter.tiles[tileid].id = [];
+
+				// Update the time stamp
+				_obj.nodegetter.tiles[tileid].lastupdate = (new Date()).toISOString();
 			});
 		}
 
@@ -584,21 +591,13 @@
 			// Get the map bounds (with padding)
 			var b = this.map.getBounds();//.pad(2 * Math.sqrt(2) / 2);
 
-			// Only update if the zoom level is deep enough
-			if(this.map.getZoom() <= 12){
-				// Zoom level not deep enough
-				console.warn('Not close enough for Geojson grab');
-				return this;
-			}
-
 			var tiles = tiler.xyz(b,12);
 			
 			var qs,i,t,id;
 			var promises = [];
 			
 			for(t = 0; t < tiles.length; t++){
-				
-				id = tiles[t].z+'/'+tiles[t].x+'-'+tiles[t].y;
+				id = tiles[t].z+'/'+tiles[t].x+'/'+tiles[t].y;
 				if(!this.nodegetter.tiles[id]){
 					this.nodegetter.tiles[id] = {'url':'data/'+id+'.geojson'};
 					// If we haven't already downloaded the data
@@ -851,7 +850,7 @@
 		}
 
 		this.on('moveend',function(){
-			if(_obj.map.getZoom() >= 13){
+			if(_obj.map.getZoom() >= 11){
 				_obj.getNodes(_obj.node.type,_obj.nodegetter._options);
 			}
 		});
