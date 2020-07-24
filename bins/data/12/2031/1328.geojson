@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-24T08:37:10Z",
-"features": [
-	{"geometry":{"coordinates":[-1.465309,53.322376],"type":"Point"},"properties":{"amenity":"recycling","name":"Jordanthorpe Recycling Centre","osm_id":"3632892005","tag":{"recycling:cardboard":"yes","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:newspaper":"yes","recycling:paper":"yes","recycling_type":"centre"}},"type":"Feature"}
-]
-}
