@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[0.034232,51.399328],"type":"Point"},"properties":{"amenity":"recycling","name":"Waldo Road Reuse & Recycling Centre","osm_id":"420364322"},"type":"Feature"},
 	{"geometry":{"coordinates":[0.011282,51.406888],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"420369793"},"type":"Feature"},

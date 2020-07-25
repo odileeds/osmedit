@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-2.243631,53.514456],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1504230878","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.274793,53.517885],"type":"Point"},"properties":{"amenity":"recycling","name":"AYM to Recycle","osm_id":"3061333833","tag":{"opening_hours":"24/7","recycling:clothes":"yes","recycling:shoes":"yes"}},"type":"Feature"},

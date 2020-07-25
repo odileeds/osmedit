@@ -1,13 +1,13 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-1.231486,52.955541],"type":"Point"},"properties":{"amenity":"recycling","name":"Trowell Road Recycling Site","osm_id":"347002677"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.269539,52.933659],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"600199019","tag":{"recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.249357,52.937613],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"638828575","tag":{"operator":"Broxtowe Borough Council","recycling:cans":"yes","recycling:cardboard":"yes","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.281874,52.953857],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1162520590","tag":{"recycling:glass":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.25475,52.90905],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2281091133","tag":{"recycling:cardboard":"yes","recycling:cartons":"yes","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes","recycling:shoes":"yes"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.274769,52.929411],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5276413741"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.274758,52.929374],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5276413741"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.27544,52.929268],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5276413745"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.276712,52.928604],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5276413830"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.277632,52.928224],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5276459440"},"type":"Feature"},
@@ -20,7 +20,7 @@
 	{"geometry":{"coordinates":[-1.279762,52.926013],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5278667647"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.280064,52.926375],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5278667670"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.279851,52.926402],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5278667679"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.278674,52.927525],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5278667728"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.278654,52.927518],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5278667728"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.290413,52.923116],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5309381615"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.287725,52.923745],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5309381665"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.285542,52.92246],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5309381724"},"type":"Feature"},
@@ -171,6 +171,13 @@
 	{"geometry":{"coordinates":[-1.274231,52.925251],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7737714761"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.272333,52.926009],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7737717710"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.273756,52.926006],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7737717719"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.275331,52.925859],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7737717727","tag":{"waste":"dog_excrement"}},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.27523,52.925872],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7737717727","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.278248,52.925306],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892218"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.273294,52.927249],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892270"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.270884,52.926186],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892316"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.270687,52.925487],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892327"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.275529,52.925893],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892407"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.275856,52.926858],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892409"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.275245,52.928361],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7741892513"},"type":"Feature"}
 ]
 }

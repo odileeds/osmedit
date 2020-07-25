@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.16059,51.502466],"type":"Point"},"properties":{"amenity":"recycling","name":"Wedal Road Refuse","osm_id":"553078683"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.162498,51.454707],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4801338635"},"type":"Feature"},

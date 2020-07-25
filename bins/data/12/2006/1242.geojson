@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.635926,57.607535],"type":"Point"},"properties":{"amenity":"recycling","name":"ReBOOT Forres","osm_id":"6200082712","tag":{"recycling:electrical_appliances":"yes","recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.613341,57.609826],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6200187801"},"type":"Feature"},

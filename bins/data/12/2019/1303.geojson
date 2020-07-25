@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-2.482321,54.619644],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1643281868"},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.493498,54.577293],"type":"Point"},"properties":{"amenity":"recycling","name":"Broad Close Recycling","osm_id":"3365952779","tag":{"addr:city":"Appleby","addr:street":"Chapel Street","operator":"Eden District Council","recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes"}},"type":"Feature"},

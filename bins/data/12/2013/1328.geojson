@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.065234,53.298135],"type":"Point"},"properties":{"amenity":"recycling","name":"Cheshire County Council Household Waste Recycing Site","osm_id":"28249581"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.062691,53.290195],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"479160920"},"type":"Feature"}

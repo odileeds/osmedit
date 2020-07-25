@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.4098,56.349157],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3813746801","tag":{"recycling:electrical_appliances":"no","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:green_waste":"no","recycling:scrap_metal":"no","recycling:small_appliances":"no","recycling:waste":"no","recycling:wood":"no","recycling_type":"container"}},"type":"Feature"}
 ]

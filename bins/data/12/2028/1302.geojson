@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-1.684357,54.638558],"type":"Point"},"properties":{"amenity":"recycling","name":"Romanway Household Waste and Recycling Centre","osm_id":"1716115678","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.71292,54.635153],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1716421459"},"type":"Feature"},

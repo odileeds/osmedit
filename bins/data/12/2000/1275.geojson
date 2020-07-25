@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-4.200652,55.974666],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7459519232","tag":{"operator":"East Dunbartonshire Council","recycling:glass":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes","recycling_type":"centre"}},"type":"Feature"}
 ]

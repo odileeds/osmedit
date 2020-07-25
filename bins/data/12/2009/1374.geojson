@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.340523,50.81857],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"65202015"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.379732,50.805272],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"708772222"},"type":"Feature"},

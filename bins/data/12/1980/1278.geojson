@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-5.950806,55.832981],"type":"Point"},"properties":{"amenity":"recycling","name":"Distillery Bridge","osm_id":"443270240","tag":{"recycling:aluminium":"yes","recycling:cans":"yes","recycling:cartons":"yes","recycling:plastic":"yes","recycling:plastic_bags":"yes","recycling:plastic_bottles":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-5.947199,55.832146],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1768818374","tag":{"recycling:glass":"yes"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[0.486078,52.040802],"type":"Point"},"properties":{"amenity":"recycling","name":"Birdbrook Recycling Centre","osm_id":"321478779","tag":{"recycling:glass":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.448903,52.04191],"type":"Point"},"properties":{"amenity":"recycling","name":"Glass Recyclign Bins","osm_id":"1935067334"},"type":"Feature"}

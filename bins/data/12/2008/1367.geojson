@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.467489,51.204527],"type":"Point"},"properties":{"amenity":"recycling","name":"Minehead Recycling Centre","osm_id":"1322906003","tag":{"operator":"Somerset County Council","recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.464369,51.202238],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1633779339","ref":"Recyling Bins"},"type":"Feature"},

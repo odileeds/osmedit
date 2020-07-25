@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-1.908373,52.416484],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"257549667"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.91854,52.416467],"type":"Point"},"properties":{"amenity":"recycling","name":"Lifford Lane Household Recycling Centre","osm_id":"287879975","tag":{"recycling_type":"centre"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-2.099805,49.191598],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1675160236"},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.080957,49.168157],"type":"Point"},"properties":{"amenity":"recycling","name":"Le Marais recycling","osm_id":"1780640234","tag":{"recycling_type":"container"}},"type":"Feature"},

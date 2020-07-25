@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.203293,50.79081],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5186027163","tag":{"waste":"trash"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.20288,50.790606],"type":"Point"},"properties":{"amenity":"waste_basket","highway":"crossing","osm_id":"5186027166","tag":{"crossing":"uncontrolled","crossing_ref":"zebra","sloped_curb":"both","tactile_paving":"yes","waste":"trash"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-2.089824,54.979469],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2621482490","tag":{"operator":"SITA","recycling:cans":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling_type":"centre"}},"type":"Feature"}
 ]

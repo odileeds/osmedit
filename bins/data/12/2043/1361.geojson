@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-0.410645,51.560168],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"544301261","tag":{"operator":"Hillingdon"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.412194,51.56103],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"544303741","tag":{"operator":"Hillingdon"}},"type":"Feature"},

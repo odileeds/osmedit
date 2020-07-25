@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.06664,50.70694],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"355314737"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.065931,50.70624],"type":"Point"},"properties":{"amenity":"recycling","name":"Tesco Seaton Recyling","osm_id":"1648548162","tag":{"recycling:cans":"yes","recycling:cardboard":"yes","recycling:cartons":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:newspaper":"yes","recycling:paper":"yes","recycling_type":"container"}},"type":"Feature"},

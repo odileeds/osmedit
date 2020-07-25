@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-3.427612,56.376878],"type":"Point"},"properties":{"amenity":"recycling","name":"Friarton Road Recycling Centre","osm_id":"267932112","tag":{"recycling:batteries":"yes","recycling:cardboard":"yes","recycling:clothes":"yes","recycling:engine_oil":"yes","recycling:glass":"yes","recycling:green_waste":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes","recycling:scrap_metal":"yes","recycling:shoes":"yes","recycling:white_goods":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.396726,56.373252],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2838352071"},"type":"Feature"}

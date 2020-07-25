@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-24T00:48:03Z",
+"lastupdate": "2020-07-25T00:42:33Z",
 "features": [
 	{"geometry":{"coordinates":[-2.155264,54.993737],"type":"Point"},"properties":{"amenity":"recycling","name":"Paper Mill","osm_id":"1568451552"},"type":"Feature"}
 ]
