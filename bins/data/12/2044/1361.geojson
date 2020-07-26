@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.317318,51.559811],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"31472891","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.35074,51.523857],"type":"Point"},"properties":{"amenity":"recycling","name":"Greenford Re-use and Recycling Centre","osm_id":"32546337","tag":{"addr:postcode":"UB6 9AP","recycling:batteries":"yes","recycling:cans":"yes","recycling:engine_oil":"yes","recycling:glass_bottles":"yes","recycling:green_waste":"yes","recycling:white_goods":"yes"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-3.269989,55.918075],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"28101667"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.283362,55.914652],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"31034894"},"type":"Feature"},
@@ -34,6 +34,7 @@
 	{"geometry":{"coordinates":[-3.257914,55.914042],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7619678899"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.257781,55.907319],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7620437005"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.259482,55.924547],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7658519697"},"type":"Feature"},
-	{"geometry":{"coordinates":[-3.254145,55.924484],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7658519931"},"type":"Feature"}
+	{"geometry":{"coordinates":[-3.254145,55.924484],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7658519931"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.263855,55.924315],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7746679748","tag":{"recycling:clothes":"yes","recycling_type":"container"}},"type":"Feature"}
 ]
 }

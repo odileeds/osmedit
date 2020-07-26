@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-5.473109,56.416524],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7280446640"},"type":"Feature"},
 	{"geometry":{"coordinates":[-5.472566,56.4148],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7280456876","tag":{"colour":"Black","operator":"Argll and Bute Council","waste":"trash"}},"type":"Feature"},

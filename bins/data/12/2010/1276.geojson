@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-3.293209,55.940753],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"29173155"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.271791,55.972382],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"33579194"},"type":"Feature"},
@@ -78,6 +78,7 @@
 	{"geometry":{"coordinates":[-3.305125,55.960786],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7617800687"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.251961,55.933622],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7658035432"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.256258,55.95598],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7723655982"},"type":"Feature"},
-	{"geometry":{"coordinates":[-3.271487,55.932501],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7728625056"},"type":"Feature"}
+	{"geometry":{"coordinates":[-3.271487,55.932501],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7728625056"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.267585,55.929996],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7746321680"},"type":"Feature"}
 ]
 }

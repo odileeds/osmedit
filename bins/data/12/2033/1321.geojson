@@ -1,10 +1,10 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.294499,53.676551],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1591394398"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.302015,53.695644],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7180445667","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.307109,53.695417],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7514404933","tag":{"colour":"Black/Dark Grey","description":"On lampost 1","material":"plastic","operator":"Wakefield Council","waste":"trash;dog_excrement;recycling;mixed"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.316843,53.695377],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7632225970"},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.316866,53.695401],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7632225970","tag":{"collection_times":"Thursday any time","material":"reinforced_concrete","operator":"Wakefield Council.","waste":"trash;dog_excrement;mixed;recycling"}},"type":"Feature"}
 ]
 }

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.244748,51.996404],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"853930976","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.209754,51.969874],"type":"Point"},"properties":{"amenity":"recycling","name":"Ivel Court Recycling","osm_id":"1484824222","tag":{"recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling_type":"centre"}},"type":"Feature"},

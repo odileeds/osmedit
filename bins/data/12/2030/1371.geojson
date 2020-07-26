@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.495203,50.990124],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"34679291"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.559436,50.973026],"type":"Point"},"properties":{"amenity":"recycling","name":"Carlo's glass bank","osm_id":"500030453"},"type":"Feature"},

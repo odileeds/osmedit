@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-3.330077,56.120678],"type":"Point"},"properties":{"amenity":"recycling","name":"Rober Smith Court","osm_id":"60944672"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.257982,56.102402],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7126932926","tag":{"recycling_type":"container"}},"type":"Feature"}

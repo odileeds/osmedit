@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-4.152985,55.763169],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"442580259"},"type":"Feature"},
 	{"geometry":{"coordinates":[-4.19883,55.7408],"type":"Point"},"properties":{"amenity":"recycling","name":"Morrisons","osm_id":"444926185","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},

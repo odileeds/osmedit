@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.987459,51.35329],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"773239785","tag":{"recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.969614,51.367353],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4023917142","tag":{"phone":"+44 1380 730768","recycling:cans":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"yes","recycling_type":"centre","website":"http://www.wiltshire.gov.uk/rubbish-and-recycling/household-recycling-centres"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.760692,51.290563],"type":"Point"},"properties":{"amenity":"recycling","name":"Asda recycling","osm_id":"448282681"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.779945,51.298537],"type":"Point"},"properties":{"amenity":"recycling","name":"Bottle bank","osm_id":"459173283"},"type":"Feature"},

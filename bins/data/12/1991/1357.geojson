@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-4.960769,51.763541],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4379725559"},"type":"Feature"},
 	{"geometry":{"coordinates":[-5.004142,51.778228],"type":"Point"},"properties":{"amenity":"recycling","name":"Winsel Civic Amenity & Recycling Centre","osm_id":"5470068587","tag":{"recycling_type":"centre"}},"type":"Feature"}

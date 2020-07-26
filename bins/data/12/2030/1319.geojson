@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.543751,53.781826],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"308513447","tag":{"recycling:glass_bottles":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.541564,53.7793],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"389996299","tag":{"recycling:glass_bottles":"brown","recycling_type":"container"}},"type":"Feature"},
@@ -173,7 +173,7 @@
 	{"geometry":{"coordinates":[-1.549267,53.800292],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088176","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"522"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.541493,53.79609],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088179","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"938"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.542166,53.799047],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088180","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3209"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.549803,53.795678],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088184","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"41"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.549803,53.795678],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088184","tag":{"operator":"Leeds City Council","ref:UK:leedscc:bin":"41"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.545326,53.797335],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088185","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"65"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.545241,53.798479],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088186","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"52"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.555132,53.796805],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088187","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3530"}},"type":"Feature"},
@@ -227,7 +227,7 @@
 	{"geometry":{"coordinates":[-1.534289,53.795462],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088282","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"1633"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.548515,53.799924],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088283","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"518"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.542008,53.79942],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088288","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"2232"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.55241,53.796547],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088289","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3527"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.552456,53.796488],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088289","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3527"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.540193,53.798141],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088292","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3417"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.540183,53.798143],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088293","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"3438"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.547344,53.800157],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7429088294","tag":{"operator":"CITY CENTRE MANAGEMENT","ref:UK:leedscc:bin":"786"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.777686,51.17858],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling containers","osm_id":"3512640845","tag":{"recycling:cans":"yes","recycling:cardboard":"yes","recycling:cartons":"yes","recycling:clothes":"yes","recycling:foil":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes","recycling:plastic_packaging":"yes","recycling_type":"container"}},"type":"Feature"}
 ]

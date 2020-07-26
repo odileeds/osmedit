@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-2.291829,53.543859],"type":"Point"},"properties":{"amenity":"recycling","name":"Fountain Place, Recycling","osm_id":"967674482"},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.297395,53.592046],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4968265065"},"type":"Feature"},

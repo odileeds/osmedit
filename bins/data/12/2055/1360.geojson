@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[0.639892,51.572041],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1248773411","tag":{"operator":"Southend Council","recycling:glass":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.639136,51.572779],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1248819175"},"type":"Feature"},

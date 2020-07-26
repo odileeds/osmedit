@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.727065,52.000518],"type":"Point"},"properties":{"amenity":"recycling","name":"Tesco Car Park","osm_id":"456846940"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.708775,52.024003],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1145376415","tag":{"recycling:glass":"yes"}},"type":"Feature"},

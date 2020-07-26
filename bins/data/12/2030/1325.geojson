@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.539427,53.436715],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"243892922"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.563087,53.473321],"type":"Point"},"properties":{"amenity":"recycling","name":"Deepcar Household Waste Recycling Centre","osm_id":"2812307166","tag":{"addr:city":"Deepcar","addr:postcode":"S36 2DT","addr:street":"Manchester Road","opening_hours:url":"http://www.veoliaenvironmentalservices.co.uk/Sheffield/recycling-sites/Household-Waste-Recycling-Centres/Sheffield-Road-HWRC/","operator":"Veolia","recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","website":"http://www.veoliaenvironmentalservices.co.uk/Sheffield/recycling-sites/Household-Waste-Recycling-Centres/Sheffield-Road-HWRC/"}},"type":"Feature"}

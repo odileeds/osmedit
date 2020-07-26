@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-3.507148,54.706017],"type":"Point"},"properties":{"amenity":"recycling","name":"Household Waste Recycling Centre - Glasson Industrial Estate","osm_id":"2382709167","tag":{"opening_hours":"08:00-18:00","recycling_type":"centre","website":"https://www.cumbria.gov.uk/planning-environment/waste-management/servicesincumbria/hwrcs/glasson.asp"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.469949,54.687663],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3359571513"},"type":"Feature"},

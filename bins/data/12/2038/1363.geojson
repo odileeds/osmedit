@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-0.836691,51.403041],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"280145183","tag":{"recycling:glass":"yes","recycling:paper":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.829185,51.411196],"type":"Point"},"properties":{"amenity":"recycling","name":"Glass and old-clothes recycling bins","osm_id":"287134749","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.276085,52.349903],"type":"Point"},"properties":{"amenity":"recycling","name":"Sainsbury","osm_id":"1311681500","tag":{"recycling:cardboard":"yes","recycling:cartons":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.314753,52.335184],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1330413470"},"type":"Feature"},

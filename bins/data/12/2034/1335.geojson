@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-25T00:42:33Z",
+"lastupdate": "2020-07-26T00:31:07Z",
 "features": [
 	{"geometry":{"coordinates":[-1.215145,52.929501],"type":"Point"},"properties":{"amenity":"recycling","is_in":"Nottingham,Nottinghamshire,United Kingdom","osm_id":"206128331","tag":{"is_in:city":"Nottingham","is_in:county":"Nottinghamshire"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.173059,52.951553],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"379542831","tag":{"colour":"red","operator":"British Heart Foundation","recycling_type":"container"}},"type":"Feature"},
