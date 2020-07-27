@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-1.091218,52.871242],"type":"Point"},"properties":{"amenity":"recycling","name":"Bunny Lane Recycling Site","osm_id":"620135807","tag":{"operator":"Rushcliffe Borough Council","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.090226,52.890952],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5645768166"},"type":"Feature"},

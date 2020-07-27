@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-2.17799,52.186154],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"659033364"},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.191403,52.181362],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling Banks in Oak Apple Carpark","osm_id":"659034186"},"type":"Feature"},

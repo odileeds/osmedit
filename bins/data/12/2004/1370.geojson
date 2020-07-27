@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-3.832377,51.01667],"type":"Point"},"properties":{"amenity":"recycling","name":"South Molton Recycle","osm_id":"1106151735","tag":{"recycling:cardboard":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.823591,51.029223],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4384457022","tag":{"recycling:cardboard":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic_bottles":"yes","recycling_type":"container"}},"type":"Feature"}

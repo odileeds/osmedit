@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-3.254476,56.427042],"type":"Point"},"properties":{"amenity":"recycling","name":"Rait Village Recycling Facility","osm_id":"2178841677","tag":{"recycling_type":"container"}},"type":"Feature"}
 ]

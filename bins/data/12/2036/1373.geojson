@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-0.999959,50.847996],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"179982903","tag":{"designation":"Household Waste Recycling Centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.988323,50.849135],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"179984472"},"type":"Feature"},

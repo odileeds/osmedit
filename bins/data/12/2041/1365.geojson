@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-0.591114,51.317984],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"269002861","tag":{"recycling:beverage_cartons":"yes","recycling:books":"yes","recycling:cardboard":"yes","recycling:cds":"yes","recycling:clothes":"yes","recycling:dvds":"yes","recycling:paper":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.557851,51.320263],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"269006542"},"type":"Feature"},

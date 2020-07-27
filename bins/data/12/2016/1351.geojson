@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-2.744215,52.074419],"type":"Point"},"properties":{"amenity":"recycling","name":"Co-operative Supermarket car-park Recycling point","osm_id":"772135705"},"type":"Feature"}
 ]

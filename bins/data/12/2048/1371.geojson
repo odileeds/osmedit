@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[0.085617,50.972415],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4117460785","tag":{"opening_hours":"00:00 - 24:00","recycling:glass_bottles":"yes","recycling_type":"container","wheelchair":"yes"}},"type":"Feature"}
 ]

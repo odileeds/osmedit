@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-0.262806,52.542387],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"482714646"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.245228,52.569252],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4575119123","tag":{"recycling:clothes":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
@@ -68,6 +68,7 @@
 	{"geometry":{"coordinates":[-0.242787,52.572671],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6562995263"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.243696,52.572864],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6562995269"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.243208,52.572458],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6562995271"},"type":"Feature"},
-	{"geometry":{"coordinates":[-0.207516,52.574677],"type":"Point"},"properties":{"amenity":"recycling","name":"Peterborough Household Recycling Centre","osm_id":"7170704689","tag":{"recycling_type":"centre"}},"type":"Feature"}
+	{"geometry":{"coordinates":[-0.207516,52.574677],"type":"Point"},"properties":{"amenity":"recycling","name":"Peterborough Household Recycling Centre","osm_id":"7170704689","tag":{"recycling_type":"centre"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.252734,52.54282],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7752780348"},"type":"Feature"}
 ]
 }

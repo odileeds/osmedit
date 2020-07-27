@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-2.264755,52.58965],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"773309017","tag":{"description":"Village Hall rear car park","opening_hours":"24/7","recycling:batteries":"no","recycling:cans":"yes","recycling:cartons":"yes","recycling:clothes":"yes","recycling:electrical_appliances":"no","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:green_waste":"no","recycling:plastic_bottles":"yes","recycling:small_appliances":"no","recycling:wood":"no","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.270604,52.585775],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"798819494","tag":{"waste":"dog_excrement"}},"type":"Feature"},

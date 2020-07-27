@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-2.881348,56.451457],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"350510917","tag":{"operator":"Fife Council","recycling:cans":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"yes","recycling:plastic_bottles":"yes","recycling:plastic_packaging":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.884188,56.442854],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"350511900"},"type":"Feature"}

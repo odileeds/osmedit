@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-1.446046,54.971735],"type":"Point"},"properties":{"amenity":"recycling","name":"Middlefields Recycling Village","osm_id":"1347773590","tag":{"designation":"middlefields ind est recycling village"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.453356,54.942785],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4290901862"},"type":"Feature"},

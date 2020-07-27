@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-26T00:31:07Z",
+"lastupdate": "2020-07-27T00:28:31Z",
 "features": [
 	{"geometry":{"coordinates":[-1.066951,53.0007],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"421936844"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.104732,52.98347],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"529616848","tag":{"image":"https://www.mapillary.com/map/im/IA9Bf93jF0SFAKzZjXUI6w","waste":"dog_excrement"}},"type":"Feature"},

@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"lastupdate": "2020-07-27T00:28:31Z",
+"features": [
+	{"geometry":{"coordinates":[-1.980348,52.213955],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7752139264","tag":{"colour":"Black","covered":"yes","indoor":"no","material":"plastic","waste":"mixed"}},"type":"Feature"}
+]
+}
