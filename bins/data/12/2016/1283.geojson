@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-2.76314,55.617],"type":"Point"},"properties":{"amenity":"recycling","name":"Galashiels Community Recycling Centre","osm_id":"458894001","tag":{"recycling:batteries":"yes","recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:scrap_metal":"yes"}},"type":"Feature"}
 ]

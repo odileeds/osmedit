@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-1.810115,51.588587],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"869284042","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.796332,51.593795],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"870109594","tag":{"waste":"dog_excrement"}},"type":"Feature"},

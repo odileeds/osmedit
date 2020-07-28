@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-1.52406,51.6425],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"20916433"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.51258,51.634965],"type":"Point"},"properties":{"amenity":"recycling","name":"Horse & Jockey glass / paper / can recycling","osm_id":"457902351"},"type":"Feature"},

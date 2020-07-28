@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-3.000345,53.449791],"type":"Point"},"properties":{"amenity":"recycling","name":"South Sefton Recycling Park","osm_id":"966029411"},"type":"Feature"}
 ]

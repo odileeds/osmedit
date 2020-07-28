@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-0.69432,50.780086],"type":"Point"},"properties":{"amenity":"recycling","name":"West Park Recycling","osm_id":"603706585","tag":{"odbl":"clean"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.688614,50.780056],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1824904598"},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[0.866099,51.869561],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3424614969","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.857889,51.874787],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3424636055"},"type":"Feature"},
@@ -8,6 +8,7 @@
 	{"geometry":{"coordinates":[0.82933,51.880642],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4747705550"},"type":"Feature"},
 	{"geometry":{"coordinates":[0.8774,51.888093],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5939524826"},"type":"Feature"},
 	{"geometry":{"coordinates":[0.865584,51.880282],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6367249280"},"type":"Feature"},
-	{"geometry":{"coordinates":[0.87597,51.875505],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7252755706"},"type":"Feature"}
+	{"geometry":{"coordinates":[0.87597,51.875505],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7252755706"},"type":"Feature"},
+	{"geometry":{"coordinates":[0.850356,51.887746],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7755646964"},"type":"Feature"}
 ]
 }

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-0.539667,50.827974],"type":"Point"},"properties":{"amenity":"recycling","name":"Littlehampton Household Waste Recycling Site","osm_id":"30427536","tag":{"addr:city":"Littlehampton","addr:postcode":"BN17 7PH","addr:street":"Mill Lane","operator":"West Sussex County Council","recycling:batteries":"yes","recycling:cans":"yes","recycling:cardboard":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:scrap_metal":"yes","recycling:waste":"yes","recycling_type":"centre","website":"http://www.recycleforwestsussex.org/recycling-sites/littlehampton/"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.542342,50.804625],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1374846270"},"type":"Feature"},

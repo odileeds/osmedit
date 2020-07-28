@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-1.215145,52.929501],"type":"Point"},"properties":{"amenity":"recycling","is_in":"Nottingham,Nottinghamshire,United Kingdom","osm_id":"206128331","tag":{"is_in:city":"Nottingham","is_in:county":"Nottinghamshire"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.173059,52.951553],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"379542831","tag":{"colour":"red","operator":"British Heart Foundation","recycling_type":"container"}},"type":"Feature"},
@@ -115,6 +115,12 @@
 	{"geometry":{"coordinates":[-1.173488,52.951403],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7124490285","tag":{"waste":"trash"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.172611,52.951782],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7124490294"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.172741,52.95174],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7124490307"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.172807,52.951756],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7124490318"},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.172807,52.951756],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7124490318"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.220389,52.922301],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7754354887"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.220717,52.922315],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7754355003"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.220347,52.922406],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7754355006"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.207716,52.920499],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503754","tag":{"waste":"dog_excrement; trash"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.207104,52.920647],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503759"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.207234,52.920598],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503762"},"type":"Feature"}
 ]
 }

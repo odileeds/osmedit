@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-27T00:28:31Z",
+"lastupdate": "2020-07-28T01:29:12Z",
 "features": [
 	{"geometry":{"coordinates":[-0.177731,51.797597],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"256639216","tag":{"location":"overground","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.189665,51.81302],"type":"Point"},"properties":{"amenity":"recycling","name":"Haldens","osm_id":"802101259"},"type":"Feature"},
