@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-28T01:29:12Z",
+"lastupdate": "2020-07-29T00:24:51Z",
 "features": [
 	{"geometry":{"coordinates":[-4.937548,56.255761],"type":"Point"},"properties":{"amenity":"recycling","name":"Cairndow Inn","osm_id":"6390503885","tag":{"recycling:glass_bottles":"yes"}},"type":"Feature"}
 ]

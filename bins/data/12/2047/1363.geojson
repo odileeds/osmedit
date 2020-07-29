@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-28T01:29:12Z",
+"lastupdate": "2020-07-29T00:24:51Z",
 "features": [
 	{"geometry":{"coordinates":[-0.055005,51.419284],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"294952733","tag":{"recycling:printer_cartridges":"yes","recycling:small_appliances":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.067254,51.406854],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"309545266"},"type":"Feature"},

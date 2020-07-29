@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-28T01:29:12Z",
+"lastupdate": "2020-07-29T00:24:51Z",
 "features": [
 	{"geometry":{"coordinates":[-1.268762,53.883023],"type":"Point"},"properties":{"amenity":"recycling","name":"Radcaster Recycling Centre","osm_id":"274051194"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.254784,53.887689],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3932108391"},"type":"Feature"},

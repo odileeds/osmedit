@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-28T01:29:12Z",
+"lastupdate": "2020-07-29T00:24:51Z",
 "features": [
 	{"geometry":{"coordinates":[-1.037945,52.910639],"type":"Point"},"properties":{"amenity":"recycling","name":"Cotgrave Precinct Recycling Site","osm_id":"3659545260","tag":{"operator":"Rushcliffe Borough Council","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.038911,52.946031],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3702059692","tag":{"operator":"Rushcliffe Borough Council","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},

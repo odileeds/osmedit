@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-28T01:29:12Z",
+"lastupdate": "2020-07-29T00:24:51Z",
 "features": [
 	{"geometry":{"coordinates":[-0.152816,51.524364],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"99884"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.119419,51.523351],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"25475749"},"type":"Feature"},
@@ -759,6 +759,8 @@
 	{"geometry":{"coordinates":[-0.163632,51.528903],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7704836723"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.160128,51.52494],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7707253590","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.167475,51.524283],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7714127734","tag":{"recycling_type":"centre"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-0.164645,51.527408],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7714127736","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"no","recycling:plastic_packaging":"yes","recycling:shoes":"yes","recycling:small_electrical_appliances":"yes","recycling_type":"container"}},"type":"Feature"}
+	{"geometry":{"coordinates":[-0.164645,51.527408],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7714127736","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"no","recycling:plastic_packaging":"yes","recycling:shoes":"yes","recycling:small_electrical_appliances":"yes","recycling_type":"container"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.153417,51.524299],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7760999945","tag":{"waste":"dog_excrement"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.153374,51.524303],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7760999946"},"type":"Feature"}
 ]
 }
