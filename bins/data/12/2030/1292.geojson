@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-1.50962,55.12896],"type":"Point"},"properties":{"amenity":"recycling","name":"King St recycling","osm_id":"641747623"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.560775,55.169892],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"996342992","tag":{"recycling:cans":"no","recycling:clothes":"yes","recycling:glass":"no"}},"type":"Feature"},

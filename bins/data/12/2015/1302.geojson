@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-2.832403,54.658402],"type":"Point"},"properties":{"amenity":"recycling","name":"Flusco Recycling","osm_id":"1657363443","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.869368,54.669194],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"3347849846"},"type":"Feature"},

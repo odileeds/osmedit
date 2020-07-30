@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-1.215145,52.929501],"type":"Point"},"properties":{"amenity":"recycling","is_in":"Nottingham,Nottinghamshire,United Kingdom","osm_id":"206128331","tag":{"is_in:city":"Nottingham","is_in:county":"Nottinghamshire"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.173059,52.951553],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"379542831","tag":{"colour":"red","operator":"British Heart Foundation","recycling_type":"container"}},"type":"Feature"},
@@ -122,6 +122,7 @@
 	{"geometry":{"coordinates":[-1.207716,52.920499],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503754","tag":{"waste":"dog_excrement; trash"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.207104,52.920647],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503759"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.207234,52.920598],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7756503762"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.19788,52.928315],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7759206523"},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.19788,52.928315],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7759206523"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.204494,52.927137],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7762624509"},"type":"Feature"}
 ]
 }

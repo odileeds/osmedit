@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-3.227049,56.058828],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3877303776","tag":{"operator":"Fife Council","recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.228917,56.058971],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"3880845049","tag":{"operator":"Fife Council","recycling:cans":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling:paper":"yes","recycling:plastic":"yes","recycling_type":"container"}},"type":"Feature"},
@@ -50,7 +50,7 @@
 	{"geometry":{"coordinates":[-3.226718,56.065696],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5608861206","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.22397,56.067631],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5608861207","tag":{"waste":"dog_excrement"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.219855,56.067022],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5608861208","tag":{"waste":"dog_excrement"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-3.228155,56.060276],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5610076193"},"type":"Feature"},
+	{"geometry":{"coordinates":[-3.228068,56.060299],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5610076193"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.228402,56.0602],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5610076194"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.228402,56.060213],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5610076195"},"type":"Feature"},
 	{"geometry":{"coordinates":[-3.228873,56.061064],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5610076196"},"type":"Feature"},

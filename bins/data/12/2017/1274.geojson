@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-2.70272,56.051835],"type":"Point"},"properties":{"amenity":"recycling","name":"North Berwick Recycling Centre","osm_id":"1607737460","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.697492,56.053239],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1673717845","tag":{"recycling_type":"container"}},"type":"Feature"}

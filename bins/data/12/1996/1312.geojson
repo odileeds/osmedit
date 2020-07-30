@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-29T00:24:51Z",
+"lastupdate": "2020-07-30T00:29:16Z",
 "features": [
 	{"geometry":{"coordinates":[-4.501241,54.151217],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"283485770"},"type":"Feature"},
 	{"geometry":{"coordinates":[-4.510109,54.152797],"type":"Point"},"properties":{"amenity":"waste_basket","highway":"bus_stop","name":"bin","osm_id":"1830297879","tag":{"shelter":"yes"}},"type":"Feature"},
