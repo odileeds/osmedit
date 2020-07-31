@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.56.1002 b121d216">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2020-03-18T17:07:02Z"/>
+
+  <node id="2101532104" lat="53.7953035" lon="-1.5441943">
+    <tag k="addr:city" v="Leeds"/>
+    <tag k="addr:street" v="Trevelyan Square"/>
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248190" lat="53.7983293" lon="-1.5322227">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248191" lat="53.7981709" lon="-1.5322715">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4361248192" lat="53.7982525" lon="-1.5322756">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4362453635" lat="53.7952510" lon="-1.5371581">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="4362557276" lat="53.7964889" lon="-1.5393189">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378769" lat="53.7984465" lon="-1.5342276">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378771" lat="53.7983823" lon="-1.5338735">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="5506378794" lat="53.7973114" lon="-1.5332348">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="6183459986" lat="53.7978446" lon="-1.5431916">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+  <node id="7029962656" lat="53.7953839" lon="-1.5436780">
+    <tag k="amenity" v="waste_basket"/>
+  </node>
+
+</osm>

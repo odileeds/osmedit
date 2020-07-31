@@ -1,0 +1,66 @@
+pre.prettyprint {
+	background: rgba(228, 233, 242, 0.4);
+	padding: 1em;
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+
+button.done {
+	background: #00B6FF;
+}
+button:hover {
+	background: #00B6FF;
+}
+.label {
+	display: block;
+	position: absolute;
+	top: -4px;
+	right: 0em;
+	font-size: 0.75em;
+	font-weight: bold;
+	background-color: black;
+	padding: 4px 8px 2px 8px;
+	border-radius: 0.25em;
+	vertical-align: baseline;
+	white-space: nowrap; 
+	color: white;
+}
+#location {
+	width: 100%;
+	height: 550px;
+	margin-top: 1em;
+}
+.my-location-accuracy, .my-location:after { position: absolute; left:50%; top:50%; transform:translate3D(-50%,-50%,0); border-radius: 100%; }
+.my-location:after { content: ''; width: 14px; height: 14px; background-color: #2254F4; border: 3px solid white; }
+.my-location-accuracy { background-color: rgba(34, 84, 244, 0.3); transition: width 0.1s ease-in, height 0.1s ease-in; }
+.leaflet-control-geolocate { background: white; }
+.leaflet-control-geolocate a { transform: rotate(90deg); }
+.leaflet-control-geolocate.live-location a { background-color: rgba(34, 84, 244, 0.3); }
+.leaflet-touch .leaflet-control-layers-toggle { width: auto; height: auto; background-size: 20px; }
+.leaflet-left .leaflet-control.leaflet-control-attribution { margin-left: 0px; }
+.leaflet-marker-icon svg { position: relative; margin: auto; position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-100%,0); }
+.leaflet-bar svg { position: relative; margin: auto; position: absolute; left: 50%; top: 50%; transform: translate3d(-50%,-50%,0); width: 70%; height: 70%; }
+.marker-group {
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+#auth { line-height: 0px; }
+#auth .user img { display: none; }
+#auth.logged-in .user img { display: inline-block; }
+#auth.logged-in #login, #auth #logout { display: none; }
+#auth.logged-in #logout, #auth #login { display: inline-block; }
+.user { width: auto; display: inline-block; }
+.user img { width: 7.5em; float: left; margin-right: 1em; }
+.user .details { line-height: 1.5em; width: auto; height: auto; display: none; margin-bottom: 0.75em; }
+#auth.logged-in .user .details { display: block; }
+.user .right { display: inline-block; }
+#forester {
+	position: relative;
+}
+#auth {
+	position: absolute;
+	z-index: 1005;
+	right: 0px;
+	top: 0px;
+}

@@ -599,7 +599,8 @@
 			for(t = 0; t < tiles.length; t++){
 				id = tiles[t].z+'/'+tiles[t].x+'/'+tiles[t].y;
 				if(!this.nodegetter.tiles[id]){
-					this.nodegetter.tiles[id] = {'url':'data/'+id+'.geojson'};
+					this.nodegetter.tiles[id] = {'url':(options.src ||'data/')+id+'.geojson'};
+					
 					// If we haven't already downloaded the data
 					if(!this.nodegetter.tiles[id].data) promises.push(getGeoJSONTile(this.nodegetter.tiles[id].url,id));
 				}
@@ -793,14 +794,22 @@
 						// Add a title if one is provided
 						popup = {'label':'<h3>'+(options.title||"Node")+'</h3>'+(str ? '<p>'+str+'</p>':''),'options':{'icon':this.marker}};
 					}
-					marker = L.marker([this.nodes[id].lat,this.nodes[id].lon],{icon: this.markers[popup.options.icon].icon}).on('popupopen', function(e){
-						obj.trigger('popupopen',e);
-					}).on('popupclose',function(e){
-						obj.trigger('popupclose',e);
-					});
+					if(this.markers[popup.options.icon]){
+						marker = L.marker([this.nodes[id].lat,this.nodes[id].lon],{icon: this.markers[popup.options.icon].icon}).on('popupopen', function(e){
+							obj.trigger('popupopen',e);
+						}).on('popupclose',function(e){
+							obj.trigger('popupclose',e);
+						});
+					}else{
+						marker = L.marker([this.nodes[id].lat,this.nodes[id].lon]).on('popupopen', function(e){
+							obj.trigger('popupopen',e);
+						}).on('popupclose',function(e){
+							obj.trigger('popupclose',e);
+						});						
+					}
 					marker.osmid = id;
 					if(!marker.properties) marker.properties = {};
-					marker.properties.background = (this.markers[popup.options.icon].background||"black");
+					marker.properties.background = (this.markers[popup.options.icon] ? this.markers[popup.options.icon].background : "black");
 					marker.bindPopup(popup.label,popup.options);
 					markerList.push(marker);
 				}else{

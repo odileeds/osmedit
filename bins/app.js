@@ -341,6 +341,7 @@ var app;
 
 			osmedit.getNodes({
 				'type':'geojson',
+				'src': 'https://odileeds.github.io/osm-geojson/tiles/bins/',
 				'popup': function(){
 					var str,cls,title,types,p,i,ts,ul;
 					ul = '';

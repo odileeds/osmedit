@@ -64,7 +64,7 @@
 		this.auth = osmAuth(props);
 
 		this.setNode = function(node){
-			console.log('setNode',node);
+			this.log.info('setNode',node);
 			this.node = node;
 			return this;
 		}
@@ -72,7 +72,7 @@
 		this.getNodes = function(opts,callback){
 			this.mapper.node = this.node;
 			if(!opts) opts = this.mapper.node.options;
-			console.log('opts',opts);
+			this.log.message('getNodes',opts,callback);
 			this.mapper.getNodes(this.mapper.node.type,opts);
 			return this;
 		}
@@ -232,13 +232,10 @@
 		}
 		
 		this.addMap = function(id,options){
-
-			console.log('addMap');
+			this.log.message('addMap');
 			if(!options) options = {};
 			options.logging = this.log.logging;
-			
 			this.mapper = new OSMMap(id,options);
-
 			return this;
 		}
 		
@@ -278,6 +275,9 @@
 		}
 		if(o.length > 0) return o;
 	}
+
+
+
 
 	function OSMMap(id,options){
 
@@ -401,6 +401,7 @@
 			});
 		}
 
+		// We will grab boxes of data
 		this.getNodesFromOverpass = function(a,options,callback){
 
 			if(!a) return this;
@@ -415,19 +416,20 @@
 
 			/* We need Overpass QL something like:
 			(
-			  node ["amenity"="waste_basket"] (50.6,7.0,50.8,7.3);
-			  node ["amenity"="recycling"] (50.6,7.0,50.8,7.3);
+			  node ["amenity"="waste_basket"] (53.4500,-1.9683,53.9272,-1.2250);
+			  node ["amenity"="recycling"] (53.4500,-1.9683,53.9272,-1.2250);
 			);
 			(._;>;);
 			out;
 			
+			e.g. http://overpass-turbo.eu/s/TXI
 			See https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide for details
 			*/
-
 			var qs = '%28%20';
 			for(var i = 0; i < a.length; i++) qs += 'node%20%5B'+encodeURIComponent(a[i])+'%5D%0A%20%20%28'+b._southWest.lat+','+b._southWest.lng+','+b._northEast.lat+','+b._northEast.lng+'%29%3B%20%20';
 			qs += '%29%3B%0Aout%3B';
 
+			this.log.info('Getting data from https://overpass-api.de/api/interpreter?data='+qs,a);
 			S(document).ajax('overpass.xml',{
 //			S(document).ajax("https://overpass-api.de/api/interpreter?data="+qs,{
 				'dataType':'kml',
@@ -479,7 +481,6 @@
 						}
 
 					}
-					console.log('nodes',this.nodes);
 					
 					// Now update the marker group
 					this.buildPins(attr.options);
@@ -492,7 +493,7 @@
 		
 		this.buildPins = function(options){
 			
-			console.log('buildPins');
+			this.log.message('buildPins');
 
 			if(!options) options = {};
 
@@ -534,7 +535,7 @@
 						p += (100*colours[c]/pins.length)/f;
 						grad += ' '+Math.round(p)+'%';
 					}
-					console.log('cluster',pins[0].osmid,colours,grad);
+					//console.log('cluster',pins[0].osmid,colours,grad);
 					return L.divIcon({ html: '<div class="marker-group" style="background:radial-gradient(circle at center, '+grad+');">'+pins.length+'</div>', className: '',iconSize: L.point(40, 40) });
 				},
 				// Disable all of the defaults:
@@ -545,7 +546,6 @@
 
 			// Build marker list
 			markerList = [];
-			console.log('Nodes',this.nodes);
 
 			for(id in this.nodes){
 				if(this.nodes[id] && typeof this.nodes[id].lon==="number" && typeof this.nodes[id].lat==="number"){
@@ -585,11 +585,10 @@
 		}
 		
 		this.getNodes = function(a,options){
-			console.log('getNodes');
+			this.log.message('getNodes',a,options);
 			if(!a) return this;
 			if(!options) options = {};
 			options['this'] = this;
-			console.log('Mapper getNodes',options);
 			if(options['overpass']){
 				this.getNodesFromOverpass(a,options,function(a,b){
 					this.log.message('got overpass',this,a);
@@ -770,10 +769,10 @@
 			args = Array.prototype.slice.call(arguments[1], 0);
 			bold = 'font-weight:bold;';
 			if(console && typeof console.log==="function"){
-				if(arguments[0] == "ERROR") console.error('%c'+this.id+'%c:',bold,'',args);
-				else if(arguments[0] == "WARNING") console.warn('%c'+this.id+'%c:',bold,'',args);
-				else if(arguments[0] == "INFO") console.info('%c'+this.id+'%c:',bold,'',args);
-				else console.log('%c'+this.id+'%c:',bold,'',args);
+				if(arguments[0] == "ERROR") console.error('%c'+this.id+'%c:',bold,'',...args);
+				else if(arguments[0] == "WARNING") console.warn('%c'+this.id+'%c:',bold,'',...args);
+				else if(arguments[0] == "INFO") console.info('%c'+this.id+'%c:',bold,'',...args);
+				else console.log('%c'+this.id+'%c:',bold,'',...args);
 			}
 		}
 		return this;
