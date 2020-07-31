@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.130563,51.49075],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"25536894","tag":{"recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.13688,51.497863],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"169367547"},"type":"Feature"},
@@ -199,7 +199,7 @@
 	{"geometry":{"coordinates":[-0.134444,51.503779],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5969186742"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.100081,51.496457],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6019344419"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.172553,51.462079],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6019790568"},"type":"Feature"},
-	{"geometry":{"coordinates":[-0.123242,51.486553],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6019793396"},"type":"Feature"},
+	{"geometry":{"coordinates":[-0.123242,51.486553],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6019793396","tag":{"waste":"trash;cigarettes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.163795,51.470442],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"6027741310","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.134462,51.501471],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6209023193"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.134682,51.501586],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"6209023194"},"type":"Feature"},

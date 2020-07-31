@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-2.619416,51.432671],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"27233959","tag":{"recycling:plastic_bottles":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.59789,51.415702],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"31330618"},"type":"Feature"},

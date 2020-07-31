@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-3.862499,56.619662],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4856334721","tag":{"opening_hours":"24/7","recycling:glass":"yes","recycling_type":"centre"}},"type":"Feature"}
 ]

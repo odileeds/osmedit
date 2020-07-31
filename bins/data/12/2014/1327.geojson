@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-2.942321,53.367602],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"26171907","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.907823,53.380508],"type":"Point"},"properties":{"amenity":"recycling","name":"Tesco Recycling Point","osm_id":"26171909"},"type":"Feature"}

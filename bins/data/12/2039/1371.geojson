@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.750025,50.982387],"type":"Point"},"properties":{"amenity":"recycling","name":"Midhurst Household Waste Recycling Site","osm_id":"1057514818","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.738632,50.987562],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2383555907"},"type":"Feature"},

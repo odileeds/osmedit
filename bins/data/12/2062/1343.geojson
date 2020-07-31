@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[1.243428,52.520988],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4728256068"},"type":"Feature"},
 	{"geometry":{"coordinates":[1.233425,52.488126],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5549118359","tag":{"recycling:clothes":"yes","recycling:cooking_oil":"yes","recycling:glass":"yes","recycling:paper":"yes"}},"type":"Feature"},

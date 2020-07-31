@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.750956,53.400815],"type":"Point"},"properties":{"amenity":"recycling","name":"Household Waste Recycling Centre","osm_id":"7276454162","tag":{"operator":"West Lindsey District Council","operator:type":"public","recycling_type":"centre"}},"type":"Feature"}
 ]

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-3.600973,51.544997],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling Transfer Centre","osm_id":"3939264835","tag":{"operator":"Kier","recycling:cans":"no","recycling:clothes":"no","recycling:glass":"no","recycling:glass_bottles":"no","recycling:paper":"no","recycling:plastic":"no","recycling_type":"centre"}},"type":"Feature"}
 ]

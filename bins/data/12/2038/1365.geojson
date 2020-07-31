@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.846321,51.338442],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"410221235","tag":{"recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:shoes":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.823589,51.294695],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling Bank","osm_id":"1770689936","tag":{"recycling_type":"container"}},"type":"Feature"},

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.128078,52.31306],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"313725278"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.126695,52.310738],"type":"Point"},"properties":{"amenity":"recycling","man_made":"yes","name":"New Farm Recycling Centre","osm_id":"4330640647","tag":{"addr:city":"Hemingford Abbots","addr:postcode":"PE28 9HL","addr:street":"Rideaway"}},"type":"Feature"}

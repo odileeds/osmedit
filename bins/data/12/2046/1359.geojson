@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.093259,51.627121],"type":"Point"},"properties":{"amenity":"recycling","name":"Barrowell Green Recycling Centre","osm_id":"26026691"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.14533,51.621627],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"269191773"},"type":"Feature"},

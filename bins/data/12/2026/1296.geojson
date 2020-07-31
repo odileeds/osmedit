@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-1.908389,54.948686],"type":"Point"},"properties":{"amenity":"recycling","name":"Glass recycling containers","osm_id":"1489915875","tag":{"recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.916308,54.946429],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"4151358999"},"type":"Feature"},

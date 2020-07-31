@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-1.234802,53.363723],"type":"Point"},"properties":{"amenity":"recycling","name":"North Anston","osm_id":"2392853319","tag":{"recycling_type":"centre"}},"type":"Feature"}
 ]

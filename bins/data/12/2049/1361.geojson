@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[0.098301,51.523919],"type":"Point"},"properties":{"amenity":"recycling","name":"Barking Waste Transfer Station","osm_id":"670379640","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.155825,51.529632],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"1362197419"},"type":"Feature"},

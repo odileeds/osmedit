@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.529026,52.169352],"type":"Point"},"properties":{"amenity":"recycling","name":"Glass recycling ","osm_id":"7640840163"},"type":"Feature"}
 ]

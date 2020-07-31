@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-7.334522,57.410519],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5131756456"},"type":"Feature"},
 	{"geometry":{"coordinates":[-7.336204,57.414307],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5131756459","tag":{"recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"container","website":"https://www.cne-siar.gov.uk/bins-and-recycling/household-waste/household-waste-recycling/recycling-points/"}},"type":"Feature"}

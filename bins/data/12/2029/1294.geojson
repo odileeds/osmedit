@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-1.642658,55.045674],"type":"Point"},"properties":{"amenity":"recycling","name":"Brunswick Industrial Estate Recycle Centre","osm_id":"510416189"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.619668,55.057195],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"765376576","tag":{"recycling:cans":"yes","recycling:glass":"yes"}},"type":"Feature"},

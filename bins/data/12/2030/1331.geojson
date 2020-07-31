@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-1.561761,53.138558],"type":"Point"},"properties":{"amenity":"recycling","name":"Sainsbury's Recycling point","osm_id":"937575104"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.563179,53.143423],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4203431782"},"type":"Feature"},

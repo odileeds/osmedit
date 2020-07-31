@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[0.865739,52.257137],"type":"Point"},"properties":{"amenity":"recycling","name":"Norton Recycling Centre","osm_id":"5706645496","tag":{"recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:shoes":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.823998,52.250427],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"6349080751","tag":{"recycling:paper":"yes"}},"type":"Feature"},

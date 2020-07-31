@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-2.949951,51.329228],"type":"Point"},"properties":{"amenity":"recycling","name":"May Gurney Ltd","osm_id":"1939986080","tag":{"recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.986026,51.321927],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2381138889"},"type":"Feature"}

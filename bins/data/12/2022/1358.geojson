@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-2.271786,51.679352],"type":"Point"},"properties":{"amenity":"recycling","name":"Pyke Quarry HRC (Horsley)","osm_id":"26953350"},"type":"Feature"},
 	{"geometry":{"coordinates":[-2.219208,51.695332],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"502928935"},"type":"Feature"}

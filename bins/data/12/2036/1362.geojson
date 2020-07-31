@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.984408,51.464391],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"16017250","tag":{"recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:newspaper":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.975912,51.454121],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"16204762","tag":{"recycling:clothes":"yes","recycling:glass_bottles":"yes","recycling:magazines":"yes","recycling:paper":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"},
@@ -21,7 +21,7 @@
 	{"geometry":{"coordinates":[-1.032107,51.465344],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"840826375"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.052874,51.464922],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"841486465"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.05364,51.465032],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"841486468"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.05457,51.467259],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"841486479"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.054652,51.467211],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"841486479"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.052913,51.462155],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"841486495"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.974413,51.467152],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1743259752","tag":{"recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.050624,51.480186],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2165378865","tag":{"waste":"dog_excrement"}},"type":"Feature"},

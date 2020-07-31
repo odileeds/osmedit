@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[-0.900644,51.660333],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"808467298"},"type":"Feature"},
 	{"geometry":{"coordinates":[-0.883865,51.657305],"type":"Point"},"properties":{"amenity":"recycling","name":"Mudds Bank","osm_id":"2281795152","tag":{"recycling_type":"container"}},"type":"Feature"},

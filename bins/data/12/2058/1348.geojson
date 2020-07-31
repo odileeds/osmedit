@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"lastupdate": "2020-07-30T00:29:16Z",
+"lastupdate": "2020-07-31T01:06:47Z",
 "features": [
 	{"geometry":{"coordinates":[0.912413,52.238284],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"7042297716","tag":{"opening_hours":"24/7","operator":"Mid Suffolk District Council","operator:type":"public","recycling:clothes":"yes","recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"centre"}},"type":"Feature"},
 	{"geometry":{"coordinates":[0.916527,52.230517],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"7157014277","tag":{"waste":"dog_excrement"}},"type":"Feature"},
