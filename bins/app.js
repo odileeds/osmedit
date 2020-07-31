@@ -51,12 +51,14 @@ var app;
 
 	function Application(opts){
 
+		this.version = "0.3";
 		this.opts = opts;
 		this.name = (opts.name||"ODI Leeds Editor");
 		this.log = new Logger({'id':this.name,'logging':(location.search.indexOf("logging=true")>=0)});
 		this.data = {};
 		debug = (typeof opts.debug==="boolean" ? opts.debug: true);
 
+		document.getElementById('version').innerHTML = "v"+this.version;
 		// Access this within sub-functions
 		var _obj = this;
 

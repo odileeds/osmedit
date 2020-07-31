@@ -25,6 +25,8 @@ nav li a.theme, nav li a.theme-accent { background-color: #502d16; color: white;
 .glass .leaflet-popup-content-wrapper,
 .glass .leaflet-popup-tip { background: #1DD3A7; }
 
+#version { z-index: 1000; bottom: 0; right: 0; position: absolute; font-size: 11px; margin: 0; padding: 0 5px; line-height: 16.5px; background: rgba(255, 255, 255, 0.7); }
+
 #add-item svg { overflow: unset; }
 #add-item svg path:first-child { filter: drop-shadow(0 4px 12px #F9BC26); }
 
