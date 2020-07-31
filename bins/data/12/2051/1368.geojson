@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[0.312299,51.142869],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"420406516","tag":{"recycling:cans":"no","recycling:glass":"no","recycling:paper":"no"}},"type":"Feature"},
-	{"geometry":{"coordinates":[0.266912,51.132614],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"459872605","tag":{"recycling:cans":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes"}},"type":"Feature"}
-]
-}

@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[0.528865,51.94987],"type":"Point"},"properties":{"amenity":"recycling","name":"Blackmore End Recycling Centre","osm_id":"354573934","tag":{"recycling:cans":"yes","recycling:glass":"yes"}},"type":"Feature"},
-	{"geometry":{"coordinates":[0.598038,51.989595],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"1241150922","tag":{"recycling:glass":"yes"}},"type":"Feature"}
-]
-}

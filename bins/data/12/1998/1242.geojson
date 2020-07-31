@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-4.32606,57.60634],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"5637148713","tag":{"add:place":"football field parking","addr:city":"Culbokie","recycling:cans":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling_type":"container"}},"type":"Feature"}
-]
-}

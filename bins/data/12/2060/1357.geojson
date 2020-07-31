@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[1.104166,51.772652],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"345534786","tag":{"waste":"dog_excrement"}},"type":"Feature"}
-]
-}

@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[0.719851,52.076911],"type":"Point"},"properties":{"amenity":"recycling","name":"Bottle Bank/Paper/Clothes","osm_id":"855283214"},"type":"Feature"}
-]
-}

@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-2.368651,57.287964],"type":"Point"},"properties":{"amenity":"recycling","name":"Inverurie Household Waste Recycling Centre","osm_id":"4610434492","tag":{"opening_hours":"Mo-Su 09:00-17:00","operator":"Aberdeenshire Council","recycling_type":"centre"}},"type":"Feature"}
-]
-}

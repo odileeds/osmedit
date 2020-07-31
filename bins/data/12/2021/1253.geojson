@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-2.356412,57.077278],"type":"Point"},"properties":{"amenity":"recycling","name":"Community Recycling Facility","osm_id":"2294721386"},"type":"Feature"}
-]
-}

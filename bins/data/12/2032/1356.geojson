@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-1.343246,51.793917],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"2100234222"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.393169,51.825768],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"4182150944","tag":{"operator":"Aspire","recycling:clothes":"yes","recycling:shoes":"yes","recycling_type":"container"}},"type":"Feature"}
-]
-}

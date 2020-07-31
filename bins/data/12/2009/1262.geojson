@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-3.404776,56.654641],"type":"Point"},"properties":{"amenity":"recycling","name":"Bridge of Cally Recycling Centre","osm_id":"4297008581"},"type":"Feature"}
-]
-}

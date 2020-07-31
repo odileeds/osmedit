@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-0.190447,51.132472],"type":"Point"},"properties":{"amenity":"recycling","name":"Crawley Household Waste Recycling Site","osm_id":"211745965"},"type":"Feature"}
-]
-}

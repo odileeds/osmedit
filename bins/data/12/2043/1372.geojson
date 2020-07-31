@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-0.429686,50.94027],"type":"Point"},"properties":{"amenity":"recycling","name":"Thakeham Village Hall","osm_id":"661033564"},"type":"Feature"}
-]
-}

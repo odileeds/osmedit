@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-1.102431,53.515321],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"286277476","tag":{"recycling:books":"yes","recycling:cans":"yes","recycling:cardboard":"yes","recycling:clothes":"yes","recycling:glass":"yes","recycling:paper":"yes","recycling:shoes":"yes"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.136539,53.522582],"type":"Point"},"properties":{"amenity":"waste_basket","osm_id":"5100925278"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.088234,53.500461],"type":"Point"},"properties":{"amenity":"waste_basket","name":"Mr Shifti's Rubbish","osm_id":"5356576424"},"type":"Feature"}
-]
-}

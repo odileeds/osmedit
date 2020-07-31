@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-3.209024,56.394279],"type":"Point"},"properties":{"amenity":"recycling","name":"Errol Recyling Area","osm_id":"2200134201","tag":{"recycling_type":"container"}},"type":"Feature"}
-]
-}

@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-3.000353,51.139527],"type":"Point"},"properties":{"amenity":"recycling","name":"Waste Recycling Centre","osm_id":"636081907"},"type":"Feature"}
-]
-}

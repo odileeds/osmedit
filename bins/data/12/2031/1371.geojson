@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"lastupdate": "2020-07-31T01:06:47Z",
-"features": [
-	{"geometry":{"coordinates":[-1.475686,50.999528],"type":"Point"},"properties":{"amenity":"recycling","name":"Great Woodley Recycling","osm_id":"2459421808","tag":{"recycling:clothes":"yes","recycling_type":"container"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.474999,50.990774],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"2459421849"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.473447,51.003382],"type":"Point"},"properties":{"amenity":"recycling","name":"Recycling Point","osm_id":"4769327823","tag":{"description":"Glass recycling collection bank and Salvation Army Clothes collection.","operator":"Test Valley Borough Council","recycling:clothes":"yes","recycling:glass":"yes","recycling_type":"container"}},"type":"Feature"}
-]
-}
